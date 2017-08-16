@@ -1,0 +1,368 @@
+/* Default CSS Stylesheet for a new Web Application project */
+
+BODY
+{
+    BACKGROUND-COLOR: white;
+    FONT-FAMILY:Arial;
+    FONT-SIZE: .8em;
+    FONT-WEIGHT: normal;
+    LETTER-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    WORD-SPACING: normal
+    
+}
+
+H1, H2, H3, H4, H5, TH, THEAD, TFOOT
+{
+    COLOR: #003366;
+}
+H1	{	
+	font-family:  Arial;
+	font-size:	2em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H2	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1.75em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H3	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1.58em;
+	font-weight:	500;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H4	{	
+	font-family: Arial;
+	font-size:	1.33em;
+	font-weight:	500;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H5, DT	{	
+	font-family:  Arial;
+	font-size:	1em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H6	{	
+	font-family: Arial;
+	font-size:	.8em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+TFOOT, THEAD	{	
+	font-size:	1em;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	font-family: Arial, Helvetica, sans-serif;
+	}	
+		
+TH	{	
+	vertical-align:middle;
+	font-size:	8pt;
+	font-weight:	bold;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	font-family: Arial, Helvetica, sans-serif;
+	color:Black;
+	}	
+	
+	TD
+		{	
+	vertical-align:baseline;
+	font-size:	8pt;
+	
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	font-family: Arial;
+	}	
+	
+	Label
+	{	
+	vertical-align:	baseline;
+	font-size:	10pt;
+	
+    font-family: Arial;
+	}	
+
+	
+
+
+A:link	{	
+	text-decoration:	none;
+	color:	#3333cc;
+	}	
+		
+A:visited	{	
+	text-decoration:	none;
+	color:	#333399;
+	}	
+		
+A:active	{	
+	text-decoration:	none;
+	color:	#333399;
+	}	
+		
+A:hover	{	
+	text-decoration:	underline;
+	color:	#3333cc;
+	}
+	
+SMALL	{	
+	font-size:	.7em;
+	}	
+
+BIG	{	
+	font-size:	1.10em;
+	}	
+
+BLOCKQUOTE, PRE	{	
+	font-family:	Courier New, monospace;
+	}	
+	
+
+UL LI	{	
+	list-style-type:	square ;
+	}	
+
+UL LI LI	{	
+	list-style-type:	disc;
+	}	
+
+UL LI LI LI	{	
+	list-style-type:	circle;
+	}	
+	
+OL LI	{	
+	list-style-type:	decimal;
+	}	
+
+OL OL LI	{	
+	list-style-type:	lower-alpha;
+	}	
+
+OL OL OL LI	{	
+	list-style-type:	lower-roman;
+	}	
+
+	
+	.DataGrid
+	{
+		BorderColor=#663300; 
+		BorderStyle=None; 
+		BorderWidth=1px;
+		BackColor=White;
+		
+	}
+.DataGridHeader
+{
+	background-color:#333333;
+    color:white;
+    font-family:MS Sans Serif;
+	font-size:9pt;
+	FONT-WEIGHT: bold;   
+    height:16px
+}
+
+.DataGridItem
+{
+	COLOR:black;	
+	FONT-WEIGHT: normal;    
+    font-size:8pt;
+	font-family:MS Sans Serif;
+}
+
+.DatagridAlternatingStyle
+{
+	font-size:8pt;
+	font-family:MS Sans Serif;
+	background-color:#f5f5f5;
+}
+
+.DatagridPagerstyle
+{
+	color:#3d3d3d;
+	font-family:MS Sans Serif;
+	font-size:9pt;
+	background-color:#e1e1e1;
+	FONT-WEIGHT:normal;    
+    height:16px;    
+}
+
+.ReportButtonStyle
+{
+	border-style:outset;
+	border-color:#404040;
+	font-family:MS Sans Serif;
+	background-color:#e1e1e1;  
+	font-size:10pt;
+	color:Black; 
+	border-width:thin;	   
+	height :30px;  
+	width :120px
+}
+
+.ComboBox
+{
+	font-family:Microsoft Sans Serif;
+	font-size:8pt;
+		
+}
+.FontStyle
+{
+	font-family:Arial;
+	font-size:8pt; 
+}
+
+.TextBox
+{
+	font-size:10pt;
+	font-family :Arial;
+	border-style:outset;
+	border-color:Black;  
+	border-width :1;
+	height:28px;
+}
+
+.TextBoxForms
+{
+	font-size:8pt;
+	font-family :Arial;
+	border-style:Groove;
+	/*border-color:Black;  
+	border-width :1;*/
+	
+}
+.TextForms
+{
+	font-size:8pt;
+	font-family :Arial;
+	border-style:Groove;
+	/*border-color:Black;  
+	border-width :1;*/
+	width:30;
+}
+
+.TextBoxDate
+{
+	font-size:8pt;
+	font-family:Arial;
+	border-style:groove;
+	/*border-color:Black;
+	border-width:1;*/
+	width:91px;
+}
+
+.TextBoxWide
+{
+	font-size:10pt;
+	font-family :Arial;
+	border-style:Groove;
+	border-color:Black;  
+	border-width :1;
+	width:185;
+}
+
+.FormButtonStyle
+{
+	border-style:outset;
+	border-color:#404040;
+	font-family:MS Sans Serif;
+	background-color:#c0c0c0;  
+	font-size:8pt;
+	color:Black; 
+	border-width:1pt;	   
+	width:70px;
+	height:22;
+}
+
+.FormEditButtonStyle
+{
+	border-style:outset;
+	border-color:#404040;
+	font-family:MS Sans Serif;
+	background-color:#c0c0c0;  
+	font-size:8pt;
+	color:Black; 
+	border-width:1pt;	   
+	width :20px
+	
+}
+
+.FormWideButtonStyle
+{
+	border-style:outset;
+	border-color:#404040;
+	font-family:MS Sans Serif;
+	background-color:#c0c0c0;  
+	font-size:8pt;
+	color:Black; 
+	border-width:1pt;	   
+	width :120px
+}
+
+.ComboBoxSearchButtonStyle
+{
+	border-right: silver;
+		border-top: silver;
+		border-bottom: silver;
+		border-left: silver;
+		font-weight: bold;
+		font-size: 8pt;
+		background-image: url(drb19.jpg);
+		width: 17px;
+		color: navy;
+		font-family: Arial;
+		height: 19px;
+		background-color: silver;
+}
+
+.TextBoxStyle
+{
+	border-right: silver 1px solid;
+	/*border-top: lightsteelblue 1px solid;
+	border-left: lightsteelblue 1px solid;
+	border-bottom: lightsteelblue 1px solid;*/
+	/*border-color: black;*/
+	padding-left: 1; 
+	padding-right: 1; 
+	padding-top: 1; 
+	padding-bottom: 1;
+	font-size: 8pt;
+	/*background-color: #eaf1f6;*/
+	background-color: White;
+}

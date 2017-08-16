@@ -1,0 +1,17 @@
+CHN                                               ----------------------
+                                                FEES DECISION REPORT
+                                               ----------------------
+                                                     Class : All
++----+------+---------+-------+-----+-----+------+-----+-----+-----+------+-----+-----+-----+-----+-----+-----------+
+|cls |Stream|Fees Mode| S.Cat.|Rank |Diary|Tution|Comp.|Scie.|Games|Admis.|Secu.|Annu.|Env. |Host.|Total|  Remarks  |
++----+------+---------+-------+-----+-----+------+-----+-----+-----+------+-----+-----+-----+-----+-----+-----------+
+ Nurs None   Monthly   Afo     Afo       0    200    50    50    50      0     0     0     0    50   400             
+ Nurs None   One Time  Afo     Afo       0      0     0     0     0    500  1000     0     0     0  1500             
+ Nurs None   Yearly    Afo     Afo      50      0     0     0     0      0     0    50    50     0   150             
+ V    None   Monthly   Afo     Afo       0    300   100   100   100      0     0     0     0   100   700             
+ V    None   One Time  Afo     Afo       0      0     0     0     0    500  1000     0     0     0  1500             
+ V    None   Yearly    Afo     Afo     100      0     0     0     0      0     0   100   100     0   300             
+ XI   Math G Monthly   Afo     Afo       0    400   150   150   150      0     0     0     0   150  1000             
+ XI   Math G One Time  Afo     Afo       0      0     0     0     0    500  1000     0     0     0  1500             
+ XI   Math G Yearly    Afo     Afo     150      0     0     0     0      0     0   150   150     0   450             
++----+------+---------+-------+-----+-----+------+-----+-----+-----+------+-----+-----+-----+-----+-----+-----------+

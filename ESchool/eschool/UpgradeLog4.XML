@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="eschool">
+</Property><Property Name="Solution File" Value="C:\Inetpub\wwwroot\eschool\eschool.sln">
+</Property><Property Name="Date" Value="Wednesday, August 16, 2017">
+</Property><Property Name="Time" Value="18:41 PM">
+</Property><Property Name="Log Number" Value="4">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="eschool.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="eschool.sln" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="eschool" Source="eschool.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="3" Project="eschool" Source="eschool.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="eschool" Source="eschool.csproj" Description="You have completed the first step in converting your Visual Studio .NET 2003 web project. To complete the conversion, please select your project in the Solution Explorer and choose the 'Convert to Web Application' context menu item.">
+</Event></UpgradeLog>

@@ -1,0 +1,257 @@
+8/6/2008 10:06:29 AM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 10:08:49 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:08:49 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:08:54 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:08:54 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:12:15 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:12:15 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:14:51 AM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 10:15:05 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:15:05 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:15:08 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:15:08 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:17:36 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:17:36 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:17:41 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:17:41 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:17:53 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:17:53 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:19:36 AM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 10:19:43 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:19:43 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:19:51 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:19:51 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:19:55 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:19:55 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:20:01 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:20:01 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:20:01 AM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click. Exception: Length cannot be less than zero.
+Parameter name: length User: eschool
+8/6/2008 10:20:28 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:20:28 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:20:49 AM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click. Exception: Length cannot be less than zero.
+Parameter name: length User: eschool
+8/6/2008 10:25:47 AM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 10:25:54 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:25:54 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:25:59 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:25:59 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:26:02 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:26:02 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:26:08 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:26:08 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:26:27 AM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click. Exception: Length cannot be less than zero.
+Parameter name: length User: eschool
+8/6/2008 10:27:10 AM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 10:28:02 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:28:02 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:28:05 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:28:05 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:28:10 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:28:10 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:28:21 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:28:21 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:30:15 AM ==> Form: StudentRegistration.aspx.cs, Method: btnSave_Click. New Student Kashish Sharma with ID 1 saved. User: eschool
+8/6/2008 10:30:17 AM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click.  User: eschool
+8/6/2008 10:37:30 AM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 10:37:38 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:37:38 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:37:40 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:37:40 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:37:44 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:37:44 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:37:48 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:37:48 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:38:18 AM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click. Exception: Input string was not in a correct format. User: eschool
+8/6/2008 10:38:21 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:38:21 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:43:38 AM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click. Exception: Input string was not in a correct format. User: eschool
+8/6/2008 10:48:05 AM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 10:49:33 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:49:33 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:49:41 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:49:41 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:50:00 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:50:00 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:52:58 AM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 10:53:24 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:53:24 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:53:27 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:53:27 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:53:30 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:53:30 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:54:19 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:54:19 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:56:04 AM ==> Form: StudentRegistration.aspx.cs, Method: btnSave_Click. New Student Ram Mehra with ID 2 saved. User: eschool
+8/6/2008 10:56:04 AM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click.  User: eschool
+8/6/2008 10:56:10 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:56:10 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:56:13 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:56:13 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:56:19 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:56:19 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:56:20 AM ==> Form: StudentRegistration.aspx.cs, Method: btnSave_Click. New Student Shikha Dubey with ID 4 saved. User: eschool
+8/6/2008 10:56:20 AM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click.  User: eschool
+8/6/2008 10:59:53 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:59:53 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 10:59:56 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 10:59:56 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:00:00 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 11:00:00 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:00:05 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 11:00:05 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:03:31 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 11:03:31 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:03:35 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 11:03:35 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:03:39 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 11:03:39 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:03:44 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 11:03:44 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:03:47 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 11:03:47 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:03:50 AM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 11:03:50 AM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:21:59 AM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 11:22:08 AM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:48:03 AM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 11:48:16 AM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:49:54 AM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:50:18 AM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:50:26 AM ==> Form : OrganisationDetails.aspx, Method : btnSave_click  User: eschool
+8/6/2008 11:51:21 AM ==>  Form : Ledger_Creation.aspx,Method : Page_Load  User: eschool
+8/6/2008 11:51:24 AM ==>  Form : Ledger_Creation.aspx,Method : Page_Load  User: eschool
+8/6/2008 11:51:27 AM ==>  Form : Ledger_Creation.aspx,Method : Page_Load  User: eschool
+8/6/2008 11:51:27 AM ==>  Form : Ledger Creation,Method : dropEdit_SelectedIndexChanged  User: eschool
+8/6/2008 11:51:39 AM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:51:44 AM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:51:44 AM ==> Form:OrganisationDetails.aspx,Method:savebutton. User: eschool
+8/6/2008 11:51:46 AM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:51:46 AM ==> Form : OrganisationDetails.aspx, Method : DropEdit_SelectedIndexChanged  User: eschool
+8/6/2008 11:51:58 AM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:52:21 AM ==> Form : OrganisationDetails.aspx, Method : btnUpdate_click  User: eschool
+8/6/2008 11:53:49 AM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:53:49 AM ==> Form:OrganisationDetails.aspx,Method:savebutton. User: eschool
+8/6/2008 11:53:52 AM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 11:53:52 AM ==> Form : OrganisationDetails.aspx, Method : DropEdit_SelectedIndexChanged  User: eschool
+8/6/2008 12:00:00 PM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 12:00:08 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:00:08 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:00:12 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:00:16 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:00:16 PM ==> Form:OrganisationDetails.aspx,Method:savebutton. User: eschool
+8/6/2008 12:00:18 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:00:18 PM ==> Form : OrganisationDetails.aspx, Method : DropEdit_SelectedIndexChanged  User: eschool
+8/6/2008 12:01:01 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:01:01 PM ==> Form : OrganisationDetails.aspx, Method : btnUpdate_click  User: eschool
+8/6/2008 12:01:09 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:01:09 PM ==> Form:OrganisationDetails.aspx,Method:savebutton. User: eschool
+8/6/2008 12:01:12 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:01:12 PM ==> Form : OrganisationDetails.aspx, Method : DropEdit_SelectedIndexChanged  User: eschool
+8/6/2008 12:01:21 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:01:21 PM ==> Form : OrganisationDetails.aspx, Method : btnUpdate_click  User: eschool
+8/6/2008 12:01:39 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:01:39 PM ==> Form:OrganisationDetails.aspx,Method:savebutton. User: eschool
+8/6/2008 12:01:42 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:01:42 PM ==> Form : OrganisationDetails.aspx, Method : DropEdit_SelectedIndexChanged  User: eschool
+8/6/2008 12:01:50 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:01:50 PM ==> Form : OrganisationDetails.aspx, Method : btnUpdate_click  User: eschool
+8/6/2008 12:08:08 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:08:08 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:08:10 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:08:10 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:08:15 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:08:15 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:08:19 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:08:19 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:08:29 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:08:29 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:08:40 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:08:40 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:08:40 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load.  User: eschool
+8/6/2008 12:10:49 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:10:49 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:10:55 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:10:55 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:10:58 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:10:58 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:10:58 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load.  User: eschool
+8/6/2008 12:13:17 PM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 12:28:45 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:28:51 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:28:51 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:28:53 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:28:53 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:41:49 PM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool
+8/6/2008 12:42:00 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:42:00 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:42:11 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:42:13 PM ==>  Form : OrganisationDetails.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:42:13 PM ==> Form:OrganisationDetails.aspx,Method:savebutton. User: eschool
+8/6/2008 12:42:19 PM ==>  Form : Category.aspx,Method : Page_Load,  userid eschool
+8/6/2008 12:42:28 PM ==>  Form : Category.aspx,Method : Page_Load,  userid eschool
+8/6/2008 12:42:28 PM ==>  Form : Category.aspx, Method : btnAdd_Click  userid eschool
+8/6/2008 12:44:11 PM ==> Form : Student_Registarion.aspx.cs, Method: Page_Load.  User: eschool
+8/6/2008 12:44:11 PM ==> Form: StudentRegistration.aspx.cs, Method: Page_Load.  User: eschool
+8/6/2008 12:45:29 PM ==> Form : Student_Registarion.aspx.cs, Method: Page_Load.  User: eschool
+8/6/2008 12:45:29 PM ==> Form: StudentRegistration.aspx.cs, Method: Page_Load.  User: eschool
+8/6/2008 12:45:29 PM ==> Form: StudentRegistration.aspx.cs, Method: btnSave_Click. New Student Ashish Tiwari with ID Nursery-1 saved. User: eschool
+8/6/2008 12:45:29 PM ==> Form: StudentRegistration.aspx.cs, Method: btnSave_Click.  User: eschool
+8/6/2008 12:45:35 PM ==> Form : StudentRegStatus.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:45:39 PM ==> Form : StudentRegStatus.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:45:42 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:45:42 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:45:45 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:45:45 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:45:51 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:45:51 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:45:55 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:45:55 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:46:11 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:46:11 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:46:11 PM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click. Exception: Procedure or function ProInsertStudentInfo has too many arguments specified. User: eschool
+8/6/2008 12:52:07 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:52:07 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:52:07 PM ==> Form: StudentRegistration.aspx.cs, Method: btnSave_Click. New Student Ashish Tiwari with ID A-1 saved. User: eschool
+8/6/2008 12:52:07 PM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click.  User: eschool
+8/6/2008 12:52:13 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:52:13 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:52:16 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:52:16 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:52:22 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:52:22 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:52:22 PM ==> Form: StudentRegistration.aspx.cs, Method: btnSave_Click. New Student Ashish Tiwari with ID 1 saved. User: eschool
+8/6/2008 12:52:22 PM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click.  User: eschool
+8/6/2008 12:52:26 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:52:26 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:52:30 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:52:30 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:52:34 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:52:34 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:52:40 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:52:40 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:52:43 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:52:43 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:52:49 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:52:49 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:52:49 PM ==> Form: StudentRegistration.aspx.cs, Method: btnSave_Click. New Student Ashish Tiwari with ID 1 saved. User: eschool
+8/6/2008 12:52:49 PM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click.  User: eschool
+8/6/2008 12:54:13 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:54:13 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:54:17 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:54:17 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:54:20 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:54:20 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:54:20 PM ==> Form: StudentRegistration.aspx.cs, Method: btnSave_Click. New Student Ashish Tiwari with ID 1 saved. User: eschool
+8/6/2008 12:54:20 PM ==> Form: Student_Admission.aspx.cs, Method: btnSave_Click.  User: eschool
+8/6/2008 12:56:18 PM ==> Form : TC.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:56:18 PM ==> Form: Tc.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 12:56:21 PM ==> Form : TC.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 12:56:21 PM ==> Form: Tc.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 1:32:43 PM ==>  Form : Exammarksdecision.aspx.cs, Method: Page_load, User: eschool
+8/6/2008 1:32:43 PM ==> Form:ExamMarksDecision.aspx,Method :Page_Load. User_ID : Mahesh  
+8/6/2008 1:32:52 PM ==> Form: SetStudentRollNo.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 1:32:59 PM ==> Form: SetStudentRollNo.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 1:36:42 PM ==> Form : Student_Admission.aspx,Method: Page_Load. User_ID : eschool
+8/6/2008 1:36:42 PM ==> Form: Student_Admission.aspx.cs, Method: Page_Load. User: eschool
+8/6/2008 2:37:22 PM ==>  Form : Login.aspx,Method  btnLogin_Click,  Userid :  eschool

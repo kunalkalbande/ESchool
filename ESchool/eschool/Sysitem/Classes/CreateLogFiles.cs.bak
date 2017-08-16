@@ -1,0 +1,55 @@
+using System;
+using System.IO;
+using System.Text;
+
+namespace eschool.Classes
+{
+	/// <summary>
+	/// Summary description for CreateLogFiles.
+	/// </summary>
+	public class CreateLogFiles
+	{
+		
+		//private string sErrorTime;
+        static string fileName;
+		static string sLogFormat;
+		public CreateLogFiles()
+		{
+//			if (System.IO.Directory.Exists(Server.MapPath("LOG")))
+//			{
+//				System.IO.Directory.CreateDirectory(Server.MapPath("LOG"));
+//			}
+			//sLogFormat used to create log files format :
+			// dd/mm/yyyy hh:mm:ss AM/PM ==> Log Message
+			
+			
+			
+			//this variable used to create log filename format "
+			//for example filename : ErrorLogYYYYMMDD
+		//	string sYear	= DateTime.Now.Year.ToString();
+			//string sMonth	= DateTime.Now.Month.ToString();
+		//	string sDay	= DateTime.Now.Day.ToString();
+			//sErrorTime = sYear+sMonth+sDay;
+			
+		}
+
+		public static void ErrorLog(string sErrMsg)
+		{
+			
+				fileName = @"C:\Inetpub\wwwroot\EPetro\Logs\" +DateTime.Today.Day.ToString()+ "-" +DateTime.Today.Month.ToString() + "-" + DateTime.Today.Year.ToString() + ".log";
+				sLogFormat = DateTime.Now.ToShortDateString().ToString()+" "+DateTime.Now.ToLongTimeString().ToString()+" ==> ";
+				//StreamWriter sw = new StreamWriter(@"C:\Inetpub\wwwroot\EPetro\Logs"+sErrorTime,true);
+				StreamWriter sw = new StreamWriter(fileName,true);
+
+				sw.WriteLine(sLogFormat + sErrMsg);
+				sw.Flush();
+				sw.Close();
+			
+			
+		}
+	}
+}
+
+
+
+//CreateLogFiles.ErrorLog("Form:ProductWiseSales.aspx,Method:cmdrpt_Click" + ex.Message);

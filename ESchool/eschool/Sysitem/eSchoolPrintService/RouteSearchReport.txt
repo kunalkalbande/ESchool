@@ -1,0 +1,16 @@
+                                                      =====================
+                                                       Route Search Report
+                                                      =====================
+
++-------+----------------------+------+------------------+-----+---+----------+----------+--------+--+-------------+-------------+
+|RouteNo|      Route Name      |RollNo|   Student Name   |Class|Sec|  Stream  | Scategory|  Rank  |BG|   Address   |  Phone No   |
++-------+----------------------+------+------------------+-----+---+----------+----------+--------+--+-------------+-------------+
+ 1001    Bada                   1      Kashish Sharma     Nurse A   None       Afo        Afo      A+ Thatipur                   
+ 1003    Hazeera                2      Ram Mehra          Nurse A   None       Afo        Afo      A+ Lashkar                    
+ 1002    PhoolBaag              3      Priya Gupta            V A   None       Afo        Afo      A+ Darpan Colony              
+ 1004    Pinto Park             4      Shikha Dubey           V A   None       Afo        Afo      A+ Hazeera                    
+ 1002    PhoolBaag              5      Arvind Sharma          V A   None       Afo        Afo      A+ Gandhi Nagar               
+ 1003    Hazeera                7      Ashif Shekh           XI A   Math Group Afo        Afo      A+ Hazeera                    
+ 1002    PhoolBaag              8      Nikhil Yadav          XI A   Math Group Afo        Afo      A+ Suresh Nagar               
+ 1005    Gola Ka Mandir         9      Manish Goyal       Nurse A   None       Afo        Afo      A+ Jiwaji Nagar               
++-------+----------------------+------+------------------+-----+---+----------+----------+--------+--+-------------+-------------+

@@ -1,0 +1,5 @@
+﻿Installing assembly 'c:\Inetpub\wwwroot\eschool\Sysitem\eSchoolPrintService\eschool_windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\Inetpub\wwwroot\eschool\Sysitem\eSchoolPrintService\eschool_windowsservice.exe
+   logfile = c:\Inetpub\wwwroot\eschool\Sysitem\eSchoolPrintService\eschool_windowsservice.InstallLog
+Installing service Eschool_WindowsService...

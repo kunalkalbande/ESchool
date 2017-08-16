@@ -1,0 +1,44 @@
+<%@ Control Language="c#" AutoEventWireup="false" Codebehind="header.ascx.cs" Inherits="eschool.usercontrol.header" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
+<HTML>
+	<HEAD>
+		<TITLE>Template 1.Page 2 modified2</TITLE>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio 7.0">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK href="../Styles.css" type="text/css" rel="stylesheet">
+		<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<!--		<STYLE type="text/css">BODY { SCROLLBAR-FACE-COLOR: #075D01; SCROLLBAR-HIGHLIGHT-COLOR: white; SCROLLBAR-SHADOW-COLOR: #E6EF01; SCROLLBAR-ARROW-COLOR: #E6EF01; SCROLLBAR-BASE-COLOR: #E6EF01; scrollbar-dark-shadow-color: white; scrollbar-3d-light-color: black }
+		</STYLE>	--><LINK href="Styles.css" type="text/css" rel="stylesheet">
+	</HEAD>
+	<BODY bgColor="#ffffff" leftMargin="0" topMargin="0" rightMargin="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+		<!-- ImageReady Slices (Template 1.Page 2 modified2.psd) -->
+		<TABLE cellSpacing="0" cellPadding="0" width="770" border="0">
+			<TR>
+				<TD width="770" background="http://localhost/eschool/images/Header1.jpg" colSpan="3"
+					height="109"></TD>
+			</TR>
+			<tr>
+				<td colspan="3">
+					<SCRIPT type="text/javascript" src="http://localhost/eschool/coolmenus3.js"></SCRIPT>
+					<SCRIPT type="text/javascript" src="http://localhost/eschool/menubar.js"></SCRIPT>
+					<SCRIPT type="text/javascript" src="http://localhost/eschool/stMainLinks.js"></SCRIPT>
+				</td>
+			</tr>
+			<TR>
+				<TD colSpan="3">&nbsp;</TD>
+			</TR>
+			<TR>
+				<TD colSpan="3">&nbsp;</TD>
+			</TR>
+			<tr height="20">
+				<td align="left">
+					<asp:Label id="Label1" runat="server" Font-Bold="True" ForeColor="Maroon">Current Date : </asp:Label>
+					<asp:Label id="lblDate" runat="server" Font-Bold="True" ForeColor="Maroon"></asp:Label></td>
+				<td><asp:label id="Label3" runat="server"><A href="http://localhost/eschool/Form/Menu.aspx">Home</A></asp:label></td>
+				<td align="right"></td>
+			</tr>
+		</TABLE>
+		<!-- End ImageReady Slices -->
+	</BODY>
+</HTML>

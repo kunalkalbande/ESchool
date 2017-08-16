@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="eschool">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\kunalk\Desktop\eschool Source-20170816T080025Z-001\eschool Source\eschool.sln">
+</Property><Property Name="Date" Value="Wednesday, August 16, 2017">
+</Property><Property Name="Time" Value="18:34 PM">
+</Property></Properties><Event ErrorLevel="2" Project="eschool" Source="http://localhost/eschool/eschool.csproj" Description="Unable to open the Web site 'http://localhost/eschool/eschool.csproj'.  The Web site 'http://localhost/eschool/eschool.csproj' does not exist.">
+</Event><Event ErrorLevel="0" Project="" Source="eschool.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="eschool.sln" Description="Converted">
+</Event></UpgradeLog>

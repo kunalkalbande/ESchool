@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="eschool">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\kunalk\Desktop\eschool Source-20170816T080025Z-001\eschool Source\eschool.sln">
+</Property><Property Name="Date" Value="Wednesday, August 16, 2017">
+</Property><Property Name="Time" Value="18:37:39 PM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="eschool" Source="..\..\..\..\..\inetpub\wwwroot\eschool\eschool.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

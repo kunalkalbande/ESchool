@@ -1,0 +1,1337 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C1A79F2-92E4-445C-A53C-68F50A0FA23C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>eschool</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>eschool</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Databaseconfiguration|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySecurity">
+      <Name>MySecurity</Name>
+      <HintPath>..\..\..\Test\MySecurity\bin\Debug\MySecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Messaging">
+      <Name>System.Messaging</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mobile">
+      <Name>System.Web.Mobile</Name>
+    </Reference>
+    <Reference Include="System.Web.RegularExpressions">
+      <Name>System.Web.RegularExpressions</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\eschool.dll" />
+    <Content Include="bin\eschool.pdb" />
+    <Content Include="bin\MySecurity.dll" />
+    <Content Include="HeaderFooter\images\agenda.js" />
+    <Content Include="HeaderFooter\images\calendar_icon.gif" />
+    <Content Include="HeaderFooter\images\contrast.js" />
+    <Content Include="HeaderFooter\images\cupHJbutton.gif" />
+    <Content Include="HeaderFooter\images\Delete.bmp" />
+    <Content Include="HeaderFooter\images\edit.bmp" />
+    <Content Include="HeaderFooter\images\Editbutton.bmp" />
+    <Content Include="HeaderFooter\images\eSchoolMenu_08.JPG" />
+    <Content Include="HeaderFooter\images\eSchoolMenu_081.JPG" />
+    <Content Include="HeaderFooter\images\eSchoolMenu_0811.jpg" />
+    <Content Include="HeaderFooter\images\eSchoolMenu_08111.jpg" />
+    <Content Include="HeaderFooter\images\footer.jpg" />
+    <Content Include="HeaderFooter\images\header1.jpg" />
+    <Content Include="HeaderFooter\images\icnCalendar.gif" />
+    <Content Include="HeaderFooter\images\ipopeng.htm" />
+    <Content Include="HeaderFooter\images\logo2.gif" />
+    <Content Include="HeaderFooter\images\plugins.js" />
+    <Content Include="HeaderFooter\images\Save.bmp" />
+    <Content Include="HeaderFooter\images\search.gif" />
+    <Content Include="HeaderFooter\shareables\jsfiles\Country.js" />
+    <Content Include="HeaderFooter\shareables\jsfiles\ipopeng.htm" />
+    <Content Include="HeaderFooter\shareables\jsfiles\menu.htm" />
+    <Content Include="HeaderFooter\shareables\jsfiles\menubar.js" />
+    <Content Include="HeaderFooter\shareables\jsfiles\Searchdrop.js" />
+    <Content Include="HeaderFooter\shareables\jsfiles\Secrchdrop1.js" />
+    <Content Include="HeaderFooter\shareables\jsfiles\stm31.js" />
+    <Content Include="HeaderFooter\shareables\jsfiles\Validations.js" />
+    <Content Include="HeaderFooter\shareables\Style\agenda.js" />
+    <Content Include="HeaderFooter\shareables\Style\arrowl.gif" />
+    <Content Include="HeaderFooter\shareables\Style\arrowr.gif" />
+    <Content Include="HeaderFooter\shareables\Style\bigCross.gif" />
+    <Content Include="HeaderFooter\shareables\Style\contrast.css" />
+    <Content Include="HeaderFooter\shareables\Style\contrast.js" />
+    <Content Include="HeaderFooter\shareables\Style\darrow.gif" />
+    <Content Include="HeaderFooter\shareables\Style\drb19.jpg" />
+    <Content Include="HeaderFooter\shareables\Style\ipopeng.htm" />
+    <Content Include="HeaderFooter\shareables\Style\plugins.js" />
+    <Content Include="HeaderFooter\shareables\Style\Styles.css" />
+    <Content Include="HeaderFooter\shareables\Style\StyleSheet.css" />
+    <Content Include="HeaderFooter\usercontrol\Footer.ascx" />
+    <Content Include="HeaderFooter\usercontrol\header.ascx" />
+    <Content Include="HeaderFooter\usercontrol\Header1.ascx" />
+    <Content Include="HeaderFooter\usercontrol\Header11.ascx" />
+    <Content Include="HeaderFooter\usercontrol\Header2.ascx" />
+    <Content Include="Install\Activate\Activate.exe" />
+    <Content Include="Install\ChangeDate.exe" />
+    <Content Include="Install\DataBaseConfiguration.exe" />
+    <Content Include="Install\Run_DScript.exe" />
+    <Content Include="LoginHome\Login.aspx" />
+    <Content Include="LoginHome\Menu.aspx" />
+    <Content Include="Modules\Accounts\BalanceSheet.aspx" />
+    <Content Include="Modules\Accounts\Ledger.aspx" />
+    <Content Include="Modules\Accounts\Receipt.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\Accounts\ReceiptItem.aspx" />
+    <Content Include="Modules\Accounts\TradingAccount.aspx" />
+    <Content Include="Modules\Accounts\voucher.aspx" />
+    <Content Include="Modules\certificate\Tc.aspx" />
+    <Content Include="Modules\certificate\Tcrpt.aspx" />
+    <Content Include="Modules\chat Server\Server.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\Form\Addtadance_Register.aspx" />
+    <Content Include="Modules\Form\Allowancesdeduction.aspx" />
+    <Content Include="Modules\Form\Attendance.aspx" />
+    <Content Include="Modules\Form\BankMaster.aspx" />
+    <Content Include="Modules\Form\Category.aspx" />
+    <Content Include="Modules\Form\classedit.aspx" />
+    <Content Include="Modules\Form\Classwisesubjects.aspx" />
+    <Content Include="Modules\Form\ExamMarksDecision.aspx" />
+    <Content Include="Modules\Form\HolidayEntryForm.aspx" />
+    <Content Include="Modules\Form\House.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\Form\Leaveallowed.aspx" />
+    <Content Include="Modules\Form\Logout.aspx" />
+    <Content Include="Modules\Form\SetStudentRollNo.aspx" />
+    <Content Include="Modules\Form\StaffAttendance.aspx" />
+    <Content Include="Modules\Form\Staffname.aspx" />
+    <Content Include="Modules\Form\Staff_leave.aspx" />
+    <Content Include="Modules\Form\Staff_typeinsertion.aspx" />
+    <Content Include="Modules\Form\Stuck_Off.aspx" />
+    <Content Include="Modules\Form\StudentAttendance.aspx" />
+    <Content Include="Modules\Form\StudentClassPromotion.aspx" />
+    <Content Include="Modules\Form\StudentRegistration.aspx" />
+    <Content Include="Modules\Form\StudentRegStatus.aspx" />
+    <Content Include="Modules\Form\Student_Admission.aspx" />
+    <Content Include="Modules\Form\Student_MarksEntry.aspx" />
+    <Content Include="Modules\Form\Subject.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\Form\Subjectinsertion.aspx" />
+    <Content Include="Modules\Form\Supplier_Entry.aspx" />
+    <Content Include="Modules\Form\TestSME.aspx" />
+    <Content Include="Modules\Form\TimeTable.aspx" />
+    <Content Include="Modules\Form\TimeTableAdjusPeriodwise.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\Form\Timetableadjustment.aspx" />
+    <Content Include="Modules\Health\doctor.aspx" />
+    <Content Include="Modules\Health\Doctorrpt.aspx" />
+    <Content Include="Modules\Health\studenthealthcheck.aspx" />
+    <Content Include="Modules\Health\studentrpt.aspx" />
+    <Content Include="Modules\Help\AboutUs.aspx" />
+    <Content Include="Modules\Help\ContactDetails.aspx" />
+    <Content Include="Modules\Hostal\Dinner.aspx" />
+    <Content Include="Modules\Hostal\Hostel_fees.aspx" />
+    <Content Include="Modules\Hostal\Room_booking.aspx" />
+    <Content Include="Modules\Hostal\Room_mast.aspx" />
+    <Content Include="Modules\Lab\Labbooking.aspx" />
+    <Content Include="Modules\Lab\Labmast.aspx" />
+    <Content Include="Modules\Library\BooksInformationReport.aspx" />
+    <Content Include="Modules\Library\CardGeneration.aspx" />
+    <Content Include="Modules\Library\CardsReports.aspx" />
+    <Content Include="Modules\Library\IssueBookDuplicate.aspx" />
+    <Content Include="Modules\Library\IssueBookReport.aspx" />
+    <Content Include="Modules\Library\Itemform.aspx" />
+    <Content Include="Modules\Library\ReturnIssueBook.aspx" />
+    <Content Include="Modules\Logistics\Routeedit.aspx" />
+    <Content Include="Modules\PrintPreview\MeetingrptPrint.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\PrintPreview\PtaMeetingrptPrint.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\Pta\meetingrpt.aspx" />
+    <Content Include="Modules\Pta\ptacommunication.aspx" />
+    <Content Include="Modules\Pta\ptameeting.aspx" />
+    <Content Include="Modules\Pta\Ptamember.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\Pta\Ptamemberrpt.aspx" />
+    <Content Include="Modules\Reports\AttandanceReport.aspx" />
+    <Content Include="Modules\Reports\BankReport.aspx" />
+    <Content Include="Modules\Reports\CategoryRankWise.aspx" />
+    <Content Include="Modules\Reports\ClassWiseReport.aspx" />
+    <Content Include="Modules\Reports\Completesalarydata.aspx" />
+    <Content Include="Modules\Reports\DailyFeeReport.aspx" />
+    <Content Include="Modules\Reports\FacultyInfo.aspx" />
+    <Content Include="Modules\Reports\GreenSheetReport.aspx" />
+    <Content Include="Modules\Reports\LedgerReport.aspx" />
+    <Content Include="Modules\Reports\ParentsInformation.aspx" />
+    <Content Include="Modules\Reports\Payslip.aspx" />
+    <Content Include="Modules\Reports\PeriodWise.aspx" />
+    <Content Include="Modules\Reports\ResultGlance.aspx" />
+    <Content Include="Modules\Reports\Rout_search.aspx" />
+    <Content Include="Modules\Reports\salarysheet.aspx" />
+    <Content Include="Modules\Reports\SecurityReport.aspx" />
+    <Content Include="Modules\Reports\Staffleaverpt.aspx" />
+    <Content Include="Modules\Reports\StockMovement_Report.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\Reports\Stuck_Off_Report.aspx" />
+    <Content Include="Modules\Reports\StudentMarksReport.aspx" />
+    <Content Include="Modules\Reports\Student_Information.aspx" />
+    <Content Include="Modules\Reports\SubjectWiseReport.aspx" />
+    <Content Include="Modules\Reports\TeacherWiseTimeTable.aspx" />
+    <Content Include="Modules\Reports\TimeTableAdjustmentPeriodWiseReport.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\Reports\TimeTableAdjustmentReport.aspx" />
+    <Content Include="Modules\Reports\Upda88teStudentinfo.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\Reports\WeightageReport.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\Roles\BackupRestore.aspx" />
+    <Content Include="Modules\Roles\Maintenance.aspx" />
+    <Content Include="Modules\Roles\OrganisationDetails.aspx" />
+    <Content Include="Modules\Roles\RoleMaster.aspx" />
+    <Content Include="Modules\Roles\Roles_Privileges.aspx" />
+    <Content Include="Modules\Roles\User_Profile.aspx" />
+    <Content Include="Modules\StudentFees\AdvanceFeesReport.aspx" />
+    <Content Include="Modules\StudentFees\CollectionDetailsofFees.aspx" />
+    <Content Include="Modules\StudentFees\CompleteFeeReport.aspx" />
+    <Content Include="Modules\StudentFees\FeesDecisionReport.aspx" />
+    <Content Include="Modules\StudentFees\FeesDueReport.aspx" />
+    <Content Include="Modules\StudentFees\FeesReceipt.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\StudentFees\FeesSearch.aspx" />
+    <Content Include="Modules\StudentFees\FessDecision.aspx" />
+    <Content Include="Modules\StudentFees\Investments.aspx" />
+    <Content Include="Modules\StudentFees\Misc.aspx" />
+    <Content Include="Modules\StudentFees\Payment.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\StudentFees\PaySlip.aspx" />
+    <Content Include="Modules\StudentFees\RecuringFeesReceipt.aspx" />
+    <Content Include="Modules\TimeTable\SubjectTeacherList.aspx" />
+    <Content Include="Sysitem\AccessDeny.aspx" />
+    <Content Include="Sysitem\Classes\ClassLibrary1.exe" />
+    <Content Include="Sysitem\Error.aspx" />
+    <Content Include="Sysitem\eSchoolPrintService\CopyLocalPrint.exe" />
+    <Content Include="Sysitem\eSchoolPrintService\Eschool_WindowsService.exe" />
+    <Content Include="Sysitem\eSchoolPrintService\print.exe" />
+    <Content Include="Sysitem\Global.asax" />
+    <Content Include="Sysitem\Service.aspx" />
+    <Content Include="Web.config" />
+    <Compile Include="HeaderFooter\usercontrol\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HeaderFooter\usercontrol\header.ascx.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HeaderFooter\usercontrol\Header1.ascx.cs">
+      <DependentUpon>Header1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HeaderFooter\usercontrol\Header11.ascx.cs">
+      <DependentUpon>Header11.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HeaderFooter\usercontrol\Header2.ascx.cs">
+      <DependentUpon>Header2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginHome\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginHome\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Accounts\BalanceSheet.aspx.cs">
+      <DependentUpon>BalanceSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Accounts\Ledger.aspx.cs">
+      <DependentUpon>Ledger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Accounts\Receipt.aspx.cs">
+      <DependentUpon>Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Accounts\ReceiptItem.aspx.cs">
+      <DependentUpon>ReceiptItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Accounts\TradingAccount.aspx.cs">
+      <DependentUpon>TradingAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Accounts\voucher.aspx.cs">
+      <DependentUpon>voucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\certificate\Tc.aspx.cs">
+      <DependentUpon>Tc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\certificate\Tcrpt.aspx.cs">
+      <DependentUpon>Tcrpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\chat Server\Server.aspx.cs">
+      <DependentUpon>Server.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Addtadance_Register.aspx.cs">
+      <DependentUpon>Addtadance_Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Allowancesdeduction.aspx.cs">
+      <DependentUpon>Allowancesdeduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Attendance.aspx.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\BankMaster.aspx.cs">
+      <DependentUpon>BankMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\classedit.aspx.cs">
+      <DependentUpon>classedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Classwisesubjects.aspx.cs">
+      <DependentUpon>Classwisesubjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\ExamMarksDecision.aspx.cs">
+      <DependentUpon>ExamMarksDecision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\HolidayEntryForm.aspx.cs">
+      <DependentUpon>HolidayEntryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\House.aspx.cs">
+      <DependentUpon>House.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Leaveallowed.aspx.cs">
+      <DependentUpon>Leaveallowed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\SetStudentRollNo.aspx.cs">
+      <DependentUpon>SetStudentRollNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\StaffAttendance.aspx.cs">
+      <DependentUpon>StaffAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Staffname.aspx.cs">
+      <DependentUpon>Staffname.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Staff_leave.aspx.cs">
+      <DependentUpon>Staff_leave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Staff_typeinsertion.aspx.cs">
+      <DependentUpon>Staff_typeinsertion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Stuck_Off.aspx.cs">
+      <DependentUpon>Stuck_Off.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\StudentAttendance.aspx.cs">
+      <DependentUpon>StudentAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\StudentClassPromotion.aspx.cs">
+      <DependentUpon>StudentClassPromotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\StudentRegistration.aspx.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\StudentRegStatus.aspx.cs">
+      <DependentUpon>StudentRegStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Student_Admission.aspx.cs">
+      <DependentUpon>Student_Admission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Student_MarksEntry.aspx.cs">
+      <DependentUpon>Student_MarksEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Subject.aspx.cs">
+      <DependentUpon>Subject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Subjectinsertion.aspx.cs">
+      <DependentUpon>Subjectinsertion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Supplier_Entry.aspx.cs">
+      <DependentUpon>Supplier_Entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\TestSME.aspx.cs">
+      <DependentUpon>TestSME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\TimeTable.aspx.cs">
+      <DependentUpon>TimeTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\TimeTableAdjusPeriodwise.aspx.cs">
+      <DependentUpon>TimeTableAdjusPeriodwise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\Timetableadjustment.aspx.cs">
+      <DependentUpon>Timetableadjustment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Health\doctor.aspx.cs">
+      <DependentUpon>doctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Health\Doctorrpt.aspx.cs">
+      <DependentUpon>Doctorrpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Health\studenthealthcheck.aspx.cs">
+      <DependentUpon>studenthealthcheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Health\studentrpt.aspx.cs">
+      <DependentUpon>studentrpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Help\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Help\ContactDetails.aspx.cs">
+      <DependentUpon>ContactDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Hostal\Dinner.aspx.cs">
+      <DependentUpon>Dinner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Hostal\Hostel_fees.aspx.cs">
+      <DependentUpon>Hostel_fees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Hostal\Room_booking.aspx.cs">
+      <DependentUpon>Room_booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Hostal\Room_mast.aspx.cs">
+      <DependentUpon>Room_mast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Lab\Labbooking.aspx.cs">
+      <DependentUpon>Labbooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Lab\Labmast.aspx.cs">
+      <DependentUpon>Labmast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\BooksInformationReport.aspx.cs">
+      <DependentUpon>BooksInformationReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\CardGeneration.aspx.cs">
+      <DependentUpon>CardGeneration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\CardsReports.aspx.cs">
+      <DependentUpon>CardsReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\IssueBookDuplicate.aspx.cs">
+      <DependentUpon>IssueBookDuplicate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\IssueBookReport.aspx.cs">
+      <DependentUpon>IssueBookReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\Itemform.aspx.cs">
+      <DependentUpon>Itemform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\LibraryClass\CardGenerationClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\LibraryClass\DuePaymentClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\LibraryClass\IssueBook.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\LibraryClass\ItemClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\LibraryClass\MemberShipClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\LibraryClass\NewUserClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\LibraryClass\PasswordClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\LibraryClass\PaymentClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\LibraryClass\PendingClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\LibraryClass\ProductOrderClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Library\ReturnIssueBook.aspx.cs">
+      <DependentUpon>ReturnIssueBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Logistics\Routeedit.aspx.cs">
+      <DependentUpon>Routeedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\PrintPreview\MeetingrptPrint.aspx.cs">
+      <DependentUpon>MeetingrptPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\PrintPreview\PtaMeetingrptPrint.aspx.cs">
+      <DependentUpon>PtaMeetingrptPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Pta\meetingrpt.aspx.cs">
+      <DependentUpon>meetingrpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Pta\ptacommunication.aspx.cs">
+      <DependentUpon>ptacommunication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Pta\ptameeting.aspx.cs">
+      <DependentUpon>ptameeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Pta\Ptamember.aspx.cs">
+      <DependentUpon>Ptamember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Pta\Ptamemberrpt.aspx.cs">
+      <DependentUpon>Ptamemberrpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\AttandanceReport.aspx.cs">
+      <DependentUpon>AttandanceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\BankReport.aspx.cs">
+      <DependentUpon>BankReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\CategoryRankWise.aspx.cs">
+      <DependentUpon>CategoryRankWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\ClassWiseReport.aspx.cs">
+      <DependentUpon>ClassWiseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\Completesalarydata.aspx.cs">
+      <DependentUpon>Completesalarydata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\DailyFeeReport.aspx.cs">
+      <DependentUpon>DailyFeeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\FacultyInfo.aspx.cs">
+      <DependentUpon>FacultyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\GreenSheetReport.aspx.cs">
+      <DependentUpon>GreenSheetReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\LedgerReport.aspx.cs">
+      <DependentUpon>LedgerReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\ParentsInformation.aspx.cs">
+      <DependentUpon>ParentsInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\Payslip.aspx.cs">
+      <DependentUpon>Payslip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\PeriodWise.aspx.cs">
+      <DependentUpon>PeriodWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\ResultGlance.aspx.cs">
+      <DependentUpon>ResultGlance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\Rout_search.aspx.cs">
+      <DependentUpon>Rout_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\salarysheet.aspx.cs">
+      <DependentUpon>salarysheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\SecurityReport.aspx.cs">
+      <DependentUpon>SecurityReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\Staffleaverpt.aspx.cs">
+      <DependentUpon>Staffleaverpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\StockMovement_Report.aspx.cs">
+      <DependentUpon>StockMovement_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\Stuck_Off_Report.aspx.cs">
+      <DependentUpon>Stuck_Off_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\StudentMarksReport.aspx.cs">
+      <DependentUpon>StudentMarksReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\Student_Information.aspx.cs">
+      <DependentUpon>Student_Information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\SubjectWiseReport.aspx.cs">
+      <DependentUpon>SubjectWiseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\TeacherWiseTimeTable.aspx.cs">
+      <DependentUpon>TeacherWiseTimeTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\TimeTableAdjustmentPeriodWiseReport.aspx.cs">
+      <DependentUpon>TimeTableAdjustmentPeriodWiseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\TimeTableAdjustmentReport.aspx.cs">
+      <DependentUpon>TimeTableAdjustmentReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\Upda88teStudentinfo.aspx.cs">
+      <DependentUpon>Upda88teStudentinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\WeightageReport.aspx.cs">
+      <DependentUpon>WeightageReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Roles\BackupRestore.aspx.cs">
+      <DependentUpon>BackupRestore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Roles\Maintenance.aspx.cs">
+      <DependentUpon>Maintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Roles\OrganisationDetails.aspx.cs">
+      <DependentUpon>OrganisationDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Roles\RoleMaster.aspx.cs">
+      <DependentUpon>RoleMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Roles\Roles_Privileges.aspx.cs">
+      <DependentUpon>Roles_Privileges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Roles\User_Profile.aspx.cs">
+      <DependentUpon>User_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\AdvanceFeesReport.aspx.cs">
+      <DependentUpon>AdvanceFeesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\CollectionDetailsofFees.aspx.cs">
+      <DependentUpon>CollectionDetailsofFees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\CompleteFeeReport.aspx.cs">
+      <DependentUpon>CompleteFeeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\FeesDecisionReport.aspx.cs">
+      <DependentUpon>FeesDecisionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\FeesDueReport.aspx.cs">
+      <DependentUpon>FeesDueReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\FeesReceipt.aspx.cs">
+      <DependentUpon>FeesReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\FeesSearch.aspx.cs">
+      <DependentUpon>FeesSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\FessDecision.aspx.cs">
+      <DependentUpon>FessDecision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\Investments.aspx.cs">
+      <DependentUpon>Investments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\Misc.aspx.cs">
+      <DependentUpon>Misc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\PaySlip.aspx.cs">
+      <DependentUpon>PaySlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StudentFees\RecuringFeesReceipt.aspx.cs">
+      <DependentUpon>RecuringFeesReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\TimeTable\SubjectTeacherList.aspx.cs">
+      <DependentUpon>SubjectTeacherList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sysitem\AccessDeny.aspx.cs">
+      <DependentUpon>AccessDeny.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sysitem\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\Classes\CreateLogFiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\Classes\DbOperations_LATEST.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\Classes\EmployeeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\Classes\GenUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\Classes\InventoyCLass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\Classes\PartiesClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\Classes\StringUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\e-Coaching\Class\CoachingClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sysitem\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\MessageBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\SchoolClass\AccountClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\SchoolClass\regis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\SchoolClass\SchoolMgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sysitem\Service.aspx.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <EmbeddedResource Include="HeaderFooter\usercontrol\Footer.ascx.resx">
+      <DependentUpon>Footer.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooter\usercontrol\header.ascx.resx">
+      <DependentUpon>header.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooter\usercontrol\Header1.ascx.resx">
+      <DependentUpon>Header1.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooter\usercontrol\Header11.ascx.resx">
+      <DependentUpon>Header11.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooter\usercontrol\Header2.ascx.resx">
+      <DependentUpon>Header2.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginHome\Login.aspx.resx">
+      <DependentUpon>Login.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginHome\Menu.aspx.resx">
+      <DependentUpon>Menu.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Accounts\BalanceSheet.aspx.resx">
+      <DependentUpon>BalanceSheet.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Accounts\Ledger.aspx.resx">
+      <DependentUpon>Ledger.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Accounts\Receipt.aspx.resx">
+      <DependentUpon>Receipt.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Accounts\ReceiptItem.aspx.resx">
+      <DependentUpon>ReceiptItem.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Accounts\TradingAccount.aspx.resx">
+      <DependentUpon>TradingAccount.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Accounts\voucher.aspx.resx">
+      <DependentUpon>voucher.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\certificate\Tc.aspx.resx">
+      <DependentUpon>Tc.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\certificate\Tcrpt.aspx.resx">
+      <DependentUpon>Tcrpt.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\chat Server\Server.aspx.resx">
+      <DependentUpon>Server.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Addtadance_Register.aspx.resx">
+      <DependentUpon>Addtadance_Register.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Allowancesdeduction.aspx.resx">
+      <DependentUpon>Allowancesdeduction.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Attendance.aspx.resx">
+      <DependentUpon>Attendance.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\BankMaster.aspx.resx">
+      <DependentUpon>BankMaster.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Category.aspx.resx">
+      <DependentUpon>Category.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\classedit.aspx.resx">
+      <DependentUpon>classedit.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Classwisesubjects.aspx.resx">
+      <DependentUpon>Classwisesubjects.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\ExamMarksDecision.aspx.resx">
+      <DependentUpon>ExamMarksDecision.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\HolidayEntryForm.aspx.resx">
+      <DependentUpon>HolidayEntryForm.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\House.aspx.resx">
+      <DependentUpon>House.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Leaveallowed.aspx.resx">
+      <DependentUpon>Leaveallowed.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Logout.aspx.resx">
+      <DependentUpon>Logout.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\SetStudentRollNo.aspx.resx">
+      <DependentUpon>SetStudentRollNo.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\StaffAttendance.aspx.resx">
+      <DependentUpon>StaffAttendance.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Staffname.aspx.resx">
+      <DependentUpon>Staffname.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Staff_leave.aspx.resx">
+      <DependentUpon>Staff_leave.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Staff_typeinsertion.aspx.resx">
+      <DependentUpon>Staff_typeinsertion.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Stuck_Off.aspx.resx">
+      <DependentUpon>Stuck_Off.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\StudentAttendance.aspx.resx">
+      <DependentUpon>StudentAttendance.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\StudentClassPromotion.aspx.resx">
+      <DependentUpon>StudentClassPromotion.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\StudentRegistration.aspx.resx">
+      <DependentUpon>StudentRegistration.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\StudentRegStatus.aspx.resx">
+      <DependentUpon>StudentRegStatus.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Student_Admission.aspx.resx">
+      <DependentUpon>Student_Admission.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Student_MarksEntry.aspx.resx">
+      <DependentUpon>Student_MarksEntry.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Subject.aspx.resx">
+      <DependentUpon>Subject.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Subjectinsertion.aspx.resx">
+      <DependentUpon>Subjectinsertion.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Supplier_Entry.aspx.resx">
+      <DependentUpon>Supplier_Entry.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\TestSME.aspx.resx">
+      <DependentUpon>TestSME.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\TimeTable.aspx.resx">
+      <DependentUpon>TimeTable.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\TimeTableAdjusPeriodwise.aspx.resx">
+      <DependentUpon>TimeTableAdjusPeriodwise.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\Timetableadjustment.aspx.resx">
+      <DependentUpon>Timetableadjustment.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Health\doctor.aspx.resx">
+      <DependentUpon>doctor.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Health\Doctorrpt.aspx.resx">
+      <DependentUpon>Doctorrpt.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Health\studenthealthcheck.aspx.resx">
+      <DependentUpon>studenthealthcheck.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Health\studentrpt.aspx.resx">
+      <DependentUpon>studentrpt.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Help\AboutUs.aspx.resx">
+      <DependentUpon>AboutUs.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Help\ContactDetails.aspx.resx">
+      <DependentUpon>ContactDetails.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Hostal\Dinner.aspx.resx">
+      <DependentUpon>Dinner.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Hostal\Hostel_fees.aspx.resx">
+      <DependentUpon>Hostel_fees.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Hostal\Room_booking.aspx.resx">
+      <DependentUpon>Room_booking.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Hostal\Room_mast.aspx.resx">
+      <DependentUpon>Room_mast.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Lab\Labbooking.aspx.resx">
+      <DependentUpon>Labbooking.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Lab\Labmast.aspx.resx">
+      <DependentUpon>Labmast.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Library\BooksInformationReport.aspx.resx">
+      <DependentUpon>BooksInformationReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Library\CardGeneration.aspx.resx">
+      <DependentUpon>CardGeneration.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Library\CardsReports.aspx.resx">
+      <DependentUpon>CardsReports.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Library\IssueBookDuplicate.aspx.resx">
+      <DependentUpon>IssueBookDuplicate.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Library\IssueBookReport.aspx.resx">
+      <DependentUpon>IssueBookReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Library\Itemform.aspx.resx">
+      <DependentUpon>Itemform.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Library\ReturnIssueBook.aspx.resx">
+      <DependentUpon>ReturnIssueBook.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Logistics\Routeedit.aspx.resx">
+      <DependentUpon>Routeedit.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PrintPreview\MeetingrptPrint.aspx.resx">
+      <DependentUpon>MeetingrptPrint.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PrintPreview\PtaMeetingrptPrint.aspx.resx">
+      <DependentUpon>PtaMeetingrptPrint.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Pta\meetingrpt.aspx.resx">
+      <DependentUpon>meetingrpt.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Pta\ptacommunication.aspx.resx">
+      <DependentUpon>ptacommunication.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Pta\ptameeting.aspx.resx">
+      <DependentUpon>ptameeting.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Pta\Ptamember.aspx.resx">
+      <DependentUpon>Ptamember.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Pta\Ptamemberrpt.aspx.resx">
+      <DependentUpon>Ptamemberrpt.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\AttandanceReport.aspx.resx">
+      <DependentUpon>AttandanceReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\BankReport.aspx.resx">
+      <DependentUpon>BankReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\CategoryRankWise.aspx.resx">
+      <DependentUpon>CategoryRankWise.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\ClassWiseReport.aspx.resx">
+      <DependentUpon>ClassWiseReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\Completesalarydata.aspx.resx">
+      <DependentUpon>Completesalarydata.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\DailyFeeReport.aspx.resx">
+      <DependentUpon>DailyFeeReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\FacultyInfo.aspx.resx">
+      <DependentUpon>FacultyInfo.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\GreenSheetReport.aspx.resx">
+      <DependentUpon>GreenSheetReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\LedgerReport.aspx.resx">
+      <DependentUpon>LedgerReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\ParentsInformation.aspx.resx">
+      <DependentUpon>ParentsInformation.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\Payslip.aspx.resx">
+      <DependentUpon>Payslip.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\PeriodWise.aspx.resx">
+      <DependentUpon>PeriodWise.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\ResultGlance.aspx.resx">
+      <DependentUpon>ResultGlance.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\Rout_search.aspx.resx">
+      <DependentUpon>Rout_search.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\salarysheet.aspx.resx">
+      <DependentUpon>salarysheet.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\SecurityReport.aspx.resx">
+      <DependentUpon>SecurityReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\Staffleaverpt.aspx.resx">
+      <DependentUpon>Staffleaverpt.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\StockMovement_Report.aspx.resx">
+      <DependentUpon>StockMovement_Report.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\Stuck_Off_Report.aspx.resx">
+      <DependentUpon>Stuck_Off_Report.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\StudentMarksReport.aspx.resx">
+      <DependentUpon>StudentMarksReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\Student_Information.aspx.resx">
+      <DependentUpon>Student_Information.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\SubjectWiseReport.aspx.resx">
+      <DependentUpon>SubjectWiseReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\TeacherWiseTimeTable.aspx.resx">
+      <DependentUpon>TeacherWiseTimeTable.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\TimeTableAdjustmentPeriodWiseReport.aspx.resx">
+      <DependentUpon>TimeTableAdjustmentPeriodWiseReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\TimeTableAdjustmentReport.aspx.resx">
+      <DependentUpon>TimeTableAdjustmentReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\Upda88teStudentinfo.aspx.resx">
+      <DependentUpon>Upda88teStudentinfo.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports\WeightageReport.aspx.resx">
+      <DependentUpon>WeightageReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Roles\BackupRestore.aspx.resx">
+      <DependentUpon>BackupRestore.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Roles\Maintenance.aspx.resx">
+      <DependentUpon>Maintenance.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Roles\OrganisationDetails.aspx.resx">
+      <DependentUpon>OrganisationDetails.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Roles\RoleMaster.aspx.resx">
+      <DependentUpon>RoleMaster.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Roles\Roles_Privileges.aspx.resx">
+      <DependentUpon>Roles_Privileges.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Roles\User_Profile.aspx.resx">
+      <DependentUpon>User_Profile.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\AdvanceFeesReport.aspx.resx">
+      <DependentUpon>AdvanceFeesReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\CollectionDetailsofFees.aspx.resx">
+      <DependentUpon>CollectionDetailsofFees.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\CompleteFeeReport.aspx.resx">
+      <DependentUpon>CompleteFeeReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\FeesDecisionReport.aspx.resx">
+      <DependentUpon>FeesDecisionReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\FeesDueReport.aspx.resx">
+      <DependentUpon>FeesDueReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\FeesReceipt.aspx.resx">
+      <DependentUpon>FeesReceipt.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\FeesSearch.aspx.resx">
+      <DependentUpon>FeesSearch.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\FessDecision.aspx.resx">
+      <DependentUpon>FessDecision.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\Investments.aspx.resx">
+      <DependentUpon>Investments.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\Misc.aspx.resx">
+      <DependentUpon>Misc.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\Payment.aspx.resx">
+      <DependentUpon>Payment.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\PaySlip.aspx.resx">
+      <DependentUpon>PaySlip.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StudentFees\RecuringFeesReceipt.aspx.resx">
+      <DependentUpon>RecuringFeesReceipt.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TimeTable\SubjectTeacherList.aspx.resx">
+      <DependentUpon>SubjectTeacherList.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sysitem\AccessDeny.aspx.resx">
+      <DependentUpon>AccessDeny.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sysitem\Error.aspx.resx">
+      <DependentUpon>Error.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sysitem\Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sysitem\Service.aspx.resx">
+      <DependentUpon>Service.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HeaderFooter\usercontrol\header.ascx.bak" />
+    <None Include="HeaderFooter\usercontrol\header.ascx.cs.bak" />
+    <None Include="Modules\Help\eSchool_User Manual.pdf" />
+    <None Include="Sysitem\Classes\CreateLogFiles.cs.bak" />
+    <None Include="Sysitem\eSchoolPrintService\eschool_windowsservice.InstallLog" />
+    <None Include="Sysitem\Web.INI" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sysitem\Logs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2033</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/eschool</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,20 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eschool", "eschool.csproj", "{1C1A79F2-92E4-445C-A53C-68F50A0FA23C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Databaseconfiguration|Default = Databaseconfiguration|Default
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C1A79F2-92E4-445C-A53C-68F50A0FA23C}.Databaseconfiguration|Default.ActiveCfg = Databaseconfiguration|Any CPU
+		{1C1A79F2-92E4-445C-A53C-68F50A0FA23C}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{1C1A79F2-92E4-445C-A53C-68F50A0FA23C}.Debug|Default.Build.0 = Debug|Any CPU
+		{1C1A79F2-92E4-445C-A53C-68F50A0FA23C}.Release|Default.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -40,11 +40,11 @@ namespace eschool.Classes
 				fileName = home_drive+@"\Inetpub\wwwroot\eschool\Sysitem\Logs\" +DateTime.Today.Day.ToString()+ "-" +DateTime.Today.Month.ToString() + "-" + DateTime.Today.Year.ToString() + ".log";
 				sLogFormat = DateTime.Now.ToShortDateString().ToString()+" "+DateTime.Now.ToLongTimeString().ToString()+" ==> ";
 				 
-				StreamWriter sw = new StreamWriter(fileName,true);
+				//StreamWriter sw = new StreamWriter(fileName,true);
 
-				sw.WriteLine(sLogFormat + sErrMsg);
-				sw.Flush();
-				sw.Close();
+				//sw.WriteLine(sLogFormat + sErrMsg);
+				//sw.Flush();
+				//sw.Close();
 		}
 	}
 }

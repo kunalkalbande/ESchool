@@ -39,9 +39,9 @@ namespace eschool.Form
 	public class teacher : System.Web.UI.Page
 	{
 		protected System.Web.UI.WebControls.HyperLink Hyperedit;
-		protected System.Web.UI.WebControls.CompareValidator CompareValidator1;
+	//	protected System.Web.UI.WebControls.CompareValidator CompareValidator1;
 		protected System.Web.UI.WebControls.CompareValidator CompareValidator2;
-		protected System.Web.UI.WebControls.CompareValidator CompareValidator3;
+		//protected System.Web.UI.WebControls.CompareValidator CompareValidator3;
 		protected System.Web.UI.WebControls.CompareValidator CompareValidator4;
 		protected System.Web.UI.WebControls.CompareValidator CompareValidator5;
 		protected System.Web.UI.WebControls.CompareValidator CompareValidator6;

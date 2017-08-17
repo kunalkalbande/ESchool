@@ -45,8 +45,8 @@
 											<asp:ListItem Value="Bio Group">Bio Group</asp:ListItem>
 											<asp:ListItem Value="Commerce Group">Commerce Group</asp:ListItem>
 											<asp:ListItem Value="Math Group">Math Group</asp:ListItem>
-										</asp:dropdownlist>&nbsp; From Date&nbsp;<asp:TextBox ID="txtfromdate" Width="70" BorderStyle="Groove" CssClass="FontStyle" Runat="server"></asp:TextBox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.AttandanceReport.txtfromdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
-												border="0"></A>&nbsp; To Date&nbsp;<asp:TextBox ID="txttodate" Width="70" BorderStyle="Groove" CssClass="FontStyle" Runat="server"></asp:TextBox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.AttandanceReport.txttodate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+										</asp:dropdownlist>&nbsp; From Date&nbsp;<asp:TextBox ID="txtfromdate" Width="65" BorderStyle="Groove" CssClass="FontStyle" Runat="server"></asp:TextBox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.AttandanceReport.txtfromdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+												border="0"></A>&nbsp; To Date&nbsp;<asp:TextBox ID="txttodate" Width="65" BorderStyle="Groove" CssClass="FontStyle" Runat="server"></asp:TextBox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.AttandanceReport.txttodate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 												border="0"></A>&nbsp;
 									</TD>
 								</TR>

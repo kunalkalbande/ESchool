@@ -28,8 +28,8 @@ namespace eschool.Modules.Reports
 		protected System.Web.UI.WebControls.Button BtnShow;
 		protected System.Web.UI.WebControls.Button BtnPrint;
 		protected System.Web.UI.WebControls.DropDownList DropTrType;
-		protected System.Web.UI.WebControls.DataGrid Gridreceipt;
-		protected System.Web.UI.WebControls.DataGrid Gridissue;
+		//protected System.Web.UI.WebControls.DataGrid Gridreceipt;
+		//protected System.Web.UI.WebControls.DataGrid Gridissue;
 		protected System.Web.UI.WebControls.DataGrid GridAll;
 		protected System.Web.UI.WebControls.Button btnexcel;
 		protected System.Web.UI.WebControls.TextBox TxtDatefrom;

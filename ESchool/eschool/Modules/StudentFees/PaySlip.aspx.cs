@@ -58,7 +58,7 @@ namespace eschool.StudentFees
 		protected System.Web.UI.WebControls.TextBox txtlwp;
 		protected System.Web.UI.WebControls.TextBox txtpenDeduction;
 		protected System.Web.UI.WebControls.TextBox txtDeduction;
-		protected System.Web.UI.WebControls.TextBox txtmedical;
+		//protected System.Web.UI.WebControls.TextBox txtmedical;
 		protected System.Web.UI.WebControls.TextBox txtperacno;
 		protected System.Web.UI.WebControls.TextBox txtepfacno;
 		protected System.Web.UI.WebControls.Button btnprint;

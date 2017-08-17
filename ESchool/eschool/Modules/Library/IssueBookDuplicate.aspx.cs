@@ -30,8 +30,8 @@ namespace eschool.Library.FORMS
 	/// </summary>
 	public class IssueBookDuplicate : System.Web.UI.Page
 	{
-		protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-		protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+		//protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+		//protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
 	    protected System.Web.UI.WebControls.Label Label1;
 		protected System.Web.UI.WebControls.Label Label2;
 		protected System.Web.UI.WebControls.Label Label4;

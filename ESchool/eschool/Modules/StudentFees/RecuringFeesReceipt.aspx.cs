@@ -62,7 +62,7 @@ namespace eschool.StudentFees
 		protected System.Web.UI.WebControls.TextBox txtef;
 		protected System.Web.UI.WebControls.TextBox txthf;
 		protected System.Web.UI.WebControls.TextBox txtFathername;
-		protected System.Web.UI.WebControls.TextBox txtAmt;
+		//protected System.Web.UI.WebControls.TextBox txtAmt;
 		protected System.Web.UI.WebControls.DropDownList dropmop;
 		protected System.Web.UI.WebControls.TextBox txtamt;
 		protected System.Web.UI.WebControls.TextBox txtchno;
@@ -71,7 +71,7 @@ namespace eschool.StudentFees
 		protected System.Web.UI.WebControls.TextBox txtdraftno;
 		protected System.Web.UI.WebControls.TextBox txtdraftDate;
 		protected System.Web.UI.WebControls.Panel PanDraft;
-		protected System.Web.UI.WebControls.TextBox txtAmount;
+		//protected System.Web.UI.WebControls.TextBox txtAmount;
 		protected System.Web.UI.WebControls.Button btnprint;
 		protected System.Web.UI.WebControls.Label lblFeeID;
 		protected System.Web.UI.WebControls.DropDownList DropFeeID;

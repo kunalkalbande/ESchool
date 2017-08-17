@@ -112,9 +112,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySecurity">
-      <Name>MySecurity</Name>
-      <HintPath>..\..\..\Test\MySecurity\bin\Debug\MySecurity.dll</HintPath>
+    <Reference Include="mysecurity">
+      <HintPath>Thirdparty\mysecurity.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>

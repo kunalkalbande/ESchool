@@ -72,8 +72,10 @@ namespace eschool.Form
 		/// also Generated Next LedgerID.
 		/// </summary>
 		private void Page_Load(object sender, System.EventArgs e)
-		{      
-			try
+		{
+            TxtDtFrom.Attributes.Add("readonly", "readonly");
+            TxtDtTo.Attributes.Add("readonly", "readonly");
+            try
 			{
 				pass=(Session["password"].ToString());
 				CreateLogFiles.ErrorLog ("Form: Allowancesdeduction.aspx.cs, Method: Page_Load.  User: " + pass );

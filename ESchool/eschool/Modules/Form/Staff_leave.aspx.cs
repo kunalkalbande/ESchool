@@ -131,7 +131,12 @@ namespace eschool.Form
 			{
 				if(! IsPostBack)
 				{
-					nextid();
+                    txtleavefrom.Attributes.Add("readonly", "readonly");
+                    txtleaveto.Attributes.Add("readonly", "readonly");
+                    txtdoa.Attributes.Add("readonly", "readonly");
+                    txtnatapp.Attributes.Add("readonly", "readonly");
+
+                    nextid();
 					DropEdit.Visible=false;
 					slid.Visible=true;
 					btnSave.Visible=true;
@@ -311,11 +316,11 @@ namespace eschool.Form
 		/// </summary>
 		private void btnSave_Click(object sender, System.EventArgs e)
 		{
-			try
-			{
-				string sSysDate=System.DateTime.Now.Day.ToString()+ "/" + System.DateTime.Now.Month.ToString()+ "/" + System.DateTime.Now.Year.ToString();
-				
-				if(DateTime.Compare(ToMMddYYYY(sSysDate),ToMMddYYYY(txtleavefrom.Text))>0)
+            try
+            {
+                string sSysDate = System.DateTime.Now.Day.ToString() + "/" + System.DateTime.Now.Month.ToString() + "/" + System.DateTime.Now.Year.ToString();
+                
+				if(DateTime.Compare(ToMMddYYYY(sSysDate), ToMMddYYYY(txtleavefrom.Text))>0)
 				{
 					MessageBox.Show("Leave date from must be greater than or equal to current date");
 				}

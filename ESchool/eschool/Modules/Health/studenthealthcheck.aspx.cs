@@ -91,7 +91,9 @@ namespace eschool.Health
 		/// </summary>
 		private void Page_Load(object sender, System.EventArgs e)
 		{
-			try
+            txtstudentname.Attributes.Add("readonly", "readonly");
+
+            try
 			{
 				pass=(Session["password"].ToString());
 				CreateLogFiles.ErrorLog (" Form : Student_HelthCheckUp.aspx.cs, Method: Page_load, User: " + pass );

@@ -61,7 +61,9 @@ namespace eschool.Lab
 		/// </summary>
 		private void Page_Load(object sender, System.EventArgs e)
 		{
-			try
+            Textday1.Attributes.Add("readonly", "readonly");
+
+            try
 			{
 				pass=(Session["password"].ToString());
 				CreateLogFiles.ErrorLog (" Form : LabBooking.aspx.cs, Method: Page_load, User: " + pass );

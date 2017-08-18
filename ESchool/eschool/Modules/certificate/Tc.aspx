@@ -157,15 +157,15 @@
 							</TR>
 							<TR>
 								<TD>&nbsp;Student Name</TD>
-								<TD><asp:textbox CssClass="TextBoxForms" id="txtstudentname" ReadOnly="True" runat="server"></asp:textbox></TD>
+								<TD><asp:textbox CssClass="TextBoxForms" id="txtstudentname"  runat="server"></asp:textbox></TD>
 								<TD>&nbsp;Father Name&nbsp;</TD>
-								<TD><asp:textbox CssClass="TextBoxForms" id="txtfaname" ReadOnly="True" Runat="server"></asp:textbox></TD>
+								<TD><asp:textbox CssClass="TextBoxForms" id="txtfaname"  Runat="server"></asp:textbox></TD>
 							</TR>
 							<tr>
 								<td>&nbsp;Admission Date</td>
-								<td><asp:textbox CssClass="TextBoxForms" id="txtadddta" ReadOnly="True" runat="server"></asp:textbox></td>
+								<td><asp:textbox CssClass="TextBoxForms" id="txtadddta"  runat="server"></asp:textbox></td>
 								<td>&nbsp;Date of Birth</td>
-								<td><asp:textbox CssClass="TextBoxForms" id="txtdob" ReadOnly="True" Runat="server"></asp:textbox></td>
+								<td><asp:textbox CssClass="TextBoxForms" id="txtdob"  Runat="server"></asp:textbox></td>
 							</tr>
 							<tr>
 								<td>&nbsp;Category</td>
@@ -183,7 +183,7 @@
 										<asp:ListItem Value="Girl Guide">Girl Guide</asp:ListItem>
 									</asp:dropdownlist></td>
 								<td>&nbsp;Fee Paid</td>
-								<td><asp:textbox CssClass="TextBoxForms" id="txtduefee" ReadOnly="True" Runat="server"></asp:textbox></td>
+								<td><asp:textbox CssClass="TextBoxForms" id="txtduefee"  Runat="server"></asp:textbox></td>
 							</tr>
 							<tr>
 								<td>&nbsp;TWorking Day</td>
@@ -224,10 +224,10 @@
 							</tr>
 							<tr>
 								<td>&nbsp;Apply Date</td>
-								<td><asp:textbox CssClass="Fontstyle" ReadOnly=True Width=70px BorderStyle=Groove id="txtadate" Runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Tc.txtadate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+								<td><asp:textbox CssClass="Fontstyle"  Width=70px BorderStyle=Groove id="txtadate" Runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Tc.txtadate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A></td>
 								<td>&nbsp;TC Date&nbsp;<FONT color="#ff0000">*</FONT></td>
-								<td><asp:textbox CssClass="Fontstyle" ReadOnly=True Width=70px BorderStyle=Groove id="txttcdt" runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Tc.txttcdt);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+								<td><asp:textbox CssClass="Fontstyle"  Width=70px BorderStyle=Groove id="txttcdt" runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Tc.txttcdt);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>
 									<asp:requiredfieldvalidator id="RequiredFieldValidator1" runat="server" ControlToValidate="txttcdt" ErrorMessage="you must be enter tc date">*</asp:requiredfieldvalidator><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Tc.txtisdate);return false;"></A></td>
 							</tr>

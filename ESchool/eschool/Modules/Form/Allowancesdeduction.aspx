@@ -53,12 +53,12 @@
 							</TR>
 							<tr>
 								<td>&nbsp;Date From</td>
-								<td><asp:textbox id="TxtDtFrom" BorderStyle="Groove" runat="server" CssClass="Fontstyle" ReadOnly="True"
+								<td><asp:textbox id="TxtDtFrom" BorderStyle="Groove" runat="server" CssClass="Fontstyle" 
 										Width="70px"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Allowancesdeduction.TxtDtFrom);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>
 								</td>
 								<td>&nbsp;Date To</td>
-								<td><asp:textbox id="TxtDtTo" BorderStyle="Groove" runat="server" CssClass="Fontstyle" ReadOnly="True"
+								<td><asp:textbox id="TxtDtTo" BorderStyle="Groove" runat="server" CssClass="Fontstyle" 
 										Width="70px"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Allowancesdeduction.TxtDtTo);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>
 								</td>

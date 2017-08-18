@@ -104,7 +104,7 @@
 								<tr>
 									<td style="HEIGHT: 21px">&nbsp;Student Registration ID&nbsp;<font color="red" size="1">*</font></td>
 									<td colSpan="2" style="HEIGHT: 21px"><asp:TextBox ID="txtReg_Id" CssClass="TextBoxForms" Runat="server" Visible="False" Width="70"
-											ReadOnly="True"></asp:TextBox><asp:dropdownlist CssClass="ComboBox" id="DropStudentID" Width="285" Runat="server" AutoPostBack="True">
+											></asp:TextBox><asp:dropdownlist CssClass="ComboBox" id="DropStudentID" Width="285" Runat="server" AutoPostBack="True">
 											<asp:ListItem Value="Select">Select</asp:ListItem>
 										</asp:dropdownlist><asp:comparevalidator id="CompareValidator1" runat="server" ErrorMessage="Please Select Student Registration ID"
 											ValueToCompare="Select" Operator="NotEqual" ControlToValidate="DropStudentID">
@@ -145,7 +145,7 @@
 											ControlToValidate="txtFirstName" ValidationExpression="^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$">*</asp:regularexpressionvalidator><asp:requiredfieldvalidator id="RequiredFieldValidator1" runat="server" ErrorMessage="You must enter  Student name"
 											ControlToValidate="txtFirstName">*</asp:requiredfieldvalidator></TD>
 									<td>&nbsp;Date Of Birth<FONT color="#ff0033" size="1">*</FONT></td>
-									<td><asp:textbox id="txtDob" Runat="server" CssClass="Fontstyle" ReadOnly="True" Width="70px" BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDob);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+									<td><asp:textbox id="txtDob" Runat="server" CssClass="Fontstyle" Width="70px" BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDob);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 												border="0"></A>&nbsp;</td>
 								</TR>
 								<TR>
@@ -231,7 +231,7 @@
 											ControlToValidate="TxtEmail" ValidationExpression="\w+([-+.]\w+)*@[\w-]+\.(com|net|org|edu|mil)$">*</asp:regularexpressionvalidator></TD>
 									<TD>&nbsp;Admission Date<FONT color="#ff0033" size="1">*</FONT></TD>
 									<TD><asp:textbox id="txtDoa" Runat="server" CssClass="Fontstyle" Width="70px" BorderStyle="Groove"
-											ReadOnly="True"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDoa);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+											></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDoa);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 												border="0"></A></TD>
 								</TR>
 								<TR>

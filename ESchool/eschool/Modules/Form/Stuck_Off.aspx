@@ -91,7 +91,7 @@
 								<td>&nbsp;Fees Paid</td>
 								<td><asp:textbox CssClass="TextBoxForms" id="txtduefee" Enabled="False" Runat="server"></asp:textbox></td>
 								<td>&nbsp;Date<FONT color="#ff0000"><FONT size="1">*</FONT></FONT></td>
-								<td><asp:textbox CssClass="Fontstyle" ReadOnly=True Width=70px BorderStyle=Groove id="txttcdt" runat="server" ></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Tc.txttcdt);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+								<td><asp:textbox CssClass="Fontstyle" Width=70px BorderStyle=Groove id="txttcdt" runat="server" ></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Tc.txttcdt);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>
 									<asp:requiredfieldvalidator id="RequiredFieldValidator1" runat="server" ErrorMessage="you must be enter tc date"
 										ControlToValidate="txttcdt">*</asp:requiredfieldvalidator><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Tc.txtisdate);return false;"></A></td>

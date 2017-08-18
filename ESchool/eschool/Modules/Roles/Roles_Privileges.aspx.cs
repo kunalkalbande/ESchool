@@ -504,7 +504,10 @@ namespace eschool.Roles
 			}
 			try
 			{
-				if(!IsPostBack)
+                txtRoleName.Attributes.Add("readonly", "readonly");
+                txtDesc.Attributes.Add("readonly", "readonly");
+
+                if (!IsPostBack)
 				{
 					# region Dropdown Login Name
 					DropName.Visible=false;

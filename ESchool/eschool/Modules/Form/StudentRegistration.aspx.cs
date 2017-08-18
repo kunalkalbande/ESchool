@@ -110,7 +110,9 @@ namespace eschool.Forms
 		/// </summary>
 		private void Page_Load(object sender, System.EventArgs e)
 		{
-			try
+            txtDob.Attributes.Add("readonly", "readonly");
+            txtDate.Attributes.Add("readonly", "readonly");
+            try
 			{
 				pass=(Session["password"].ToString ());
 				CreateLogFiles.ErrorLog ("Form : Student_Registarion.aspx.cs, Method: Page_Load.  User: " + pass );

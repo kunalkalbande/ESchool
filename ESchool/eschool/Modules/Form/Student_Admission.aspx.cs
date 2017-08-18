@@ -144,7 +144,11 @@ namespace eschool.Form
 		/// </summary>
 		private void Page_Load(object sender, System.EventArgs e)
 		{
-			try
+            txtReg_Id.Attributes.Add("readonly", "readonly");
+            txtDob.Attributes.Add("readonly", "readonly");
+            txtDoa.Attributes.Add("readonly", "readonly");
+
+            try
 			{
 				pass=(Session["password"].ToString ());
 				CreateLogFiles.ErrorLog("Form : Student_Admission.aspx,Method: Page_Load. User_ID : "+ pass);

@@ -52,7 +52,7 @@
 							</tr>
 							<TR>
 								<TD>&nbsp;Date</TD>
-								<TD><asp:textbox id="Textday1" CssClass="Fontstyle" ReadOnly=True Width=70px BorderStyle=Groove runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Labbooking.Textday1);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+								<TD><asp:textbox id="Textday1" CssClass="Fontstyle"  Width=70px BorderStyle=Groove runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Labbooking.Textday1);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>
 								</TD>
 								<TD>&nbsp;Time &nbsp;<FONT color="#ff0033" size="1">*</FONT> (hh:mm)</TD>

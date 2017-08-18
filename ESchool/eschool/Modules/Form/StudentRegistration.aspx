@@ -84,7 +84,7 @@
 											ControlToValidate="TxtMothernm" ValidationExpression="^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$">*</asp:regularexpressionvalidator></TD>
 									<td>&nbsp;Date Of Birth&nbsp;<FONT color="#ff0033" size="1">*</FONT>
 									</td>
-									<td><asp:textbox id="txtDob" ReadOnly="True" Runat="server" CssClass="Fontstyle" Width="70px" BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDob);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+									<td><asp:textbox id="txtDob"  Runat="server" CssClass="Fontstyle" Width="70px" BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDob);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 												border="0"></A>
 									</td>
 								</tr>
@@ -119,7 +119,7 @@
 								</TR>
 								<TR>
 									<TD>&nbsp;Test Date</TD>
-									<TD><asp:textbox id="txtDate" ReadOnly="True" Runat="server" CssClass="Fontstyle" Width="70px" BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+									<TD><asp:textbox id="txtDate" Runat="server" CssClass="Fontstyle" Width="70px" BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 												border="0"></A></TD>
 									<TD>&nbsp;Test Time&nbsp;<FONT color="#ff0033" size="1">*</FONT></TD>
 									<TD><asp:dropdownlist id="Droptimehour" Runat="server" CssClass="ComboBox">

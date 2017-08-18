@@ -514,11 +514,11 @@
 									</TR>
 									<TR>
 										<TD>&nbsp;Role Name</TD>
-										<TD><asp:textbox id="txtRoleName" runat="server" CssClass="TextBoxForms" Width="294px" ReadOnly="True"></asp:textbox></TD>
+										<TD><asp:textbox id="txtRoleName" runat="server" CssClass="TextBoxForms" Width="294px" ></asp:textbox></TD>
 									</TR>
 									<TR>
 										<TD>&nbsp;Description</TD>
-										<TD><asp:textbox id="txtDesc" runat="server" CssClass="TextBoxForms" Width="294px" ReadOnly="True"></asp:textbox></TD>
+										<TD><asp:textbox id="txtDesc" runat="server" CssClass="TextBoxForms" Width="294px"></asp:textbox></TD>
 									</TR>
 									<TR>
 										<TD align="center" bgColor="#808087" colSpan="2"><STRONG><asp:label id="Label1" BackColor="Transparent" runat="server" ForeColor="FloralWhite">Select  Modules  To  Set  Privileges</asp:label></STRONG></TD>

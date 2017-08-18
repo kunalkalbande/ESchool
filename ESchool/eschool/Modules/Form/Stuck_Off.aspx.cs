@@ -71,8 +71,10 @@ namespace eschool.certificate
 		/// </summary>
 		private void Page_Load(object sender, System.EventArgs e)
 		{
+            txttcdt.Attributes.Add("readonly", "readonly");
 
-			try
+
+            try
 			{
 				pass=(Session["password"].ToString ());
 				CreateLogFiles.ErrorLog("Form : Stuck_Off.aspx,Method: Page_Load. User_ID : "+ Session["User_Name"].ToString());

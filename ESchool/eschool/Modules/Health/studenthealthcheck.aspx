@@ -48,7 +48,7 @@
 												ValueToCompare="---Select---" Operator="NotEqual">*</asp:comparevalidator></TD>
 										<TD>&nbsp;Name&nbsp;<font color="red" size="1">*</font>
 										</TD>
-										<TD><asp:textbox CssClass="TextBoxForms" id="txtstudentname" runat="server" Width="155px" ReadOnly="True"></asp:textbox></TD>
+										<TD><asp:textbox CssClass="TextBoxForms" id="txtstudentname" runat="server" Width="155px" ></asp:textbox></TD>
 									</TR>
 									<TR>
 										<TD>&nbsp;Duration&nbsp;<font color="red" size="1">*</font></TD>

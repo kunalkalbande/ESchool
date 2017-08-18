@@ -68,7 +68,7 @@ namespace eschool.Reports
 			try
 			{
 				
-				if(!Page .IsPostBack)
+				if(!Page.IsPostBack)
 				{
 					txtfromdate.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;   //add by vikas sharma date on 06.10.07
 					txttodate.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;     //add by vikas sharma date on 06.10.07
@@ -86,10 +86,13 @@ namespace eschool.Reports
 					scon.Close();
 				}
 				 
-				if(! IsPostBack)
+				if(!IsPostBack)
 				{
-					#region Check Privileges
-					int i;
+                    txtfromdate.Attributes.Add("readonly", "readonly");
+                    txttodate.Attributes.Add("readonly", "readonly");
+
+                    #region Check Privileges
+                    int i;
 					string View_flag="0", Add_Flag="0", Edit_Flag="0", Del_Flag="0";
 					string Module="11";
 					string SubModule="32";

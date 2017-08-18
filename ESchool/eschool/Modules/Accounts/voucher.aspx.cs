@@ -128,7 +128,13 @@ namespace eschool.Forms.Inventory
 			{
 				if(!IsPostBack)
 				{
-					checkPrevileges();
+                    txtDate.Attributes.Add("readonly", "readonly");
+                    txtLCr.Attributes.Add("readonly", "readonly");                    
+                    txtRCr.Attributes.Add("readonly", "readonly");
+                    txtLDr.Attributes.Add("readonly", "readonly");
+                    txtRDr.Attributes.Add("readonly", "readonly");
+                    
+                    checkPrevileges();
 					LedgerID=new ArrayList();
 					Invoice_Date = "";
 					getID();

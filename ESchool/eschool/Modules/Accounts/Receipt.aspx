@@ -38,7 +38,7 @@
 								</tr>
 								<tr>
 									<td>&nbsp;Received Date</td>
-									<td><asp:textbox id="txtDate" Runat="server" CssClass="Fontstyle" ReadOnly=True Width=70px BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+									<td><asp:textbox id="txtDate" Runat="server" CssClass="Fontstyle"  Width=70px BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 												border="0"></A></td>
 									<td>&nbsp;Receive Mode <font color="red">*</font></td>
 									<td><asp:dropdownlist id="Dropmode" CssClass="ComboBox" Runat="server" AutoPostBack="true"></asp:dropdownlist>&nbsp;<asp:comparevalidator id="CompVali1" Runat="server" ErrorMessage="Please Select Payment Mode" ValueToCompare="Select"
@@ -48,7 +48,7 @@
 									<TR>
 										<TD>&nbsp;Chack Date</TD>
 										<TD>
-											<asp:TextBox id="txtchkdt" Runat="server" CssClass="Fontstyle" ReadOnly=True Width=70px BorderStyle="Groove"></asp:TextBox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtchkdt);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+											<asp:TextBox id="txtchkdt" Runat="server" CssClass="Fontstyle" Width=70px BorderStyle="Groove"></asp:TextBox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtchkdt);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 													border="0"></A></TD>
 										<TD>&nbsp;Check No.</TD>
 										<TD>

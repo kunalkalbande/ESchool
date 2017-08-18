@@ -83,10 +83,12 @@ namespace eschool.Modules.Accounts
 			{
 				CreateLogFiles.ErrorLog(" Form : Receipt.aspx,Method  Page_Load,  Exception: "+ex.Message+" , Userid :  "+ pass   );		
 			}
-			if(! IsPostBack)
+			if(!IsPostBack)
 			{
-				#region Check Privileges
-				int i;
+                txtDate.Attributes.Add("readonly", "readonly");
+                txtchkdt.Attributes.Add("readonly", "readonly");
+                #region Check Privileges
+                int i;
 				string View_flag="0", Add_Flag="0", Edit_Flag="0", Del_Flag="0";
 				string Module="7";
 				string SubModule="5";

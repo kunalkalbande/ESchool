@@ -129,7 +129,7 @@
 									<TD><asp:textbox id="txtrem" Runat="server" CssClass="TextBoxForms" MaxLength="40" Height="20px"
 											TextMode="MultiLine"></asp:textbox></TD>
 									<td>&nbsp;Current Date</td>
-									<td><asp:textbox id="Txtdate" Runat="server" CssClass="Fontstyle" Width=70px BorderStyle=Groove ReadOnly="true"></asp:textbox>
+									<td><asp:textbox id="Txtdate" Runat="server" CssClass="Fontstyle" Width=70px BorderStyle=Groove ></asp:textbox>
 										<A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Stock.Txtdate);return false;">
 											<IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 												border="0"></A></td>

@@ -60,7 +60,8 @@ namespace eschool.Reports
 				SqlDataReader dtratt;
 				if(!Page.IsPostBack)
 				{
-					txtadjustdate.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year; 
+                    txtadjustdate.Attributes.Add("readonly", "readonly");
+                    txtadjustdate.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year; 
 					string strstr="select distinct staff_id from timetableadjust";
 					dtratt=obj.GetRecordSet(strstr);
 					Dropstaffid.Items.Clear();

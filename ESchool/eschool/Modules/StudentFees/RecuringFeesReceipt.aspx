@@ -100,16 +100,16 @@
 								<tr>
 									<TD>&nbsp;Student Name</TD>
 									<TD><asp:textbox id="TxtFname" BorderStyle="Groove" runat="server" CssClass="TextBoxForms" Width="150px"
-											Enabled="False" ReadOnly="True"></asp:textbox></TD>
+											Enabled="False" ></asp:textbox></TD>
 									<TD>&nbsp;Stream</TD>
 									<TD><asp:textbox id="TextStream" BorderStyle="Groove" runat="server" CssClass="TextBoxForms" MaxLength="8"
-											Width="110px" Enabled="False" ReadOnly="True"></asp:textbox>&nbsp;<asp:textbox id="TextComputer" BorderStyle="Groove" runat="server" CssClass="TextBoxForms" MaxLength="7"
-											Width="100px" Enabled="False" ReadOnly="True"></asp:textbox></TD>
+											Width="110px" Enabled="False" ></asp:textbox>&nbsp;<asp:textbox id="TextComputer" BorderStyle="Groove" runat="server" CssClass="TextBoxForms" MaxLength="7"
+											Width="100px" Enabled="False"></asp:textbox></TD>
 								</tr>
 								<TR>
 									<TD>&nbsp;Father Name</TD>
 									<TD><asp:textbox id="txtFathername" BorderStyle="Groove" runat="server" CssClass="TextBoxForms" MaxLength="9"
-											Width="150px" Enabled="False" ReadOnly="True"></asp:textbox></TD>
+											Width="150px" Enabled="False"></asp:textbox></TD>
 									<td>&nbsp;Scategory / Rank</td>
 									<td><asp:textbox id="txtscat" BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" Width="110px"
 											Enabled="False"></asp:textbox>&nbsp;<asp:textbox id="txtrank" BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" Width="100px"
@@ -133,29 +133,29 @@
 											border="1">
 											<tr>
 												<TD>&nbsp;Diary Fee</TD>
-												<TD><asp:textbox ReadOnly="True" onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtdf"
+												<TD><asp:textbox onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtdf"
 														BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" AutoPostBack="False" MaxLength="9"
 														Width="80px" Enabled="True" onchange="AdjustAmount(this)"></asp:textbox></TD>
 												<TD>&nbsp;Tution Fee</TD>
-												<TD><asp:textbox ReadOnly="True" onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txttf"
+												<TD><asp:textbox onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txttf"
 														BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" AutoPostBack="False" MaxLength="9"
 														Width="80px" Enabled="True" onchange="AdjustAmount(this)"></asp:textbox></TD>
 												<TD>&nbsp;Computer Fee</TD>
-												<TD><asp:textbox ReadOnly="True" onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtcf"
+												<TD><asp:textbox onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtcf"
 														BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" AutoPostBack="False" MaxLength="9"
 														Width="80px" Enabled="True" onchange="AdjustAmount(this)"></asp:textbox></TD>
 											</tr>
 											<TR>
 												<TD>&nbsp;Science Fee</TD>
-												<TD><asp:textbox ReadOnly="True" onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtsf"
+												<TD><asp:textbox onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtsf"
 														BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" AutoPostBack="False" MaxLength="9"
 														Width="80px" Enabled="True" onchange="AdjustAmount(this)"></asp:textbox></TD>
 												<TD>&nbsp;Activity Fee</TD>
-												<TD><asp:textbox ReadOnly="True" onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtaf"
+												<TD><asp:textbox onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtaf"
 														BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" AutoPostBack="False" MaxLength="9"
 														Width="80px" Enabled="True" onchange="AdjustAmount(this)"></asp:textbox></TD>
 												<TD>&nbsp;Games Fee</TD>
-												<TD><asp:textbox ReadOnly="True" onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtgf"
+												<TD><asp:textbox onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtgf"
 														BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" AutoPostBack="False" MaxLength="9"
 														Width="80px" Enabled="True" onchange="AdjustAmount(this)"></asp:textbox></TD>
 											</TR>
@@ -166,37 +166,37 @@
 												<TD>&nbsp;Transport Fee</TD>
 												<TD><asp:textbox onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txttrf" BorderStyle="Groove"
 														Runat="server" CssClass="TextBoxForms" AutoPostBack="False" MaxLength="9" Width="80px" Enabled="True"
-														onchange="AdjustAmount(this)" ReadOnly="True"></asp:textbox></TD>
+														onchange="AdjustAmount(this)" ></asp:textbox></TD>
 												<TD>&nbsp;Admission Fee</TD>
-												<TD><asp:textbox ReadOnly="True" onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtadf"
+												<TD><asp:textbox onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtadf"
 														BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" AutoPostBack="False" MaxLength="9"
 														Width="80px" Enabled="True" onchange="AdjustAmount(this)"></asp:textbox></TD>
 											</TR>
 											<tr>
 												<TD>&nbsp;Security Fee</TD>
-												<TD><asp:textbox ReadOnly="True" onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtcmf"
+												<TD><asp:textbox onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtcmf"
 														BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" AutoPostBack="False" MaxLength="9"
 														Width="80px" Enabled="True"></asp:textbox></TD>
 												<TD>&nbsp;Annual Fee</TD>
-												<TD><asp:textbox ReadOnly="True" onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtanf"
+												<TD><asp:textbox onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtanf"
 														BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" AutoPostBack="False" MaxLength="9"
 														Width="80px" Enabled="True" onchange="AdjustAmount(this)"></asp:textbox></TD>
 												<TD>&nbsp;Env. Fee</TD>
-												<TD><asp:textbox ReadOnly="True" onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtef"
+												<TD><asp:textbox onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txtef"
 														BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" AutoPostBack="False" MaxLength="9"
 														Width="80px" Enabled="True" onchange="AdjustAmount(this)"></asp:textbox></TD>
 											</tr>
 											<TR>
 												<TD>&nbsp;House Fee</TD>
-												<TD><asp:textbox ReadOnly="True" onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txthf"
+												<TD><asp:textbox onkeypress="return GetOnlyNumbers(this, event, true,true);" id="txthf"
 														BorderStyle="Groove" Runat="server" CssClass="TextBoxForms" AutoPostBack="False" MaxLength="9"
 														Width="80px" Enabled="True" onchange="AdjustAmount(this)"></asp:textbox></TD>
 												<TD>&nbsp;Fees Amount<FONT color="#ff0033">*</FONT></TD>
-												<TD><asp:textbox ReadOnly="True" id="TxtAmount" BorderStyle="Groove" runat="server" CssClass="TextBoxForms"
+												<TD><asp:textbox id="TxtAmount" BorderStyle="Groove" runat="server" CssClass="TextBoxForms"
 														Width="80px" Enabled="False"></asp:textbox><asp:requiredfieldvalidator id="Requiredfieldvalidator3" runat="server" ControlToValidate="TxtAmount" ErrorMessage="You Must Enter Fees Amount">*</asp:requiredfieldvalidator><asp:comparevalidator id="Comparevalidator3" Runat="server" ControlToValidate="TxtAmt" ErrorMessage="Fees amount must be numeric"
 														Operator="DataTypeCheck" Type="Double" Display="Dynamic">*</asp:comparevalidator></TD>
 												<td>&nbsp;Paid&nbsp;Amount</td>
-												<td><asp:textbox ReadOnly="True" id="txtamt" BorderStyle="Groove" Runat="server" CssClass="TextBoxForms"
+												<td><asp:textbox id="txtamt" BorderStyle="Groove" Runat="server" CssClass="TextBoxForms"
 														AutoPostBack="False" Width="80"></asp:textbox><asp:requiredfieldvalidator id="Requiredfieldvalidator4" runat="server" ControlToValidate="txtamt" ErrorMessage="You Must Enter Amount">*</asp:requiredfieldvalidator></td>
 											</TR>
 										</table>
@@ -210,7 +210,7 @@
 											<asp:ListItem Value="By Cash">By Cash</asp:ListItem>
 										</asp:dropdownlist></td>
 									<TD>&nbsp;Start Period Date</TD>
-									<TD><asp:textbox id="TxtPeriod" CssClass="Fontstyle" ReadOnly="True" Width="70px" BorderStyle="Groove"
+									<TD><asp:textbox id="TxtPeriod" CssClass="Fontstyle" Width="70px" BorderStyle="Groove"
 											runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.RecuringFeesReceipt.TxtPeriod);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 												border="0"></A></TD>
 								</tr>
@@ -236,14 +236,14 @@
 										<TD>&nbsp;Cheque Date</TD>
 										<TD>
 											<asp:textbox id="txtchDate" BorderStyle="Groove" Runat="server" CssClass="Fontstyle" Width="70px"
-												ReadOnly="True"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.RecuringFeesReceipt.txtchDate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+												></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.RecuringFeesReceipt.txtchDate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 													border="0"></A>
 											<asp:requiredfieldvalidator id="Requiredfieldvalidator5" runat="server" ErrorMessage="Please Enter Cheque Date"
 												ControlToValidate="txtchDate">*</asp:requiredfieldvalidator></TD>
 										<TD>&nbsp;Current Date</TD>
 										<TD>
 											<asp:textbox id="TxtcurDate" BorderStyle="Groove" runat="server" CssClass="Fontstyle" Width="70px"
-												ReadOnly="True"></asp:textbox></TD>
+												></asp:textbox></TD>
 									</TR>
 									<TR>
 										<TD>&nbsp;Bank Name&nbsp;<FONT color="#ff0033" size="1">*</FONT></TD>
@@ -272,13 +272,13 @@
 									</TR>
 									<TR>
 										<TD>&nbsp;Draft Date</TD>
-										<TD><asp:textbox id="txtdraftDate" Runat="server" CssClass="Fontstyle" ReadOnly="True" Width="70px"
+										<TD><asp:textbox id="txtdraftDate" Runat="server" CssClass="Fontstyle" Width="70px"
 												BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.RecuringFeesReceipt.txtdraftDate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 													border="0"></A>
 											<asp:requiredfieldvalidator id="Requiredfieldvalidator1" runat="server" ControlToValidate="txtdraftDate" ErrorMessage="Please Enter Draft Date">*</asp:requiredfieldvalidator></TD>
 					</td>
 					<TD>&nbsp;Current Date</TD>
-					<TD><asp:textbox id="TxtcurDate1" runat="server" CssClass="Fontstyle" ReadOnly="True" Width="70px"
+					<TD><asp:textbox id="TxtcurDate1" runat="server" CssClass="Fontstyle" Width="70px"
 							BorderStyle="Groove"></asp:textbox></TD>
 				</tr>
 				<tr>

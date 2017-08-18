@@ -63,7 +63,7 @@
 									</TD>
 									<TD>
 										<asp:TextBox onkeypress="return GetOnlyChars(this, event);" id="TxtEmpName" Runat="server" CssClass="TextBoxForms"
-											ReadOnly="True"></asp:TextBox></TD>
+											></asp:TextBox></TD>
 								</TR>
 							</asp:panel>
 							<asp:panel id="PanStudid" Runat="server" Visible="False">
@@ -74,7 +74,7 @@
 									<TD>&nbsp;Name
 									</TD>
 									<TD>
-										<asp:TextBox id="TxtStudName" Runat="server" CssClass="TextBoxForms" ReadOnly="True"></asp:TextBox></TD>
+										<asp:TextBox id="TxtStudName" Runat="server" CssClass="TextBoxForms" ></asp:TextBox></TD>
 								</TR>
 							</asp:panel>
 							<tr>

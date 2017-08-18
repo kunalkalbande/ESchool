@@ -48,15 +48,15 @@
 								</TR>
 								<tr>
 									<td>&nbsp;Designation</td>
-									<td><asp:TextBox ID="txtdesig" CssClass="TextBoxforms" Runat="server" ReadOnly="True" Enabled="False" BorderStyle="Groove"></asp:TextBox></td>
+									<td><asp:TextBox ID="txtdesig" CssClass="TextBoxforms" Runat="server" Enabled="False" BorderStyle="Groove"></asp:TextBox></td>
 									<td>&nbsp;Date of Joining</td>
-									<td><asp:TextBox ID="txtdoj" CssClass="TextBoxforms" Runat="server" ReadOnly="True" Enabled="False" Width="130px" BorderStyle="Groove"></asp:TextBox></td>
+									<td><asp:TextBox ID="txtdoj" CssClass="TextBoxforms" Runat="server" Enabled="False" Width="130px" BorderStyle="Groove"></asp:TextBox></td>
 								</tr>
 								<tr>
 									<td>&nbsp;Saving &nbsp;A\C No</td>
-									<td><asp:TextBox ID="txtperacno" CssClass="TextBoxforms" Runat="server" ReadOnly="True" Enabled="False" BorderStyle="Groove"></asp:TextBox></td>
+									<td><asp:TextBox ID="txtperacno" CssClass="TextBoxforms" Runat="server" Enabled="False" BorderStyle="Groove"></asp:TextBox></td>
 									<td>&nbsp;E.P.F. A\C No</td>
-									<td><asp:TextBox ID="txtepfacno" CssClass="TextBoxforms" Runat="server" ReadOnly="True" Enabled="False" Width="130px" BorderStyle="Groove"></asp:TextBox></td>
+									<td><asp:TextBox ID="txtepfacno" CssClass="TextBoxforms" Runat="server" Enabled="False" Width="130px" BorderStyle="Groove"></asp:TextBox></td>
 								</tr>
 								<TR>
 									<TD align="left">&nbsp;Basic Salary</TD>
@@ -103,13 +103,13 @@
 									<TD>&nbsp;Penel Deduction</TD>
 									<TD>
 										<asp:textbox id="txtpenDeduction" CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, false,true);"
-											runat="server" ReadOnly="True" Enabled="False" BorderStyle="Groove"></asp:textbox></TD>
+											runat="server" Enabled="False" BorderStyle="Groove"></asp:textbox></TD>
 								</TR>
 								<TR>
 									<td>&nbsp;Arrears</td>
 									<td><asp:TextBox ID="txtArrears" CssClass="TextBoxforms" Runat="server" BorderStyle="Groove" Enabled="False"></asp:TextBox></td>
 									<td>&nbsp;Security</td>
-									<td><asp:TextBox CssClass="TextBoxforms" ID="txtsec" Runat="server" ReadOnly="True" Enabled="False" BorderStyle="Groove"></asp:TextBox></td>
+									<td><asp:TextBox CssClass="TextBoxforms" ID="txtsec" Runat="server" Enabled="False" BorderStyle="Groove"></asp:TextBox></td>
 								</TR>
 								<TR>
 									<TD>&nbsp;Benifits</TD>
@@ -117,13 +117,13 @@
 										<asp:textbox id="txtbenefits" CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, false,true);" runat="server"
 											BorderStyle="Groove"></asp:textbox></TD>
 									<td>&nbsp;Leave Without Pay</td>
-									<td><asp:TextBox ID="txtlwp" CssClass="TextBoxforms" Runat="server" ReadOnly="True" Enabled="False" BorderStyle="Groove"></asp:TextBox></td>
+									<td><asp:TextBox ID="txtlwp" CssClass="TextBoxforms" Runat="server" Enabled="False" BorderStyle="Groove"></asp:TextBox></td>
 								</TR>
 								<TR>
 									<TD>&nbsp;Total Allowances</TD>
 									<TD>
 										<asp:textbox id="txtAllowances" CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, false,true);"
-											runat="server" ReadOnly="True" BorderStyle="Groove"></asp:textbox></TD>
+											runat="server" BorderStyle="Groove"></asp:textbox></TD>
 									<td>&nbsp;Total Deduction</td>
 									<td><asp:TextBox ID="txtDeduction" CssClass="TextBoxforms" Runat="server" BorderStyle="Groove"></asp:TextBox></td>
 								</TR>
@@ -138,10 +138,10 @@
 									<TD>&nbsp;Gross Total</TD>
 									<TD>
 										<asp:textbox id="txtGross" CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, false,true);" runat="server"
-											ReadOnly="True" BorderStyle="Groove"></asp:textbox>
+											BorderStyle="Groove"></asp:textbox>
 									<td>&nbsp;Net Salary</td>
 									<td><asp:textbox id="txtNetSalary" CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, false,true);" runat="server"
-											ReadOnly="True" BorderStyle="Groove"></asp:textbox></td>
+											BorderStyle="Groove"></asp:textbox></td>
 								</TR>
 								<TR>
 									<TD align="center" colSpan="4">&nbsp;

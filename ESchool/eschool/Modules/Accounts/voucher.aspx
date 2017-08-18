@@ -291,7 +291,7 @@
 									<TD align="center">Voucher Date <FONT color="#ff0000">*</FONT>
 										<asp:requiredfieldvalidator id="Requiredfieldvalidator1" runat="server" ErrorMessage="Please Enter Voucher Date"
 											ControlToValidate="txtDate" ForeColor="White">*</asp:requiredfieldvalidator></TD>
-									<TD colSpan="2"><asp:textbox id="txtDate" runat="server" CssClass="Fontstyle" ReadOnly=True Width=70px BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+									<TD colSpan="2"><asp:textbox id="txtDate" runat="server" CssClass="Fontstyle" Width=70px BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 												border="0"></A></TD>
 								</TR>
 								<tr>
@@ -441,19 +441,19 @@
 								<tr>
 									<td align="right"><b>Total CR&nbsp;: </b>
 									</td>
-									<td><asp:textbox id="txtLCr" runat="server" Width="84px" ReadOnly="True" BorderStyle="Groove" CssClass="TextBoxForms"></asp:textbox></td>
+									<td><asp:textbox id="txtLCr" runat="server" Width="84px" BorderStyle="Groove" CssClass="TextBoxForms"></asp:textbox></td>
 									<td></td>
 									<td></td>
-									<td><asp:textbox id="txtRCr" runat="server" Width="84px" ReadOnly="True" BorderStyle="Groove" CssClass="TextBoxForms"></asp:textbox></td>
+									<td><asp:textbox id="txtRCr" runat="server" Width="84px" BorderStyle="Groove" CssClass="TextBoxForms"></asp:textbox></td>
 									<td></td>
 								</tr>
 								<tr>
 									<td align="right"><b>Total DR : </b>
 									</td>
-									<td><asp:textbox id="txtLDr" runat="server" Width="84px" ReadOnly="True" BorderStyle="Groove" CssClass="TextBoxForms"></asp:textbox></td>
+									<td><asp:textbox id="txtLDr" runat="server" Width="84px" BorderStyle="Groove" CssClass="TextBoxForms"></asp:textbox></td>
 									<td></td>
 									<td></td>
-									<td><asp:textbox id="txtRDr" runat="server" Width="84px" ReadOnly="True" BorderStyle="Groove" CssClass="TextBoxForms"></asp:textbox></td>
+									<td><asp:textbox id="txtRDr" runat="server" Width="84px" BorderStyle="Groove" CssClass="TextBoxForms"></asp:textbox></td>
 									<td></td>
 								</tr>
 								<tr>

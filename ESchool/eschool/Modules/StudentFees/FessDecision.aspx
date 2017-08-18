@@ -145,7 +145,7 @@
 <asp:comparevalidator id=Comparevalidator3 Runat="server" ControlToValidate="txtsf" ErrorMessage="Lab fees must be numeric" Operator="DataTypeCheck" Display="Dynamic" Type="Double">*</asp:comparevalidator></TD>
           <TD>&nbsp;Transport&nbsp;Fees</TD>
           <TD>
-<asp:textbox onkeypress="return GetOnlyNumbers(this, event, false,true);" id=txttrf BorderStyle="Groove" runat="server" CssClass="TextBoxForms" Width="60px" MaxLength="5" ReadOnly="True"></asp:textbox>
+<asp:textbox onkeypress="return GetOnlyNumbers(this, event, false,true);" id=txttrf BorderStyle="Groove" runat="server" CssClass="TextBoxForms" Width="60px" MaxLength="5" ></asp:textbox>
 <asp:comparevalidator id=Comparevalidator7 Runat="server" ControlToValidate="txttrf" ErrorMessage="Donation fees must be numeric" Operator="DataTypeCheck" Display="Dynamic" Type="Double">*</asp:comparevalidator></TD></TR>
         <TR>
           <TD style="WIDTH: 82px">&nbsp;Computer&nbsp;Fess</TD>
@@ -154,7 +154,7 @@
 <asp:comparevalidator id=Comparevalidator2 Runat="server" ControlToValidate="txtcf" ErrorMessage="Sports fees must be numeric" Operator="DataTypeCheck" Display="Dynamic" Type="Double">*</asp:comparevalidator></TD>
           <TD>&nbsp;Late&nbsp;Fees</TD>
           <TD>
-<asp:textbox onkeypress="return GetOnlyNumbers(this, event, false,true);" id=txtlf BorderStyle="Groove" runat="server" CssClass="TextBoxForms" Width="60px" MaxLength="5" ReadOnly="True"></asp:textbox>
+<asp:textbox onkeypress="return GetOnlyNumbers(this, event, false,true);" id=txtlf BorderStyle="Groove" runat="server" CssClass="TextBoxForms" Width="60px" MaxLength="5" ></asp:textbox>
 <asp:comparevalidator id=Comparevalidator6 Runat="server" ControlToValidate="txtlf" ErrorMessage="Exam fees must be numeric" Operator="DataTypeCheck" Display="Dynamic" Type="Double">*</asp:comparevalidator></TD></TR>
         <TR>
           <TD style="WIDTH: 82px">&nbsp;House Fees</TD>
@@ -172,15 +172,15 @@
 								<tr>
 									<TD style="WIDTH: 82px">&nbsp;Duration From</TD>
 									<TD><asp:textbox id="Txtfromdate" BorderStyle="Groove" runat="server" CssClass="Fontstyle" MaxLength="5"
-											Width="70px" ReadOnly="True"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.FessDecision.Txtfromdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+											Width="70px" ></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.FessDecision.Txtfromdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 												border="0"></A></TD>
 									<TD style="WIDTH: 82px">To</TD>
 									<TD><asp:textbox id="Txttodate" BorderStyle="Groove" runat="server" CssClass="Fontstyle" MaxLength="5"
-											Width="70px" ReadOnly="True"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.FessDecision.Txttodate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+											Width="70px"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.FessDecision.Txttodate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 												border="0"></A></TD>
 								</tr>
 								<TR>
-									<TD align="center" colSpan="6"><asp:button id="btnSave" runat="server" CssClass="formbuttonstyle" Text="Save"></asp:button>&nbsp;
+									<TD align="center" colSpan="4"><asp:button id="btnSave" runat="server" CssClass="formbuttonstyle" Text="Save"></asp:button>&nbsp;
 										<asp:button id="btnEdit" runat="server" CssClass="formbuttonstyle" CausesValidation="False"
 											Text="Update"></asp:button>&nbsp;
 										<asp:button id="BtnReset" Runat="server" CssClass="formbuttonstyle" CausesValidation="False"

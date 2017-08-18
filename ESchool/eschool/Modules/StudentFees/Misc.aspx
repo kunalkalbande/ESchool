@@ -80,7 +80,7 @@ src="../../HeaderFooter/shareables/jsfiles/Validations.js"></script>
           <td><asp:dropdownlist id=Droplocation Runat="server" Width=150px CssClass="ComboBox"></asp:dropdownlist></td></TR>
         <tr>
           <TD>&nbsp;Issue Date</TD>
-          <TD><asp:textbox id=txtdate runat="server" CssClass="Fontstyle" ReadOnly=True Width=70px BorderStyle="Groove"></asp:textbox><A 
+          <TD><asp:textbox id=txtdate runat="server" CssClass="Fontstyle" Width=70px BorderStyle="Groove"></asp:textbox><A 
             onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form2.txtdate);return false;" 
             ><IMG class=PopcalTrigger alt="" src="../../HeaderFooter/images/calendar_icon.gif" align=absMiddle border=0 ></A> <asp:requiredfieldvalidator id=Requiredfieldvalidator6 runat="server" ControlToValidate="txtdate" ErrorMessage="You Must Enter Date">*</asp:requiredfieldvalidator></TD>
           <TD>&nbsp;Remarks</TD>

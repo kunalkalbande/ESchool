@@ -83,7 +83,8 @@ namespace eschool.Library.FORMS
 			{
 				if(!Page .IsPostBack)
 				{
-					txtpdate.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
+                    txtpdate.Attributes.Add("readonly", "readonly");
+                    txtpdate.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
 					increasevalueID();
 					txtBookID.Visible=false;
 					lblBookID.Visible=true;

@@ -178,7 +178,7 @@ namespace eschool.StudentFees
 				con3.Open ();
 				NextFeeID();
 				CreateLogFiles.ErrorLog(" Form : RecuringFeesReceipt.aspx,Method  PageLoad, Userid :  "+ pass   );		
-				if(!Page .IsPostBack)
+				if(!Page.IsPostBack)
 				{
 					Cache["FromMonth"]="";
 					Cache["FromYear"]="";
@@ -269,10 +269,38 @@ namespace eschool.StudentFees
 					rdr1.Close();
 				}
 			 
-				if(! IsPostBack)
+				if(!IsPostBack)
 				{
-					#region Check Privileges
-					int i;
+                    TxtFname.Attributes.Add("readonly", "readonly");
+                    TextStream.Attributes.Add("readonly", "readonly");
+                    TextComputer.Attributes.Add("readonly", "readonly");
+                    txtFathername.Attributes.Add("readonly", "readonly");
+                    txtdf.Attributes.Add("readonly", "readonly");
+                    txttf.Attributes.Add("readonly", "readonly");
+                    txtcf.Attributes.Add("readonly", "readonly");
+                    txtsf.Attributes.Add("readonly", "readonly");
+
+                    txtaf.Attributes.Add("readonly", "readonly");
+                    txtgf.Attributes.Add("readonly", "readonly");
+                    txttrf.Attributes.Add("readonly", "readonly");
+                    txtadf.Attributes.Add("readonly", "readonly");
+
+                    txtcmf.Attributes.Add("readonly", "readonly");
+                    txtanf.Attributes.Add("readonly", "readonly");
+                    txtef.Attributes.Add("readonly", "readonly");
+                    txthf.Attributes.Add("readonly", "readonly");
+
+                    TxtAmount.Attributes.Add("readonly", "readonly");
+                    TxtPeriod.Attributes.Add("readonly", "readonly");
+                    txtchDate.Attributes.Add("readonly", "readonly");
+                    TxtcurDate.Attributes.Add("readonly", "readonly");
+
+                    txtdraftDate.Attributes.Add("readonly", "readonly");
+                    TxtcurDate1.Attributes.Add("readonly", "readonly");
+                    TxtcurDate.Attributes.Add("readonly", "readonly");
+
+                    #region Check Privileges
+                    int i;
 					string View_flag="0", Add_Flag="0", Edit_Flag="0", Del_Flag="0";
 					string Module="7";
 					string SubModule="2";

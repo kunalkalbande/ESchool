@@ -66,7 +66,7 @@
 				</TR>
 				<tr>
 					<td align="center"><b>CLASS WISE SUBJECT INSERTION</b>
-						<TABLE cellSpacing="1" cellPadding="1" borderColorLight="#663300" border="5">
+						<TABLE cellSpacing="5" cellPadding="5" borderColorLight="#663300" border="5">
 							<TBODY>
 								<asp:panel id="panclswiseid" Runat="server">
 									<TR>
@@ -104,6 +104,9 @@
 										<P>&nbsp;</P>
 									</TD>
 									<TD align="center"><asp:listbox id="ListSubjestAssigned" CssClass="ComboBox" runat="server" Width="160px" Height="180px"></asp:listbox></TD>
+								</TR>
+								<TR>
+									<TD align="center" colSpan="3">&nbsp;</TD>
 								</TR>
 								<TR>
 									<TD align="center" colSpan="3"><asp:button id="btnSubmit" runat="server" Width="78px" CssClass="formbuttonstyle" Text="Submit"

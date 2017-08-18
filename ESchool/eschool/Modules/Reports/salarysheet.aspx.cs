@@ -66,9 +66,12 @@ namespace eschool.Reports
 			try
 			{
 				
-				if(! IsPostBack)
+				if(!IsPostBack)
 				{
-					txtfromdt.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
+                    txtfromdt.Attributes.Add("readonly", "readonly");
+                    txttodt.Attributes.Add("readonly", "readonly");
+
+                    txtfromdt.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
 					txttodt.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
 					#region Check Privileges
 					int i;

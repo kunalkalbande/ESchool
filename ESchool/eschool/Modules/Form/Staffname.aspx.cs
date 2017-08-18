@@ -191,7 +191,9 @@ namespace eschool.Form
 				scon.Open ();	
 				if(!IsPostBack)
 				{
-					txtage.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
+                    txtage.Attributes.Add("readonly", "readonly");
+                    txtdojoin.Attributes.Add("readonly", "readonly");
+                    txtage.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
 					txtdojoin.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
 					fillID();
 					lblEmpID.Text=n;

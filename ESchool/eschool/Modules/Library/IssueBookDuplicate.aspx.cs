@@ -85,7 +85,9 @@ namespace eschool.Library.FORMS
 			{
 				if(!Page.IsPostBack)
 				{
-					txtIssue.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
+                    txtIssue.Attributes.Add("readonly", "readonly");
+                    txtReturn.Attributes.Add("readonly", "readonly");
+                    txtIssue.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
 					txtReturn.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
 					LibraryClass .CardGenerationClass obj=new LibraryClass.CardGenerationClass();
 					showBooKID();

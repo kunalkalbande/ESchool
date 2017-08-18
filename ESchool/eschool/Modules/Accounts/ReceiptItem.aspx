@@ -118,7 +118,7 @@
 									<TD><asp:textbox CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, false,false);"
 											id="Txtinvoice" Runat="server" MaxLength="6"></asp:textbox></TD>
 									<TD>&nbsp;Date</TD>
-									<TD><asp:textbox id="TxtBilDate" runat="server" CssClass="Fontstyle" ReadOnly="True" Width="70px"
+									<TD><asp:textbox id="TxtBilDate" runat="server" CssClass="Fontstyle" Width="70px"
 											BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.TxtBilDate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 												border="0"></A>
 										<asp:requiredfieldvalidator id="Requiredfieldvalidator6" runat="server" ControlToValidate="TxtBilDate" ErrorMessage="You Must Enter Date">*</asp:requiredfieldvalidator></TD>

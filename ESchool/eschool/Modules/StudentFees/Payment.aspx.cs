@@ -71,7 +71,9 @@ namespace eschool.Modules.StudentFees
 			{
 			  	if(!Page.IsPostBack)
 				{
-					con.Open();
+                    txtDate.Attributes.Add("readonly", "readonly");
+                    txtchkdt.Attributes.Add("readonly", "readonly");
+                    con.Open();
 					txtDate.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
 					txtchkdt.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
 					str="Select distinct Ledger_Name,Ledger_ID from Ledger_Master lm,Ledger_master_sub_grp lmsg  where  lm.sub_grp_id = lmsg.sub_grp_id and lmsg.sub_grp_name not like 'Bank%' and lmsg.sub_grp_name not like 'Cash in hand'  Order by Ledger_Name";

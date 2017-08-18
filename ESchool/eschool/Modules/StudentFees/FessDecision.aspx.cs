@@ -111,7 +111,12 @@ namespace eschool.StudentFees
 				scon.Open();
     			if(!IsPostBack)
 				{
-					panMonthly.Visible=false;
+                    Txtfromdate.Attributes.Add("readonly", "readonly");
+                    Txttodate.Attributes.Add("readonly", "readonly");
+                    txttrf.Attributes.Add("readonly", "readonly");
+                    txtlf.Attributes.Add("readonly", "readonly");
+
+                    panMonthly.Visible=false;
 					panOneTime.Visible=false;
 					panYearly.Visible=false;
 					InventoryClass obj=new InventoryClass();

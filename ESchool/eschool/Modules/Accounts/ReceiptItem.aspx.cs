@@ -125,9 +125,10 @@ namespace eschool.StudentFees
 						#endregion
 					}
 				}
-				if(! IsPostBack)
+				if(!IsPostBack)
 				{
-					DropStockID.Visible=false;
+                    TxtBilDate.Attributes.Add("readonly", "readonly");
+                    DropStockID.Visible=false;
 					#region Check Privileges
 					int i;
 					string View_flag="0", Add_Flag="0", Edit_Flag="0", Del_Flag="0";

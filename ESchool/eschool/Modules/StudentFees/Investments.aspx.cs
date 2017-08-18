@@ -90,7 +90,8 @@ namespace eschool.StudentFees
 				fillID();
 				if(! IsPostBack)
 				{
-					btnSave .Visible =true;
+                    Txtdate.Attributes.Add("readonly", "readonly");
+                    btnSave .Visible =true;
 					BtnUpdate .Visible =false;
 					DropStockID.Visible=false;
 					Txtdate.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;

@@ -54,6 +54,7 @@ namespace eschool.Modules.Reports
 			{
 				if(!Page.IsPostBack)
 				{
+                    Txtdate.Attributes.Add("readonly", "readonly");
                     Txtdate.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
 
 					#region Check Privileges

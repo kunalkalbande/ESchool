@@ -79,7 +79,7 @@
 							</TR>
 							<tr>
 								<td>&nbsp;Purchase Date</td>
-								<td><asp:TextBox ID="txtpdate" Runat="server" CssClass="Fontstyle" ReadOnly="True" Width="70px" BorderStyle="Groove"></asp:TextBox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Itemform.txtpdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+								<td><asp:TextBox ID="txtpdate" Runat="server" CssClass="Fontstyle" Width="70px" BorderStyle="Groove"></asp:TextBox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Itemform.txtpdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A></td>
 							</tr>
 							<tr>

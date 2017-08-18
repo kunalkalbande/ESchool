@@ -125,10 +125,22 @@ namespace eschool.StudentFees
 					
 					# endregion
 				}
-				if(! IsPostBack)
+				if(!IsPostBack)
 				{
-					#region Check Privileges
-					int i;
+                    txtdesig.Attributes.Add("readonly", "readonly");
+                    txtdoj.Attributes.Add("readonly", "readonly");
+                    txtperacno.Attributes.Add("readonly", "readonly");
+                    txtepfacno.Attributes.Add("readonly", "readonly");
+                    txtpenDeduction.Attributes.Add("readonly", "readonly");
+                    txtsec.Attributes.Add("readonly", "readonly");
+                    txtlwp.Attributes.Add("readonly", "readonly");
+
+                    txtAllowances.Attributes.Add("readonly", "readonly");
+                    txtGross.Attributes.Add("readonly", "readonly");
+                    txtNetSalary.Attributes.Add("readonly", "readonly");
+
+                    #region Check Privileges
+                    int i;
 					string View_flag="0", Add_Flag="0", Edit_Flag="0", Del_Flag="0";
 					string Module="7";
 					string SubModule="4";

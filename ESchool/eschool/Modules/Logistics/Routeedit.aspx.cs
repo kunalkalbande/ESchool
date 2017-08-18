@@ -123,7 +123,9 @@ namespace eschool.Logistics
 				}
 				if(!Page.IsPostBack)
 				{
-					Txtfromdate.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
+                    Txtfromdate.Attributes.Add("readonly", "readonly");
+                    Txttodate.Attributes.Add("readonly", "readonly");
+                    Txtfromdate.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
 					Txttodate.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
 				}
 				CreateLogFiles.ErrorLog(" Form : Routeedit.aspx,Method : Page_Load  userid "+pass );

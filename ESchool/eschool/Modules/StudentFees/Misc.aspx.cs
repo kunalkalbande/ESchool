@@ -93,9 +93,10 @@ namespace eschool.StudentFees
 			{
 				//string pass;
 				//pass=(Session["password"].ToString ());
-			 	if(! IsPostBack)
+			 	if(!IsPostBack)
 				{
-					fill();
+                    txtdate.Attributes.Add("readonly", "readonly");
+                    fill();
 					fillID();
 					btnUpdate.Visible =false;
 					btnSave .Visible =true;

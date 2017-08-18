@@ -117,11 +117,11 @@ function selectCountry()
           <TD>
 <asp:label id=Labelname runat="server">&nbsp;Name</asp:label></TD>
           <TD>
-<asp:textbox id=txtstudentname runat="server" CssClass="TextBoxforms" ReadOnly="True"></asp:textbox></TD>
+<asp:textbox id=txtstudentname runat="server" CssClass="TextBoxforms" ></asp:textbox></TD>
           <TD id=td3>
 <asp:label id=LabelClass runat="server">&nbsp;Class</asp:label></TD>
           <TD>
-<asp:textbox id=txtclass runat="server" CssClass="TextBoxforms" ReadOnly="True"></asp:textbox></TD></TR>
+<asp:textbox id=txtclass runat="server" CssClass="TextBoxforms" ></asp:textbox></TD></TR>
 								</asp:panel>
        							<asp:panel id="pannon" Runat="server" Visible="False">
         <TR>
@@ -135,7 +135,7 @@ function selectCountry()
           <TD id=td2>
 <asp:label id=Labelsn runat="server">&nbsp;Name</asp:label></TD>
           <TD>
-<asp:textbox id=txtempnm runat="server" CssClass="TextBoxforms" ReadOnly="True"></asp:textbox></TD></TR>
+<asp:textbox id=txtempnm runat="server" CssClass="TextBoxforms" ></asp:textbox></TD></TR>
 								</asp:panel>
 									<TR>
 										<TD align=center colSpan=6><asp:button id="btnSave" Runat="server" Text="Save" CssClass="FormButtonStyle"></asp:button>&nbsp;

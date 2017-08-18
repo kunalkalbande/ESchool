@@ -96,7 +96,7 @@
 									</asp:dropdownlist><asp:comparevalidator id="Compare1" Runat="server" ControlToValidate="Dropday" ValueToCompare="Select"
 										Operator="NotEqual" ErrorMessage="Select Day">*</asp:comparevalidator>&nbsp;&nbsp;Today 
 									Date&nbsp;&nbsp;&nbsp;
-									<asp:textbox id="TxtTodyDate" CssClass="Fontstyle" ReadOnly="True" Width="70px" BorderStyle="Groove"
+									<asp:textbox id="TxtTodyDate" CssClass="Fontstyle"  Width="70px" BorderStyle="Groove"
 										Runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.TxtTodyDate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>
 									<asp:button id="BttonSave" onclick="save" Runat="server" CssClass="formbuttonstyle" Text="Save"></asp:button>&nbsp;&nbsp;&nbsp;

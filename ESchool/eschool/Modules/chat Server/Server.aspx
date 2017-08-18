@@ -95,10 +95,12 @@
 								</tr>
 								<tr>
 									<td colSpan="4"><asp:textbox CssClass="TextBoxForms" id="listChatwin" Runat="server" Height="200px" Width="350px" TextMode="MultiLine"
-											ReadOnly="True"></asp:textbox><asp:listbox CssClass="ComboBox" id="LisLogin" onclick="holdvalue()" Runat="server" Height="200px" Width="180px"></asp:listbox></td>
+											></asp:textbox><asp:listbox CssClass="ComboBox" id="LisLogin" onclick="holdvalue()" Runat="server" Height="200px" Width="180px"></asp:listbox></td>
 								</tr>
 								<tr>
-									<td colSpan="4"><asp:textbox id="txtmessagwin" onkeyup="allowsend()" Runat="server" Width="400px" TextMode="MultiLine"></asp:textbox><asp:button id="btnSend" Runat="server" CssClass="formbuttonstyle" Text="Send"></asp:button></td>
+									<td colSpan="4"><asp:textbox id="txtmessagwin" onkeyup="allowsend()" Runat="server" Width="400px" TextMode="MultiLine"></asp:textbox>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <asp:button id="btnSend" Runat="server" CssClass="formbuttonstyle" Text="Send"></asp:button></td>
 								</tr>
 							</TBODY>
 						</table>

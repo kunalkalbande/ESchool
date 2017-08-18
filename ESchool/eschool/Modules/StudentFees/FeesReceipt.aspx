@@ -29,7 +29,7 @@
 												<asp:RequiredFieldValidator ID=valid1 Runat=server ControlToValidate=DropRecuID ErrorMessage="Please Entre StudentID">*</asp:RequiredFieldValidator>
 												&nbsp;<asp:Label ID="labname" Runat="server" Visible="False">Student Name</asp:Label>
 											<asp:textbox id="Txtsname" BorderStyle="Groove" Visible="False" runat="server" CssClass="FontStyle"
-												MaxLength="28" Width="250px" ReadOnly="True"></asp:textbox>
+												MaxLength="28" Width="250px" ></asp:textbox>
 											From Date&nbsp;<asp:textbox id="TxtFromdate" CssClass="FontStyle" BorderStyle="Groove" Runat="server" Width="70px"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.FeesReceipt.TxtFromdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 													border="0"></A> To Date&nbsp;<asp:textbox id="Txttodate" BorderStyle="Groove" CssClass="FontStyle" Runat="server" Width="70px"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.FeesReceipt.Txttodate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 													border="0"></A></td>

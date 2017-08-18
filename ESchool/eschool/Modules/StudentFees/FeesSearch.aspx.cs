@@ -131,7 +131,16 @@ namespace eschool.StudentFees
 		///</summary>
 		private void Page_Load(object sender, System.EventArgs e)
 		{
-			try
+            txtLastQtrDue.Attributes.Add("readonly", "readonly");
+            txtCurrQtrDue.Attributes.Add("readonly", "readonly");
+            txtTotalDue.Attributes.Add("readonly", "readonly");
+            txtPrevAdv.Attributes.Add("readonly", "readonly");
+            txtAdvColNextQtr.Attributes.Add("readonly", "readonly");
+            txtColCurrQtr.Attributes.Add("readonly", "readonly");
+            txtDueQtr.Attributes.Add("readonly", "readonly");
+
+
+            try
 			{
 				pass=(Session["password"].ToString ());
 			}

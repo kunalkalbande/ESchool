@@ -293,14 +293,14 @@
 								<font color="white">Total Due</font></TH>
 							<tr>
 								<td align="center"><asp:textbox id="txtLastQtrDue" style="TEXT-ALIGN: right" BorderStyle="Groove" Runat="server"
-									Width="100%" ReadOnly></asp:textbox></td>
+									Width="100%" ></asp:textbox></td>
 								<td align="center"><asp:textbox id="txtOthers" onblur="Reconcilation();" style="TEXT-ALIGN: right" BorderStyle="Groove"
 									Runat="server" Width="100%"></asp:textbox><asp:comparevalidator id="Comparevalidator4" Runat="server" Operator="DataTypeCheck" ErrorMessage="Enter A String"
 									ControlToValidate="txtOthers" Display="Dynamic" Type="Integer">*</asp:comparevalidator></td>
 								<td align="center"><asp:textbox id="txtCurrQtrDue" style="TEXT-ALIGN: right" BorderStyle="Groove" Runat="server"
-									Width="100%" ReadOnly></asp:textbox></td>
+									Width="100%" ></asp:textbox></td>
 								<td align="center"><asp:textbox id="txtTotalDue" style="TEXT-ALIGN: right" BorderStyle="Groove" Runat="server" Width="100%"
-									ReadOnly></asp:textbox></td>
+									y></asp:textbox></td>
 							<TR bgColor="#663300">
 								<TH>
 									<font color="white">Previous<br>
@@ -315,13 +315,13 @@
 									<font color="white">Due For The Qtr</font></TH></TR>
 								<tr>
 								<td align="center"><asp:textbox id="txtPrevAdv" style="TEXT-ALIGN: right" BorderStyle="Groove" Runat="server" Width="100%"
-									ReadOnly></asp:textbox></td>
+									></asp:textbox></td>
 								<td align="center"><asp:textbox id="txtAdvColNextQtr" style="TEXT-ALIGN: right" BorderStyle="Groove" Runat="server"
-									Width="100%" ReadOnly></asp:textbox></td>
+									Width="100%" ></asp:textbox></td>
 								<td align="center"><asp:textbox id="txtColCurrQtr" style="TEXT-ALIGN: right" BorderStyle="Groove" Runat="server"
-										Width="100%" ReadOnly></asp:textbox></td>
+										Width="100%" ></asp:textbox></td>
 								<td align="center"><asp:textbox id="txtDueQtr" style="TEXT-ALIGN: right" BorderStyle="Groove" Runat="server" Width="100%"
-									ReadOnly></asp:textbox></td>
+									></asp:textbox></td>
 							</tr></TD></tr> 
 							<!--<td colSpan=7>Remark For Less Amount&nbsp;<asp:textbox id="Textbox1" BorderStyle="Groove" Runat="server" Width="83%" Font-Size=8pt></asp:textbox> 
 							</tr>--></TABLE></TD></TR></TBODY></TABLE><iframe id="gToday:contrast:agenda.js" style="Z-INDEX: 101; LEFT: -500px; VISIBILITY: visible; POSITION: absolute; TOP: 0px"

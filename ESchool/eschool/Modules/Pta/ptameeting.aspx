@@ -42,7 +42,7 @@
 							</TR>
 							<TR>
 								<TD>Date&nbsp;<FONT color="#ff0033">*</FONT></TD>
-								<TD><asp:textbox id="txtdt" runat="server" CssClass="Fontstyle" ReadOnly=True Width=70px BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.ptameeting.txtdt);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+								<TD><asp:textbox id="txtdt" runat="server" CssClass="Fontstyle"  Width=70px BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.ptameeting.txtdt);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>
 									<asp:requiredfieldvalidator id="RequiredFieldValidator1" runat="server" ControlToValidate="txtdt" ErrorMessage="You Must Enter Date">*</asp:requiredfieldvalidator></TD>
 							</TR>

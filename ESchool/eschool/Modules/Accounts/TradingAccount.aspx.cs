@@ -90,8 +90,11 @@ namespace eRetail.Forms.Reports
 		/// </summary>
 		string uid = "";
 		private void Page_Load(object sender, System.EventArgs e)
-		{   
-			try
+		{
+            txtDateFrom.Attributes.Add("readonly", "readonly");
+            txtDateTo.Attributes.Add("readonly", "readonly");
+
+            try
 			{
 				uid = (Session["User_Name"].ToString());  
 			}

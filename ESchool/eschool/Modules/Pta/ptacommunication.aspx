@@ -39,30 +39,30 @@
 									 </asp:dropdownlist>&nbsp;<asp:CompareValidator ID=vialid1 Runat=server ControlToValidate=Dropmember ValueToCompare=---Select--- Operator=NotEqual ErrorMessage="Please Select Member ID">*</asp:CompareValidator></TD>
 								<TD >&nbsp;Member Name <FONT color="#ff0033" size=1></FONT>
 								</TD>
-								<TD><asp:textbox CssClass="TextBoxforms" id="txtmname" runat="server" Enabled="False" ReadOnly="True"></asp:textbox></TD>
+								<TD><asp:textbox CssClass="TextBoxforms" id="txtmname" runat="server" Enabled="False"></asp:textbox></TD>
 							</TR>
 							<TR>
 								<TD >&nbsp;Address</TD>
-								<TD ><asp:textbox CssClass="TextBoxforms" id="txtadd" runat="server" Enabled="False" ReadOnly="True"></asp:textbox></TD>
+								<TD ><asp:textbox CssClass="TextBoxforms" id="txtadd" runat="server" Enabled="False" ></asp:textbox></TD>
 								<TD >&nbsp;City</TD>
-								<TD><asp:textbox CssClass="TextBoxforms" id="txtcity" runat="server" Enabled="False" ReadOnly="True"></asp:textbox></TD>
+								<TD><asp:textbox CssClass="TextBoxforms" id="txtcity" runat="server" Enabled="False" ></asp:textbox></TD>
 							</TR>
 							<TR>
 								<TD >&nbsp;State</TD>
-								<TD ><asp:textbox CssClass="TextBoxforms" id="txtstate" runat="server" Enabled="False" ReadOnly="True"></asp:textbox></TD>
+								<TD ><asp:textbox CssClass="TextBoxforms" id="txtstate" runat="server" Enabled="False" ></asp:textbox></TD>
 								<TD >&nbsp;Country</TD>
-								<TD><asp:textbox CssClass="TextBoxforms" id="txtcountry" runat="server" Enabled="False" ReadOnly="True"></asp:textbox></TD>
+								<TD><asp:textbox CssClass="TextBoxforms" id="txtcountry" runat="server" Enabled="False" ></asp:textbox></TD>
 							</TR>
 							<TR>
 								<TD >&nbsp;Phone</TD>
 								<TD ><asp:textbox CssClass="TextBoxforms" id="txtphone" onkeypress="return GetOnlyNumbers(this, event, true,false);" runat="server"
-										Enabled="False" ReadOnly="True"></asp:textbox></TD>
+										Enabled="False" ></asp:textbox></TD>
 								<TD >&nbsp;E-mail</TD>
-								<TD><asp:textbox CssClass="TextBoxforms" id="txtemail" runat="server" Enabled="False" ReadOnly="True"></asp:textbox></TD>
+								<TD><asp:textbox CssClass="TextBoxforms" id="txtemail" runat="server" Enabled="False" ></asp:textbox></TD>
 							</TR>
 							<TR>
 								<TD >&nbsp;Meeting Date&nbsp;<FONT color="#ff0033" size=1>*</FONT></TD>
-								<TD ><asp:textbox id="txtmdate" CssClass="Fontstyle" ReadOnly=True Width=70px BorderStyle="Groove" runat="server" ></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.ptacommunication.txtmdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+								<TD ><asp:textbox id="txtmdate" CssClass="Fontstyle"  Width=70px BorderStyle="Groove" runat="server" ></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.ptacommunication.txtmdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>
 									<asp:requiredfieldvalidator id="Requiredfieldvalidator4" runat="server" ErrorMessage="You Must Enter Meeting Date "
 										ControlToValidate="txtmdate">*</asp:requiredfieldvalidator></TD>
@@ -81,7 +81,7 @@
 										<asp:ListItem Value="Post">Post</asp:ListItem>
 									</asp:dropdownlist></TD>
 								<TD >&nbsp;Sending Date&nbsp;<FONT color="#ff0033" size=1>*</FONT></TD>
-								<TD><asp:textbox id="txtsdate" runat="server" CssClass="TextBoxDate" ReadOnly="True"></asp:textbox></TD>
+								<TD><asp:textbox id="txtsdate" runat="server" CssClass="TextBoxDate" ></asp:textbox></TD>
 							</TR>
 							<TR>
 								<TD >&nbsp;Sender Name</TD>

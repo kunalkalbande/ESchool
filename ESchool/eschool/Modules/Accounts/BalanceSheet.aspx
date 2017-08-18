@@ -33,11 +33,11 @@
 								<td align="center">Date From&nbsp;
 									<asp:requiredfieldvalidator id="rfvDateFrom" runat="server" ControlToValidate="txtDateFrom" ErrorMessage="Please Select From Date From the Calender">*</asp:requiredfieldvalidator>&nbsp;
 									<asp:textbox id="txtDateFrom" runat="server" Width="70px" CssClass="FontStyle" BorderStyle="Groove"
-										ReadOnly="True"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateFrom);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+										></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateFrom);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A> Date To&nbsp;
 									<asp:requiredfieldvalidator id="rfvDateTo" runat="server" ControlToValidate="txtDateTo" ErrorMessage="Please Select To Date From the Calender">*</asp:requiredfieldvalidator>&nbsp;
 									<asp:textbox id="txtDateTo" CssClass="FontStyle" Width="70px" runat="server" BorderStyle="Groove"
-										ReadOnly="True"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateTo);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+										></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateTo);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>
 								</td>
 							</tr>

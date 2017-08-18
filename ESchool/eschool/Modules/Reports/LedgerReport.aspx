@@ -37,11 +37,11 @@
 												<TD vAlign="top" align="center"></TD>
 												<TD vAlign="middle" align="center">Date From</TD>
 												<TD vAlign="top"><asp:textbox id="txtDateFrom" runat="server" Width="70px" CssClass="FontStyle" BorderStyle="Groove"
-														ReadOnly="True"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateFrom);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+														></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateFrom);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 															border="0"></A></TD>
 												<TD vAlign="middle" align="center" colSpan="1" rowSpan="1">To</TD>
 												<TD vAlign="top"><asp:textbox id="txtDateTo" runat="server" Width="70px" CssClass="FontStyle" BorderStyle="Groove"
-														ReadOnly="True"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateTo);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+														></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateTo);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 															border="0"></A></TD>
 											</TR>
 											<TR>

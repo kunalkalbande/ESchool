@@ -63,7 +63,16 @@ namespace eschool.Pta
 		/// </summary>
 		private void Page_Load(object sender, System.EventArgs e)
 		{
-			try
+            txtmname.Attributes.Add("readonly", "readonly");
+            txtadd.Attributes.Add("readonly", "readonly");
+            txtcity.Attributes.Add("readonly", "readonly");
+            txtstate.Attributes.Add("readonly", "readonly");
+            txtcountry.Attributes.Add("readonly", "readonly");
+            txtphone.Attributes.Add("readonly", "readonly");
+            txtemail.Attributes.Add("readonly", "readonly");
+            txtmdate.Attributes.Add("readonly", "readonly");
+            txtsdate.Attributes.Add("readonly", "readonly");
+            try
 			{
 				pass=(Session["User_Name"].ToString());
 				

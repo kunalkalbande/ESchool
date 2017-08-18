@@ -42,11 +42,11 @@
 									</TR>
 									<TR>
 										<TD>&nbsp;Name</TD>
-										<TD><asp:textbox id="txtstudentname" runat="server" CssClass="TextBoxforms" Enabled="False" ReadOnly="True"></asp:textbox></TD>
+										<TD><asp:textbox id="txtstudentname" runat="server" CssClass="TextBoxforms" Enabled="False" ></asp:textbox></TD>
 										<TD>&nbsp;Hostel Fees
 										</TD>
 										<TD><asp:textbox id="txtfees" runat="server" CssClass="TextBoxforms" Width="130px" Enabled="False"
-												ReadOnly="True"></asp:textbox><FONT face="Arial" size="2"></FONT></TD>
+												></asp:textbox><FONT face="Arial" size="2"></FONT></TD>
 									</TR>
 									<TR>
 										<TD>&nbsp;Room No&nbsp;<font color="red" size="1">*</font></TD>
@@ -64,7 +64,7 @@
 									</TR>
 									<TR>
 										<TD>&nbsp;Date</TD>
-										<TD colSpan="3"><asp:textbox id="txtdate" runat="server" CssClass="Fontstyle" ReadOnly=True Width=70px BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Room_booking.txtdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+										<TD colSpan="3"><asp:textbox id="txtdate" runat="server" CssClass="Fontstyle"  Width=70px BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Room_booking.txtdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 													border="0"></A><asp:requiredfieldvalidator id="RequiredFieldValidator1" runat="server" ErrorMessage="You Must Enter Lab Date"
 												ControlToValidate="txtdate">*</asp:requiredfieldvalidator></TD>
 									</TR>

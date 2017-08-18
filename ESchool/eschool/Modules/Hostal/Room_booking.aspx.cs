@@ -66,7 +66,10 @@ namespace eschool.Hostel
 		/// </summary>
 		private void Page_Load(object sender, System.EventArgs e)
 		{
-			try
+            txtstudentname.Attributes.Add("readonly", "readonly");
+            txtfees.Attributes.Add("readonly", "readonly");
+            txtdate.Attributes.Add("readonly", "readonly");
+            try
 			{
 				pass=(Session["password"].ToString());
 			}

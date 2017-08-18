@@ -97,7 +97,10 @@ namespace eschool.Modules.Pta
 		/// </summary>
 		private void Page_Load(object sender, System.EventArgs e)
 		{
-			try
+            txtstudentname.Attributes.Add("readonly", "readonly");
+            txtclass.Attributes.Add("readonly", "readonly");
+            txtempnm.Attributes.Add("readonly", "readonly");
+            try
 			{
 				pass=(Session["User_Name"].ToString());
 			}

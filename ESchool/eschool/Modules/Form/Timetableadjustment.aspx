@@ -224,7 +224,7 @@
 							</asp:panel>
 							<TR>
 								<TD align="right">Adjust Date&nbsp;&nbsp;</TD>
-								<TD><asp:textbox id="txtadjustdate" CssClass="Fontstyle" ReadOnly=True Width=70px BorderStyle=Groove Runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Timetableadjustment.txtadjustdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+								<TD><asp:textbox id="txtadjustdate" CssClass="Fontstyle"  Width=70px BorderStyle=Groove Runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Timetableadjustment.txtadjustdate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>
 									<asp:requiredfieldvalidator id="rfvDoa" runat="server" ControlToValidate="txtadjustdate" ErrorMessage="You must enter  date of adjust Date">*</asp:requiredfieldvalidator>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								</TD>

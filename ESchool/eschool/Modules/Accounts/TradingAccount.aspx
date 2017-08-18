@@ -36,11 +36,11 @@
 					<td vAlign="top" align="center">Date From&nbsp;
 						<asp:requiredfieldvalidator id="rfvDateFrom" runat="server" ErrorMessage="Please Select From Date From the Calender"
 							ControlToValidate="txtDateFrom">*</asp:requiredfieldvalidator>&nbsp;
-						<asp:textbox id="txtDateFrom" CssClass="FontStyle" Width=70 runat="server" BorderStyle="Groove" ReadOnly="True"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateFrom);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+						<asp:textbox id="txtDateFrom" CssClass="FontStyle" Width=70 runat="server" BorderStyle="Groove" ></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateFrom);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 								border="0"></A> Date To&nbsp;
 						<asp:requiredfieldvalidator id="rfvDateTo" runat="server" ErrorMessage="Please Select To Date From the Calender"
 							ControlToValidate="txtDateTo">*</asp:requiredfieldvalidator>&nbsp;
-						<asp:textbox id="txtDateTo" CssClass="FontStyle" Width=70 runat="server" BorderStyle="Groove" ReadOnly="True"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateTo);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+						<asp:textbox id="txtDateTo" CssClass="FontStyle" Width=70 runat="server" BorderStyle="Groove" ></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateTo);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 								border="0"></A>&nbsp;&nbsp;&nbsp;
 						<asp:button id="btnShow" runat="server" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove BorderWidth=2 BackColor="#E0E0E0" Height=21 Width=100 Font-Size="X-Small"  Text="Show"></asp:button>&nbsp;&nbsp;&nbsp;
 						<asp:button id="BtnPrint" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove BorderWidth=2 BackColor="#E0E0E0" Width=85 Height=21 Font-Size="X-Small"  Text="Print " Runat="server"></asp:button>&nbsp;&nbsp;&nbsp;

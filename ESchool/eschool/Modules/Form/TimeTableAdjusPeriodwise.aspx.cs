@@ -42,7 +42,8 @@ namespace eschool.Modules.Form
 		/// </summary>
 		private void Page_Load(object sender, System.EventArgs e)
 		{
-			try
+            TxtTodyDate.Attributes.Add("readonly", "readonly");
+            try
 			{
 				pass=(Session["password"].ToString());
 				CreateLogFiles.ErrorLog (" Form : Time_TableAdjustmentperiod.aspx.cs, Method: Page_load, User: " + pass );

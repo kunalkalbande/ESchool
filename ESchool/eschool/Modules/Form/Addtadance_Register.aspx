@@ -73,7 +73,7 @@
 							if(panEmp.Visible==false)
 							{
 							//try{
-								  sql=" select staff_information.staff_id,staff_information.staff_name,staff_information.staff_type from staff_information where Staff_ID!=all(select distinct Staff_Attandance.Staff_id from Staff_Attandance where attendance_Date ='"+str1+"') and Staff_id!=all (select  staff_id from staff_leave where  getdate() between Staff_leavefromdt and DATEADD(day, 1, Staff_leavefromto) and  adjustment=1)"; 
+								  sql="select staff_information.staff_id,staff_information.staff_name,staff_information.staff_type from staff_information where Staff_ID!=all(select distinct Staff_Attandance.Staff_id from Staff_Attandance where attendance_Date ='"+GenUtil.str2MMDDYYYY(str1)+"') and Staff_id!=all (select  staff_id from staff_leave where  getdate() between Staff_leavefromdt and DATEADD(day, 1, Staff_leavefromto) and  adjustment=1)"; 
 								 SqlDtr=obj.GetRecordSet(sql);
 								
 								 while(SqlDtr.Read())

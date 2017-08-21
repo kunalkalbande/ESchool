@@ -70,6 +70,11 @@
 		}
 		
 		</script>
+        <style type="text/css">
+            .auto-style1 {                
+                margin-left: 4px;
+            }
+        </style>
 </HEAD>
 <body>
 <form id=classedit method=post runat="server">
@@ -86,9 +91,9 @@
       <TABLE id=Table1 cellSpacing=1 cellPadding=1 borderColorLight=#663300 border=5>
         <TR>
           <TD><asp:label id=Label2 runat="server">&nbsp;Class Name</asp:label></TD>
-          <TD>&nbsp;<asp:dropdownlist id=DropDownList1 runat="server" AutoPostBack="False" CssClass="ComboBox" Width="100px" onchange="showhidden(this)">
+          <TD>&nbsp;<asp:dropdownlist id=DropDownList1 runat="server" AutoPostBack="False" CssClass="auto-style1" Width="100px" onchange="showhidden(this)">
 			  <asp:ListItem Value="---Select---">---Select---</asp:ListItem>
-			  </asp:dropdownlist><asp:textbox id=txtclass runat="server" CssClass="TextBoxForms" Width="120px"></asp:textbox></TD></TR>
+			  </asp:dropdownlist><asp:textbox id=txtclass runat="server" CssClass="TextBoxForms" Width="110px"></asp:textbox></TD></TR>
         <TR>
           <TD><asp:label id=lblAddNewClass runat="server">&nbsp;Add New Class</asp:label><font color=red size=1>&nbsp;*</font></TD>
           <TD><input class=TextBoxForms id=txtOther onblur=insertvalue(this,document.classedit.tempeditclass) style="VISIBILITY: hidden; WIDTH: 0px" type=text maxLength=10 name=txtOther runat="server">

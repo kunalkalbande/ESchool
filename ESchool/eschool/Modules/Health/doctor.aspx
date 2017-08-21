@@ -64,7 +64,7 @@
 								<asp:panel id="pan1" Runat="server">
 									<TR>
 										<TD>&nbsp;Doctor ID</TD>
-										<TD><asp:dropdownlist id="Dropedit" runat="server" CssClass="ComboBox" AutoPostBack="true" Visible="False">
+										<TD><asp:dropdownlist id="Dropedit" Width = "102px" runat="server" CssClass="ComboBox" AutoPostBack="true" Visible="False">
 												<asp:ListItem Value="Select">---Select---</asp:ListItem>
 											</asp:dropdownlist>
 											<asp:Label id="lbldocid" Runat="server" ForeColor="blue"></asp:Label>&nbsp;

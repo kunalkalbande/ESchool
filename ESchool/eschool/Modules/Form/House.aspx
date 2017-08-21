@@ -54,7 +54,7 @@
 							<tr>
 								<td>&nbsp;House&nbsp;<font color="red" size="1">*</font></td>
 								<td><asp:textbox id="txtname" onblur="insertvalue(this,document.Form1.tempval)" CssClass="TextBoxForms"
-										Runat="server"></asp:textbox><asp:requiredfieldvalidator id="validtion1" Runat="server" ErrorMessage="Please Enter House" ControlToValidate="txtname">&nbsp;*</asp:requiredfieldvalidator></td>
+										Runat="server" Width="131px"></asp:textbox><asp:requiredfieldvalidator id="validtion1" Runat="server" ErrorMessage="Please Enter House" ControlToValidate="txtname">&nbsp;*</asp:requiredfieldvalidator></td>
 							</tr>
 							<tr>
 								<td align="center" colSpan="2"><asp:button id="btnsave" CssClass="formbuttonstyle" Runat="server" Text="Save"></asp:button>&nbsp;<asp:button id="btnedit" CssClass="formbuttonstyle" Runat="server" Text="Delete"></asp:button>

@@ -34,7 +34,7 @@
 							</TR>
 							<TR>
 								<TD>&nbsp;Lab ID</TD>
-								<TD><asp:dropdownlist id="DropEdit" CssClass="ComboBox" runat="server" AutoPostBack="True"></asp:dropdownlist>&nbsp;<asp:label id="Labid" ForeColor="blue" runat="server" Width="56px"></asp:label></TD>
+								<TD><asp:dropdownlist id="DropEdit" CssClass="ComboBox" runat="server" AutoPostBack="True" Width="124px"></asp:dropdownlist>&nbsp;<asp:label id="Labid" ForeColor="blue" runat="server" Width="56px"></asp:label></TD>
 							</TR>
 							<TR>
 								<TD>&nbsp;Lab Name&nbsp;<FONT color="#ff0033" size="1">*</FONT></TD>

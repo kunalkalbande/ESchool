@@ -127,7 +127,7 @@
 								<tr>
 									<TD>&nbsp;Remark</TD>
 									<TD><asp:textbox id="txtrem" Runat="server" CssClass="TextBoxForms" MaxLength="40" Height="20px"
-											TextMode="MultiLine"></asp:textbox></TD>
+											TextMode="MultiLine" Width="124px"></asp:textbox></TD>
 									<td>&nbsp;Current Date</td>
 									<td><asp:textbox id="Txtdate" Runat="server" CssClass="Fontstyle" Width=70px BorderStyle=Groove ></asp:textbox>
 										<A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Stock.Txtdate);return false;">

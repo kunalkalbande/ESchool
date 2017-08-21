@@ -219,7 +219,8 @@ namespace eschool.Library.FORMS
 				if(txtpdate.Text=="")
 					obj.pdate ="0";
 				else
-					obj.pdate =ToMMddYYYY(txtpdate.Text.Trim()).ToShortDateString();
+					//obj.pdate =ToMMddYYYY(txtpdate.Text.Trim()).ToShortDateString();
+                    obj.pdate = GenUtil.str2MMDDYYYY(txtpdate.Text);
     			if(txtremark.Text =="")
 					obj.remark  ="";
 				else

@@ -132,7 +132,7 @@
 							<TR>
 								<TD>
 									<asp:label id="tcid11" runat="server">&nbsp;Tc ID</asp:label>&nbsp;</TD>
-								<td colSpan="6"><asp:dropdownlist CssClass="ComboBox" id="DropEdit" runat="server" AutoPostBack="True" Width="83px"	Height="8px">
+								<td colSpan="6"><asp:dropdownlist CssClass="ComboBox" id="DropEdit" runat="server" AutoPostBack="True" Width="83px"	Height="15px">
 										<asp:ListItem Value="Select">Select</asp:ListItem>
 									</asp:dropdownlist>&nbsp;<asp:label id="tcid" ForeColor="blue" runat="server"></asp:label>&nbsp;
 									</td>

@@ -354,7 +354,7 @@ namespace eschool.Library.FORMS
 						bookid=bookid.Substring(0,bookid.IndexOf(":"));
 						if(iDays == 0)
 						{
-							if(DateTime.Compare(ToMMddYYYY(txtReturn.Text),ToMMddYYYY(txtIssue.Text))>0)
+							if(DateTime.Compare(ToMMddYYYY(Request.Form["txtReturn"]),ToMMddYYYY(txtIssue.Text))>0)
 							{
 								LibraryClass .IssueBook obj=new LibraryClass.IssueBook ();
 								
@@ -380,11 +380,13 @@ namespace eschool.Library.FORMS
      							if(txtIssue.Text=="")
 									obj.Date_Of_Issue ="0";
 								else
-									obj.Date_Of_Issue =ToMMddYYYY(txtIssue.Text.Trim()).ToShortDateString();
-    							if(txtReturn.Text=="")
-									obj.Return_Date="0";
-								else
-									obj.Return_Date =ToMMddYYYY(txtReturn.Text.Trim()).ToShortDateString();
+									//obj.Date_Of_Issue =ToMMddYYYY(txtIssue.Text.Trim()).ToShortDateString();
+                                obj.Date_Of_Issue = GenUtil.str2MMDDYYYY(txtIssue.Text);
+                                if (txtReturn.Text == "")
+                                    obj.Return_Date = "0";
+                                else
+                                    //obj.Return_Date =ToMMddYYYY(txtReturn.Text.Trim()).ToShortDateString();
+                                    obj.Return_Date = GenUtil.str2MMDDYYYY(txtReturn.Text);
 								obj.IssueBookID =i.Trim().ToString();
 								if(rediteaching.Checked==true)
 									obj.MemType=rediteaching.Text;

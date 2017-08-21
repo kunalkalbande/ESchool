@@ -49,8 +49,8 @@
 							</TR>
 							<TR>
 								<TD>&nbsp;City&nbsp;ID.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
-								<TD>&nbsp;<asp:label id="lblBeatNo" runat="server" ForeColor="Blue"></asp:label>
-									&nbsp;<asp:dropdownlist id="DropBeatNo" runat="server" Visible="False" AutoPostBack="True" CssClass="ComboBox"></asp:dropdownlist></TD>
+								<TD><asp:dropdownlist id="DropBeatNo" runat="server" Visible="False" AutoPostBack="True" CssClass="ComboBox" Width="60px"></asp:dropdownlist><asp:label id="lblBeatNo" runat="server" ForeColor="Blue"></asp:label>
+									</TD>
 							</TR>
 							<TR>
 								<TD>&nbsp;City&nbsp; <FONT color="#ff0000" size="1">*</FONT></TD>

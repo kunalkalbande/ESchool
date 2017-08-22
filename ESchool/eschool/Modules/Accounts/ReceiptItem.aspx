@@ -103,20 +103,20 @@
 											ErrorMessage="Please Select Name Of Item" ValueToCompare="Select">*</asp:comparevalidator></TD>
 									<td>&nbsp;Quantity&nbsp;<font color="red" size="1">*</font></td>
 									<td><asp:textbox CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, false,true);"
-											id="txtQty" onblur="Amount();" Runat="server" MaxLength="8"></asp:textbox>&nbsp;<asp:requiredfieldvalidator id="reqvali1" Runat="server" ControlToValidate="txtQty" ErrorMessage="Please Enter Quantity">*</asp:requiredfieldvalidator></td>
+											id="txtQty" onblur="Amount();" Runat="server" MaxLength="8" Width="130px"></asp:textbox>&nbsp;<asp:requiredfieldvalidator id="reqvali1" Runat="server" ControlToValidate="txtQty" ErrorMessage="Please Enter Quantity">*</asp:requiredfieldvalidator></td>
 								</tr>
 								<TR>
 									<TD>&nbsp;Rate&nbsp;<font color="red" size="1">*</font></TD>
 									<TD><asp:textbox CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, false,true);"
-											id="TxtRate" onblur="Amount();" Runat="server" MaxLength="8"></asp:textbox>&nbsp;<asp:requiredfieldvalidator id="Requiredfieldvalidator2" Runat="server" ControlToValidate="TxtRate" ErrorMessage="Please Enter Rate">*</asp:requiredfieldvalidator></TD>
+											id="TxtRate" onblur="Amount();" Runat="server" MaxLength="8" Width="130px"></asp:textbox>&nbsp;<asp:requiredfieldvalidator id="Requiredfieldvalidator2" Runat="server" ControlToValidate="TxtRate" ErrorMessage="Please Enter Rate">*</asp:requiredfieldvalidator></TD>
 									<TD>&nbsp;Amount&nbsp;<font color="red" size="1">*</font></TD>
 									<TD><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.TxtBilDate);return false;"></A><asp:textbox CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, false,true);"
-											id="TxtAmount" runat="server"></asp:textbox>&nbsp;<asp:requiredfieldvalidator id="RequiredFieldValidator1" runat="server" ControlToValidate="TxtAmount" ErrorMessage="You Must Enter Amount">*</asp:requiredfieldvalidator></TD>
+											id="TxtAmount" runat="server" Width="130px"></asp:textbox>&nbsp;<asp:requiredfieldvalidator id="RequiredFieldValidator1" runat="server" ControlToValidate="TxtAmount" ErrorMessage="You Must Enter Amount">*</asp:requiredfieldvalidator></TD>
 								</TR>
 								<TR>
 									<TD>&nbsp;Invoice No.</TD>
 									<TD><asp:textbox CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, false,false);"
-											id="Txtinvoice" Runat="server" MaxLength="6"></asp:textbox></TD>
+											id="Txtinvoice" Runat="server" MaxLength="6" Width="130px"></asp:textbox></TD>
 									<TD>&nbsp;Date</TD>
 									<TD><asp:textbox id="TxtBilDate" runat="server" CssClass="Fontstyle" Width="70px"
 											BorderStyle="Groove"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.TxtBilDate);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
@@ -137,7 +137,7 @@
 									<TD><asp:textbox id="TxtRemark" CssClass="TextBoxforms" runat="server" Width="165px"></asp:textbox></TD>
 									<td>&nbsp;Vehicle No</td>
 									<td><asp:textbox CssClass="TextBoxforms" onkeypress="return GetAnyNumber(this, event);" id="TxtVehicle"
-											Runat="server" MaxLength="12"></asp:textbox></td>
+											Runat="server" MaxLength="12" Width="130px"></asp:textbox></td>
 								</tr>
 								<!--/table>
 			<TABLE id="Table1" cellSpacing="1" cellPadding="1" borderColorLight="#663300" border="5"

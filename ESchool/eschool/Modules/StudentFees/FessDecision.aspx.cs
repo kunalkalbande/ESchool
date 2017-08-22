@@ -920,8 +920,8 @@ namespace eschool.StudentFees
 						txtef.Text=GenUtil.strNumericFormat(sdtr["envp_fee"].ToString());
 					}
 					txtremark.Text=sdtr["remarks"].ToString();
-					Txtfromdate.Text=GenUtil.str2MMDDYYYY(GenUtil.trimDate(sdtr["fromdate"].ToString()));
-					Txttodate.Text=GenUtil.str2MMDDYYYY(GenUtil.trimDate(sdtr["todate"].ToString()));
+					Txtfromdate.Text=GenUtil.str2DDMMYYYY(GenUtil.trimDate(sdtr["fromdate"].ToString()));
+					Txttodate.Text=GenUtil.str2DDMMYYYY(GenUtil.trimDate(sdtr["todate"].ToString()));
 				}
 				else
 				{

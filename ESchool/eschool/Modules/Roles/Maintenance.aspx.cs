@@ -402,8 +402,8 @@ namespace eschool.Roles
 		/// Method for clearing the form.
 		/// </summary>
 		public void Clear()
-		{
-			DropBeatNo.SelectedIndex=0;
+		{            
+			//DropBeatNo.SelectedIndex=0;
 			txtCity.Text="";
 			DropState.SelectedIndex =0;
 			DropCountry.SelectedIndex =0;

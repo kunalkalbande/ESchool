@@ -70,7 +70,7 @@
 							<TBODY>
 								<tr>
 									<td>&nbsp;Category ID</td>
-									<td><asp:dropdownlist id="dropcatid" CssClass="ComboBox" Onchange="ShowCatRank(this);" Width="130" Runat="server"></asp:dropdownlist></td>
+									<td><asp:dropdownlist id="dropcatid" CssClass="ComboBox" Onchange="ShowCatRank(this);" Width="123px" Runat="server"></asp:dropdownlist></td>
 								</tr>
 								<TR>
 									<TD>&nbsp;Category Name<font color=red size=1>&nbsp;*</font></TD>

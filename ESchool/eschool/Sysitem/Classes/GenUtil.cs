@@ -141,8 +141,8 @@ namespace eschool.Classes
 			if(!str.Trim().Equals(""))  
 			{
 				string[] strTokens =str.IndexOf("-")>0 ? str.Split(new char[] { '-' }, str.Length): str.Split(new char[] {'/'},str.Length);
-				return strTokens[1] + "/" + strTokens[0] + "/" + strTokens[2];
-			}
+                return strTokens[0] + "/" + strTokens[1] + "/" + strTokens[2];
+            }
 			else
 			return "";
 		}

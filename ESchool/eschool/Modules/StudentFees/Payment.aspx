@@ -25,13 +25,13 @@
 							</tr>
 							<tr>
 								<td>&nbsp;Payment Id</td>
-								<td colSpan="3"><asp:dropdownlist CssClass="ComboBox" id="Dropedit" Runat="server" AutoPostBack="True" Visible="False">
+								<td colSpan="3"><asp:dropdownlist CssClass="ComboBox" id="Dropedit" Runat="server" AutoPostBack="True" Visible="False" Width="150px">
 										<asp:ListItem Value="Select">Select</asp:ListItem>
 									</asp:dropdownlist><asp:label id="LblId" ForeColor="blue" Runat="server"></asp:label>&nbsp;&nbsp;<asp:button id="btnedit" Runat="server" Text="..." Width="20" CssClass="FormButtonStyle" CausesValidation="False"></asp:button>&nbsp;&nbsp;</td>
 							</tr>
 							<tr>
 								<td>&nbsp;Ledger ID &amp; Name&nbsp;<font color="red" size="1">*</font></td>
-								<td colSpan="3"><asp:dropdownlist CssClass="ComboBox" id="dropLedgid" Runat="server">
+								<td colSpan="3"><asp:dropdownlist CssClass="ComboBox" id="dropLedgid" Runat="server" Width="150px">
 										<asp:ListItem Value="Select">Select</asp:ListItem>
 									</asp:dropdownlist>&nbsp;<asp:comparevalidator id="CompVali" Runat="server" ErrorMessage="Please Select Ledger ID" ValueToCompare="Select"
 										ControlToValidate="dropLedgid" Operator="NotEqual">*</asp:comparevalidator>&nbsp;&nbsp;</td>
@@ -63,7 +63,7 @@
 								<td><asp:textbox CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, true,true);"
 										id="txtamnt" Runat="server" Width="90px" MaxLength="8"></asp:textbox>&nbsp;<asp:requiredfieldvalidator id="valireq1" Runat="server" ErrorMessage="Please Enter Amount" ControlToValidate="txtamnt">*</asp:requiredfieldvalidator></td>
 								<td>&nbsp;Narration</td>
-								<td><asp:textbox CssClass="TextBoxforms" id="txtRemark" Runat="server" MaxLength="35" Height="20px"></asp:textbox></td>
+								<td><asp:textbox CssClass="TextBoxforms" id="txtRemark" Runat="server" MaxLength="35" Height="20px" Width="167px"></asp:textbox></td>
 							</tr>
 							<tr>
 								<td align="center" colSpan="4"><asp:button id="btnsave" Runat="server" Text="Save" CssClass="formbuttonstyle"></asp:button></td>

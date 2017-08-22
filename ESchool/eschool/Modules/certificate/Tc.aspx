@@ -139,7 +139,7 @@
 							</TR>
 							<TR>
 								<TD>&nbsp;Class&nbsp;<FONT color="#ff0000" size="1">*</FONT></TD>
-								<TD><asp:dropdownlist OnChange="clear();" CssClass="ComboBox" id="Dropclass" runat="server" AutoPostBack="True">
+								<TD><asp:dropdownlist OnChange="clear();" CssClass="ComboBox" id="Dropclass" runat="server" AutoPostBack="True" Width="83px"	Height="15px">
 										<asp:ListItem Value="Select">Select</asp:ListItem>
 									</asp:dropdownlist>&nbsp;<asp:CompareValidator ID="compvalid1" Runat="server" ControlToValidate="Dropclass" Operator="NotEqual"
 										ValueToCompare="---Select---" ErrorMessage="Please Select Class">*</asp:CompareValidator></TD>

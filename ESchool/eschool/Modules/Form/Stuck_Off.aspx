@@ -65,12 +65,12 @@
 							</TR>
 							<TR>
 								<TD>&nbsp;Class&nbsp;<FONT color="#ff0000" size="1">*</FONT></TD>
-								<TD><asp:dropdownlist CssClass="ComboBox" id="Dropclass" runat="server" AutoPostBack="True">
+								<TD><asp:dropdownlist CssClass="ComboBox" id="Dropclass" runat="server" Height="15px" Width="83px" AutoPostBack="True">
 										<asp:ListItem Value="---Select---">---Select---</asp:ListItem>
 									</asp:dropdownlist>&nbsp;<asp:CompareValidator ID="compvalid1" Runat="server" ControlToValidate="Dropclass" Operator="NotEqual"
 										ValueToCompare="---Select---" ErrorMessage="Please Select Class">*</asp:CompareValidator></TD>
 								<TD>&nbsp;Student ID&nbsp;<FONT color="#ff0000" size="1">*</FONT></TD>
-								<TD><asp:dropdownlist CssClass="ComboBox" id="Dropstudentid" runat="server" Width="120px" AutoPostBack="True">
+								<TD><asp:dropdownlist CssClass="ComboBox" id="Dropstudentid" runat="server" AutoPostBack="True">
 										<asp:ListItem Value="---Select---">---Select---</asp:ListItem>
 									</asp:dropdownlist>&nbsp;<asp:CompareValidator ID="Comparevalidator1" Runat="server" ControlToValidate="Dropstudentid" Operator="NotEqual"
 										ValueToCompare="---Select---" ErrorMessage="Please Select Student ID">*</asp:CompareValidator></TD>

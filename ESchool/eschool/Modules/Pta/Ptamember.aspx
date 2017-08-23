@@ -50,7 +50,7 @@ function selectCountry()
 									</TR>
 									<TR>
 										<TD>&nbsp;Member Name&nbsp;<FONT color=#ff0033 size=1>*</FONT></TD>
-										<TD><asp:textbox CssClass="TextBoxforms" id=txtname1  onkeypress="return GetOnlyChars(this, event);" MaxLength=30 runat="server"></asp:textbox>&nbsp;<asp:requiredfieldvalidator id="RequiredFieldValidator1" runat="server" ControlToValidate="txtname1" ErrorMessage="You Must Enter Member Name ">*</asp:requiredfieldvalidator><asp:regularexpressionvalidator id=revName runat="server" ErrorMessage="You must enter in alphabetic format" ControlToValidate="txtname1" ValidationExpression="^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$">*</asp:regularexpressionvalidator></TD>
+										<TD><asp:textbox CssClass="TextBoxforms" id=txtname1  onkeypress="return GetOnlyChars(this, event);" Width="130px" MaxLength=30 runat="server"></asp:textbox>&nbsp;<asp:requiredfieldvalidator id="RequiredFieldValidator1" runat="server" ControlToValidate="txtname1" ErrorMessage="You Must Enter Member Name ">*</asp:requiredfieldvalidator><asp:regularexpressionvalidator id=revName runat="server" ErrorMessage="You must enter in alphabetic format" ControlToValidate="txtname1" ValidationExpression="^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$">*</asp:regularexpressionvalidator></TD>
 										<TD>&nbsp;Type of Member&nbsp;<FONT color=#ff0033 size=1>*</FONT></TD>
 										<TD><asp:dropdownlist id=Droptypemem CssClass="ComboBox" runat="server" AutoPostBack="true" Width="130px">
 												<asp:ListItem Value="---Select---">---Select---</asp:ListItem>
@@ -94,13 +94,13 @@ function selectCountry()
 									</TR>
 									<TR>
 										<TD>&nbsp;Phone No</TD>
-										<TD><asp:textbox CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, true,false);" MaxLength=12 id=Texthone runat="server"></asp:textbox></TD>
+										<TD><asp:textbox CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, true,false);" Width="130px" MaxLength=12 id=Texthone runat="server"></asp:textbox></TD>
 										<TD>&nbsp;Mobile No</TD>
-										<TD><asp:textbox CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, false,false);" MaxLength=12 id=txtmobile runat="server"></asp:textbox></TD>
+										<TD><asp:textbox CssClass="TextBoxforms" onkeypress="return GetOnlyNumbers(this, event, false,false);" Width="130px" MaxLength=12 id=txtmobile runat="server"></asp:textbox></TD>
 									</TR>
 									<TR>
 										<TD>&nbsp;E-mail</TD>
-										<TD><asp:textbox CssClass="TextBoxforms" id=txtemail runat="server"></asp:textbox><asp:regularexpressionvalidator id=RegExpEid ErrorMessage="You Must Enter Email ID in correct format" ControlToValidate="txtemail" Runat="server" ValidationExpression="\w+([-+.]\w+)*@[\w-]+\.(com|net|org|edu|mil)$">*</asp:regularexpressionvalidator></TD>
+										<TD><asp:textbox CssClass="TextBoxforms" id=txtemail Width="130px" runat="server"></asp:textbox><asp:regularexpressionvalidator id=RegExpEid ErrorMessage="You Must Enter Email ID in correct format" ControlToValidate="txtemail" Runat="server" ValidationExpression="\w+([-+.]\w+)*@[\w-]+\.(com|net|org|edu|mil)$">*</asp:regularexpressionvalidator></TD>
 										<TD>&nbsp;Address&nbsp;<font color=red size=1>*</font></TD>
 										<TD><asp:textbox CssClass="TextBoxforms" id=Textadd runat="server" Width="130px"  MaxLength=30></asp:textbox>&nbsp;<asp:requiredfieldvalidator id=Requiredfieldvalidator2 runat="server" ErrorMessage="You Must Enter Address " ControlToValidate="Textadd">*</asp:requiredfieldvalidator></TD>
 									</TR>

@@ -42,7 +42,7 @@
 									</TR>
 									<TR>
 										<TD>&nbsp;Name</TD>
-										<TD><asp:textbox id="txtstudentname" runat="server" CssClass="TextBoxforms" Enabled="False" ></asp:textbox></TD>
+										<TD><asp:textbox id="txtstudentname" runat="server" CssClass="TextBoxforms" Width=130px Enabled="False" ></asp:textbox></TD>
 										<TD>&nbsp;Hostel Fees
 										</TD>
 										<TD><asp:textbox id="txtfees" runat="server" CssClass="TextBoxforms" Width="130px" Enabled="False"

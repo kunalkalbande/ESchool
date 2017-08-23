@@ -29,8 +29,8 @@
 							<TR>
 								<TD align="center" colSpan="20">Date&nbsp;&nbsp;&nbsp;<asp:textbox id="txtDob" BorderStyle="Groove" CssClass="FontStyle" Runat="server" Width="70px"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Payslip.txtDob);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle" border="0"></A>&nbsp;&nbsp;&nbsp;
 								<BUTTON id="Search" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 100px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 21px; BACKGROUND-COLOR: #e1e1e1" accessKey="S" type="button" runat="server" class="FormButtonStyle"><IMG id="txtsearch" height="7" src="../../HeaderFooter/images/search.gif" width="16"> <U>S</U>earch</BUTTON>&nbsp;&nbsp;&nbsp;&nbsp;
-								<asp:button id="Button1" BorderColor="Black" BorderStyle="Groove" BackColor="#E0E0E0" runat="server" Width="85px" Height=21 CssClass="FormButtonStyle" Text="Print" BorderWidth="2px" Font-Size="X-Small"></asp:button>&nbsp;
-								<asp:button id="btnExcel" BorderColor="Black" BorderStyle="Groove" BackColor="#E0E0E0" runat="server" Width="85px" Height=21 CssClass="FormButtonStyle" Text="Excel" BorderWidth="2px" Font-Size="X-Small"></asp:button>&nbsp;&nbsp;</TD>
+								<asp:button id="Button1" BorderColor="Black" BorderStyle="Groove"  runat="server" Width="85px" Height=21 CssClass="FormButtonStyle" Text="Print"  Font-Size="X-Small"></asp:button>&nbsp;
+								<asp:button id="btnExcel" BorderColor="Black" BorderStyle="Groove" runat="server" Width="85px" Height=21 CssClass="FormButtonStyle" Text="Excel"  Font-Size="X-Small"></asp:button>&nbsp;&nbsp;</TD>
 							</TR>
 							<%
 							if(flage==1)

@@ -44,11 +44,11 @@
 							<TR>
 								<TD align="center">
 									<asp:button id="btnShow" CssClass="FormButtonStyle" BorderColor="black" BorderStyle="Groove"
-										BorderWidth="2" BackColor="#E0E0E0" Width="100" Font-Size="X-Small" runat="server" Text="View"></asp:button>&nbsp;&nbsp;&nbsp;
+										  Width="100" Font-Size="X-Small" runat="server" Text="View"></asp:button>&nbsp;&nbsp;&nbsp;
 									<asp:button id="BtnPrint" CssClass="FormButtonStyle" BorderColor="black" BorderStyle="Groove"
-										BorderWidth="2" BackColor="#E0E0E0" Width="85" Font-Size="X-Small" Text="Print" Runat="server"></asp:button>&nbsp;&nbsp;&nbsp;
+										  Width="85" Font-Size="X-Small" Text="Print" Runat="server"></asp:button>&nbsp;&nbsp;&nbsp;
 									<asp:button id="btnExcel" Text="Excel" CssClass="FormButtonStyle" BorderColor="black" BorderStyle="Groove"
-										BorderWidth="2" BackColor="#E0E0E0" Width="85" Font-Size="X-Small" Runat="server"></asp:button>&nbsp;
+										  Width="85" Font-Size="X-Small" Runat="server"></asp:button>&nbsp;
 								</TD>
 							</TR>
 						</table>

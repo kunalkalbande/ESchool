@@ -35,10 +35,10 @@
 							<tr>
 								<TD align="center" colSpan="6"><BUTTON class="FormButtonStyle" id="Search" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 120px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; BACKGROUND-COLOR: #e1e1e1"
 										accessKey="S" type="button" runat="server"><IMG id="txtsearch" height="7" src="../../HeaderFooter/images/search.gif" width="16">
-										<U>S</U>earch</BUTTON>&nbsp;&nbsp;&nbsp;&nbsp;<asp:button id="Button1" BorderColor="Black" BorderStyle="Groove" BorderWidth="2px" BackColor="#E0E0E0"
+										<U>S</U>earch</BUTTON>&nbsp;&nbsp;&nbsp;&nbsp;<asp:button id="Button1" BorderColor="Black" BorderStyle="Groove" 
 										runat="server" Width="94px" CssClass="FormButtonStyle" Text="Print" Font-Size="X-Small"></asp:button>
 									&nbsp;&nbsp;&nbsp;&nbsp;
-									<asp:button id="Exel" BorderColor="Black" BorderStyle="Groove" BorderWidth="2px" BackColor="#E0E0E0"
+									<asp:button id="Exel" BorderColor="Black" BorderStyle="Groove" 
 										runat="server" Width="94px" CssClass="FormButtonStyle" Text="Exel" Font-Size="X-Small"></asp:button></TD>
 							</tr>
 							<!--<TR>

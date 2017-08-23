@@ -34,26 +34,26 @@
 						<TABLE borderColorLight="#663300" border="5">
 							<TR>
 								<TD>&nbsp;Candidate ID</TD>
-								<TD><asp:dropdownlist id="ddbook" runat="server" AutoPostBack="True" CssClass="ComboBox">
+								<TD><asp:dropdownlist id="ddbook" runat="server" AutoPostBack="True" CssClass="ComboBox" Width="125px">
 										<asp:ListItem Value="---Select---">---Select---</asp:ListItem>
 									</asp:dropdownlist><asp:comparevalidator id="cvCandidateId" runat="server" ValueToCompare="---Select---" ErrorMessage="Yoy must select the candidate Id"
 										ControlToValidate="ddbook" Operator="NotEqual">*</asp:comparevalidator></TD>
 							</TR>
 							<TR>
 								<TD>&nbsp;Book ID</TD>
-								<TD><asp:textbox id="TxtBookID" runat="server" CssClass="TextBoxForms" Enabled="False" Width="65px"></asp:textbox><asp:dropdownlist id="DropBookID" AutoPostBack="True" Width="50" Runat="server" Visible="false"></asp:dropdownlist></TD>
+								<TD><asp:textbox id="TxtBookID" runat="server" CssClass="TextBoxForms" Enabled="False" Width="125px"></asp:textbox><asp:dropdownlist id="DropBookID" AutoPostBack="True" Width="50" Runat="server" Visible="false"></asp:dropdownlist></TD>
 							</TR>
 							<TR>
 								<TD>&nbsp;Book Name</TD>
-								<TD><asp:textbox id="lblBookName" CssClass="TextBoxForms" Enabled="False" Width="250px" Runat="server"></asp:textbox></TD>
+								<TD><asp:textbox id="lblBookName" CssClass="TextBoxForms" Enabled="False" Width="125px" Runat="server"></asp:textbox></TD>
 							</TR>
 							<TR>
 								<TD>&nbsp;Date OF Issue</TD>
-								<TD><asp:textbox id="TxtDateofissue" CssClass="TextBoxForms" Enabled="False" Width="100px" Runat="server"></asp:textbox></TD>
+								<TD><asp:textbox id="TxtDateofissue" CssClass="TextBoxForms" Enabled="False" Width="125px" Runat="server"></asp:textbox></TD>
 							</TR>
 							<TR>
 								<TD>&nbsp;Return Date</TD>
-								<TD><asp:textbox id="TxtReturnDate" CssClass="TextBoxForms" Enabled="False" Width="100px" Runat="server"></asp:textbox></TD>
+								<TD><asp:textbox id="TxtReturnDate" CssClass="TextBoxForms" Enabled="False" Width="125px" Runat="server"></asp:textbox></TD>
 							</TR>
 							<TR>
 								<TD align="center" colSpan="3">&nbsp;

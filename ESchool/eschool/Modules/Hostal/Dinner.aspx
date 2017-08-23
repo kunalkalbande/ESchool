@@ -37,7 +37,7 @@
 							<TR>
 								<TD>&nbsp;Time&nbsp;<font color=red size=1>*</font></TD>
 								<TD>
-									<asp:dropdownlist CssClass="ComboBox" id="Droptime" Width=130px runat="server" AutoPostBack="True">
+									<asp:dropdownlist CssClass="ComboBox" id="Droptime" Width=123px runat="server" AutoPostBack="True">
 										<asp:ListItem Value="---Select---">---Select---</asp:ListItem>
 										<asp:ListItem Value="Break Fast">Break Fast</asp:ListItem>
 										<asp:ListItem Value="Lunch">Lunch</asp:ListItem>
@@ -47,7 +47,7 @@
 										ValueToCompare="---Select---" Operator="NotEqual">*</asp:CompareValidator></TD>
 								<TD >&nbsp;Day&nbsp;<font color=red size=1>*</font></TD>
 								<TD >
-									<asp:DropDownList CssClass="ComboBox" Width=130px id="Dropblday" runat="server" AutoPostBack="True">
+									<asp:DropDownList CssClass="ComboBox" Width=123px id="Dropblday" runat="server" AutoPostBack="True">
 										<asp:ListItem Value="---Select---">---Select---</asp:ListItem>
 										<asp:ListItem Value="Monday">Monday</asp:ListItem>
 										<asp:ListItem Value="Tuesday">Tuesday</asp:ListItem>

@@ -35,13 +35,10 @@
 											</asp:dropdownlist></td>
 									</tr>
 									<tr align="center">
-										<td><asp:button id="BtnShow" BorderColor="Black" Height="21" BorderStyle="Groove" BorderWidth="2px"
-												BackColor="#E0E0E0" Runat="server" CssClass="FormButtonStyle" Width="100px" Font-Size="X-Small"
+										<td><asp:button id="BtnShow" BorderColor="Black" Height="21" BorderStyle="Groove"  Runat="server" CssClass="FormButtonStyle" Width="100px" Font-Size="X-Small"
 												Text="Show"></asp:button>
-											&nbsp;&nbsp;&nbsp;<asp:button Height="21" id="BtnPrint" BorderColor="Black" BorderStyle="Groove" BorderWidth="2px"
-												BackColor="#E0E0E0" Runat="server" CssClass="FormButtonStyle" Width="85px" Font-Size="X-Small" Text="Print"></asp:button>
-											&nbsp;&nbsp;&nbsp;<asp:button Height="21" id="btnexcel" BorderColor="Black" BorderStyle="Groove" BorderWidth="2px"
-												BackColor="#E0E0E0" Runat="server" CssClass="FormbuttonStyle" Width="85px" Font-Size="X-Small" Text="Excel"></asp:button>
+											&nbsp;&nbsp;&nbsp;<asp:button Height="21" id="BtnPrint" BorderColor="Black" BorderStyle="Groove"  Runat="server" CssClass="FormButtonStyle" Width="85px" Font-Size="X-Small" Text="Print"></asp:button>
+											&nbsp;&nbsp;&nbsp;<asp:button Height="21" id="btnexcel" BorderColor="Black" BorderStyle="Groove"  Runat="server" CssClass="FormbuttonStyle" Width="85px" Font-Size="X-Small" Text="Excel"></asp:button>
 										</td>
 									</tr>
 									<asp:Panel ID="panlopen" Runat="server" Visible="False">

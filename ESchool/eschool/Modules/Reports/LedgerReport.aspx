@@ -57,12 +57,12 @@
 											<TR>
 											<tr>
 												<TD align="center" colSpan="11"><asp:button id="cmdrpt" Height="21px" runat="server" Text="Show " CssClass="FormButtonStyle"
-														BorderColor="black" BorderStyle="Groove" BorderWidth="2" BackColor="#E0E0E0" Width="100px" Font-Size="X-Small"></asp:button>&nbsp;&nbsp;&nbsp;
+														BorderColor="black" BorderStyle="Groove"  Width="100px" Font-Size="X-Small"></asp:button>&nbsp;&nbsp;&nbsp;
 													<asp:button id="BtnPrint" Height="21px" Text="Print" Runat="server" CssClass="FormButtonStyle"
-														BorderColor="black" BorderStyle="Groove" BorderWidth="2" BackColor="#E0E0E0" Width="85px"
+														BorderColor="black" BorderStyle="Groove"  Width="85px"
 														Font-Size="X-Small"></asp:button>&nbsp;&nbsp;&nbsp;
 													<asp:button id="btnExcel" Height="21px" Text="Excel" Runat="server" CssClass="FormButtonStyle"
-														BorderColor="black" BorderStyle="Groove" BorderWidth="2" BackColor="#E0E0E0" Width="85px"
+														BorderColor="black" BorderStyle="Groove"  Width="85px"
 														Font-Size="X-Small"></asp:button>&nbsp;&nbsp;</TD>
 											</tr>
 										</TABLE>

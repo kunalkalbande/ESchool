@@ -25,13 +25,13 @@
 								</tr>
 								<tr>
 									<td>&nbsp;Receipt Id</td>
-									<td colSpan="3"><asp:dropdownlist id="Dropedit" Runat="server" CssClass="ComboBox" AutoPostBack="True" Visible="False">
+									<td colSpan="3"><asp:dropdownlist id="Dropedit" Runat="server" CssClass="ComboBox" AutoPostBack="True" Visible="False" Width="169px">
 											<asp:ListItem Value="Select">Select</asp:ListItem>
 										</asp:dropdownlist>&nbsp;<asp:label id="LblId" ForeColor="blue" Runat="server"></asp:label>&nbsp;<asp:button id="btnedit" Runat="server" Text="..." Width="20" CssClass="FormButtonStyle" CausesValidation="False"></asp:button>&nbsp;</td>
 								</tr>
 								<tr>
 									<td>&nbsp;Received From<font color="red">*</font></td>
-									<td colSpan="3"><asp:dropdownlist CssClass="ComboBox" id="dropLedgid" Runat="server">
+									<td colSpan="3"><asp:dropdownlist CssClass="ComboBox" id="dropLedgid" Runat="server" Width="169px">
 											<asp:ListItem Value="Select">Select</asp:ListItem>
 										</asp:dropdownlist>&nbsp;<asp:comparevalidator id="CompVali" Runat="server" ErrorMessage="Please Select Ledger ID" ValueToCompare="Select"
 											ControlToValidate="dropLedgid" Operator="NotEqual">*</asp:comparevalidator>&nbsp;&nbsp;</td>

@@ -40,10 +40,10 @@
 										<asp:ListItem Value="Bio Group">Bio Group</asp:ListItem>
 										<asp:ListItem Value="Math Group">Math Group</asp:ListItem>
 										<asp:ListItem Value="Commerce Group">Commerce Group</asp:ListItem>
-									</asp:dropdownlist>&nbsp;&nbsp;&nbsp;&nbsp;<asp:button id="btnShow" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" CssClass="formbuttonstyle"
-										Width="100px" Runat="server" Text="Show" Height="21" Font-Size="X-Small"></asp:button>&nbsp;&nbsp;<asp:button id="btnPrint" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" CssClass="formbuttonstyle"
-										Width="85px" Runat="server" Text="Print" Height="21" Font-Size="X-Small"></asp:button>&nbsp;&nbsp;<asp:button id="Btnexcel" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" CssClass="formbuttonstyle"
-										Width="85px" Runat="server" Text="Excel" Height="21" Font-Size="X-Small"></asp:button></td>
+									</asp:dropdownlist>&nbsp;&nbsp;&nbsp;&nbsp;<asp:button id="btnShow" BorderColor="Black"  CssClass="formbuttonstyle"
+										Width="100px" Runat="server" Text="Show" Height="21" ></asp:button>&nbsp;&nbsp;<asp:button id="btnPrint" BorderColor="Black"  CssClass="formbuttonstyle"
+										Width="85px" Runat="server" Text="Print" Height="21" ></asp:button>&nbsp;&nbsp;<asp:button id="Btnexcel" BorderColor="Black"  CssClass="formbuttonstyle"
+										Width="85px" Runat="server" Text="Excel" Height="21" ></asp:button></td>
 							</tr>
 							<%					
 								try

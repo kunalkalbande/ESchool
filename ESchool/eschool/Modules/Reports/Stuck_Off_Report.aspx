@@ -38,8 +38,8 @@
 								&nbsp;<asp:textbox id="TxtTodt" CssClass="FontStyle" BorderStyle=Groove Width="70px" Runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Tcrpt.TxtTodt);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>&nbsp;
 								&nbsp;<BUTTON class="FormButtonStyle" id="Search" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 100px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 21px; BACKGROUND-COLOR: #e1e1e1" accessKey="S" type="button" runat="server"><IMG id="txtsearch" height="7" src="../../HeaderFooter/images/search.gif" width="16"><U>S</U>earch</BUTTON>&nbsp;&nbsp;
-									  <asp:button id="BtnPrint" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" CssClass="FormButtonStyle" Width="85px" Font-Size="X-Small" Height=21 Runat="server" Text="Excel"></asp:button>&nbsp;&nbsp;
-									<asp:button id="btnPrintD" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" CssClass="FormButtonStyle"	Width="85px" Font-Size="X-Small" Height=21 Runat="server" Text="Print"></asp:button></td></tr>
+									  <asp:button id="BtnPrint" BorderColor="Black" CssClass="FormButtonStyle" Width="85px" Height=22px Runat="server" Text="Excel"></asp:button>&nbsp;&nbsp;
+									<asp:button id="btnPrintD" BorderColor="Black" CssClass="FormButtonStyle"	Width="85px" Height=22px Runat="server" Text="Print"></asp:button></td></tr>
 							<asp:Panel ID=pangrid Runat=server Visible=False>
 							<TR>
 								<%i=1;%>

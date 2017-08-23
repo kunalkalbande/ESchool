@@ -45,11 +45,11 @@
 			<uc1:header id="Header1" runat="server"></uc1:header>
 			<table id="Table2" height="228" width="778" align="center">
 				<tr>
-					<td align="center"><asp:label id="lblDetails" runat="server" ForeColor="Transparent"><b>EMPLOYEE 
+					<td align="center"><asp:label id="lblDetails" runat="server"><b>EMPLOYEE 
 								DETAILS</b></asp:label>
 						<TABLE id="Table1" cellSpacing="1" cellPadding="1" borderColorLight="#663300" border="5">
 							<TR>
-								<TD colSpan="4"><asp:label id="Label4" runat="server" ForeColor="Red">asterisk (*) fields are mandatory</asp:label><INPUT id="txtState" style="VISIBILITY: hidden; WIDTH: 48px; HEIGHT: 10px" type="text"
+								<TD colSpan="4"><INPUT id="txtState" style="VISIBILITY: hidden; WIDTH: 48px; HEIGHT: 10px" type="text"
 										size="2" name="txtState" runat="server"><INPUT id="txtCity" style="VISIBILITY: hidden; WIDTH: 48px; HEIGHT: 10px" type="text" size="2"
 										name="txtCity" runat="server"><INPUT id="txtState1" style="VISIBILITY: hidden; WIDTH: 48px; HEIGHT: 10px" type="text"
 										size="2" name="txtState1" runat="server"><INPUT id="txtCity1" style="VISIBILITY: hidden; WIDTH: 48px; HEIGHT: 10px" type="text"
@@ -57,7 +57,12 @@
 										name="txtName" runat="server"><input id="getUrl" style="WIDTH: 8px; HEIGHT: 22px" type="hidden" size="1" name="getUrl"
 										runat="server">
 								</TD>
-								<td vAlign="baseline" align="center" colSpan="2" rowSpan="5"><asp:image id="ImgUrl1" runat="server" Height="115px"></asp:image></td>
+								<td vAlign="baseline" align="center" colSpan="2" rowSpan="6"><asp:image id="ImgUrl1" runat="server" Height="115px"></asp:image></td>
+							</TR>
+							<TR>
+								<TD colspan="4">
+									<asp:label id="Label4" runat="server" ForeColor="Red">asterisk (*) fields are mandatory</asp:label>
+								</TD>
 							</TR>
 							<TR>
 								<TD>
@@ -110,7 +115,7 @@
 								</TD>
 								<TD>
 									<asp:textbox id="txtstaffeducation" MaxLength="10" onkeypress="return GetAnyNumber(this, event);"
-										CssClass="TextBoxDate" Width="90px" Runat="server"></asp:textbox><asp:requiredfieldvalidator id="RequiredFieldValidator4" ControlToValidate="txtstaffeducation" ErrorMessage="You Must Enter Qualification "
+										CssClass="TextBoxDate" Width="101px" Runat="server"></asp:textbox><asp:requiredfieldvalidator id="RequiredFieldValidator4" ControlToValidate="txtstaffeducation" ErrorMessage="You Must Enter Qualification "
 										Runat="server">*</asp:requiredfieldvalidator>
 								</TD>
 								<td>
@@ -126,7 +131,7 @@
 									<asp:label id="lbldob" runat="server">&nbsp;Date of Birth</asp:label>
 								</td>
 								<td>
-									<asp:textbox id="txtage" CssClass="Fontstyle" Width="70px" BorderStyle="Groove" Runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtage);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+									<asp:textbox id="txtage" CssClass="Fontstyle" Width="80px" BorderStyle="Groove" Runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtage);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>
 								</td>
 								<td colSpan="4">
@@ -140,14 +145,14 @@
 								</td>
 								<td>
 									<asp:textbox id="txtperacno" onkeypress="return GetOnlyNumbers(this, event, false,false);" MaxLength="12"
-										onblur="compareValue(this)" CssClass="TextBoxDate" Runat="server"></asp:textbox>
+										onblur="compareValue(this)" CssClass="TextBoxDate" Runat="server" Width="101px"></asp:textbox>
 								</td>
 								<td>
 									&nbsp;E.P.F. Ac No
 								</td>
 								<td>
 									<asp:textbox id="txtepfacno" onblur="compareValue(this)" MaxLength="12" BorderStyle="Groove"
-										CssClass="TextBoxDate" Runat="server"></asp:textbox>
+										CssClass="TextBoxDate" Runat="server" Width="93px"></asp:textbox>
 								</td>
 								<td>
 									<asp:label id="lblmaritialstatus" runat="server">&nbsp;Maritial Status&nbsp;</asp:label>
@@ -164,7 +169,7 @@
 									<asp:label id="lbldojoin" runat="server">&nbsp;Date of Joining</asp:label>
 								</td>
 								<td>
-									<asp:textbox id="txtdojoin" CssClass="Fontstyle" Width="70px" BorderStyle="Groove" Runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtdojoin);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
+									<asp:textbox id="txtdojoin" CssClass="Fontstyle" Width="80px" BorderStyle="Groove" Runat="server"></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtdojoin);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 											border="0"></A>
 								</td>
 								<TD>
@@ -195,7 +200,7 @@
 								</TD>
 								<TD><asp:label id="lblPerPin" runat="server">&nbsp;Pin Code</asp:label></TD>
 								<TD colSpan="3"><asp:textbox id="txtppin" MaxLength="8" onkeypress="return GetOnlyNumbers(this, event, false,false);"
-										runat="server" CssClass="TextBoxDate"></asp:textbox></TD>
+										runat="server" CssClass="TextBoxDate" Width="93px"></asp:textbox></TD>
 							</TR>
 							<TR>
 								<TD><asp:label id="lblPerCountry" runat="server">&nbsp;City</asp:label>&nbsp;<font color="red" size="1">*</font></TD>
@@ -211,7 +216,7 @@
 								<TD><asp:textbox id="txtloaddress" runat="server" MaxLength="40" CssClass="TextBoxDate" Width="232px"></asp:textbox></TD>
 								<TD><asp:label id="lblLoPin" runat="server">&nbsp;Pin Code</asp:label></TD>
 								<TD colSpan="3"><asp:textbox id="txtlpin" onkeypress="return GetOnlyNumbers(this, event, false,false);" MaxLength="8"
-										runat="server" CssClass="TextBoxDate"></asp:textbox></TD>
+										runat="server" CssClass="TextBoxDate" Width="93px"></asp:textbox></TD>
 							</TR>
 							<TR>
 								<TD><asp:label id="lblLoCountry" runat="server">&nbsp;City</asp:label></TD>
@@ -227,17 +232,17 @@
 										ValidationExpression="^[\w-]+@[\w-]+\.(com|net|org|edu|mil)$">*</asp:regularexpressionvalidator></TD>
 								<TD><asp:label id="lblMobNo" runat="server">&nbsp;Mobile No</asp:label></TD>
 								<TD><asp:textbox id="txtsmobile" MaxLength="12" onkeypress="return GetOnlyNumbers(this, event, false,false);"
-										runat="server" CssClass="TextBoxDate"></asp:textbox><asp:regularexpressionvalidator id="Regularexpressionvalidator1" runat="server" ErrorMessage="Contact No. Between 6-10 Digits"
+										runat="server" CssClass="TextBoxDate" Width="93px"></asp:textbox><asp:regularexpressionvalidator id="Regularexpressionvalidator1" runat="server" ErrorMessage="Contact No. Between 6-10 Digits"
 										ControlToValidate="txtsmobile" ValidationExpression="\d{6,12}">*</asp:regularexpressionvalidator></TD>
 								<TD><asp:label id="lblPhNo" runat="server">&nbsp;Phone No</asp:label></TD>
 								<TD><asp:textbox id="txtsphone" MaxLength="12" onkeypress="return GetOnlyNumbers(this, event, false,false);"
-										runat="server" CssClass="TextBoxDate"></asp:textbox><asp:regularexpressionvalidator id="RegularExpressionValidator2" runat="server" ErrorMessage="Contact No. Between 6-10 Digits"
+										runat="server" CssClass="TextBoxDate" Width="93px"></asp:textbox><asp:regularexpressionvalidator id="RegularExpressionValidator2" runat="server" ErrorMessage="Contact No. Between 6-10 Digits"
 										ControlToValidate="txtsphone" ValidationExpression="\d{6,12}">*</asp:regularexpressionvalidator></TD>
 							</TR>
 							<TR>
 								<TD><asp:label id="lblSub" runat="server">&nbsp;Subject Taken</asp:label></TD>
-								<TD><asp:listbox id="lstSubject" runat="server" Width="100px" Font-Names="Microsoft Sans Serif" SelectionMode="Multiple"
-										Rows="1" Font-Size="8pt"></asp:listbox></TD>
+								<TD><asp:listbox id="lstSubject" runat="server" Width="150px" Font-Names="Microsoft Sans Serif" SelectionMode="Multiple"
+										Rows="1" Font-Size="8pt" Height="60px"></asp:listbox></TD>
 								<td>&nbsp;Nature Of Appoint.</td>
 								<td colSpan="3"><asp:dropdownlist CssClass="ComboBox" id="DropNatApp" Width="150px" Runat="server">
 										<asp:ListItem Value="Permanent">Permanent</asp:ListItem>

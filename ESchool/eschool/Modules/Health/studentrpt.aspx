@@ -32,8 +32,8 @@
 										Width="180px"></asp:textbox>&nbsp; &nbsp;<BUTTON class="FormButtonStyle" id="Search" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 100px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 21px; BACKGROUND-COLOR: #e1e1e1"
 										accessKey="S" type="button" runat="server"><IMG id="txtsearch" style="WIDTH: 16px; HEIGHT: 7px" height="7" src="../../HeaderFooter/images/search.gif"
 											width="16"> <U>S</U>earch</BUTTON>&nbsp; &nbsp;<button class="FormButtonStyle" id="btnExcel" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 85px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 21px; BACKGROUND-COLOR: #e1e1e1"
-										type="button" runat="server">Excel</button>&nbsp; &nbsp;<asp:button id="BtnPrint" CssClass="FormButtonStyle" Height="21px" Width="85px" BackColor="#e1e1e1"
-										Runat="server" BorderStyle="Groove" Font-Size="X-Small" Text="Print"></asp:button></TD>
+										type="button" runat="server">Excel</button>&nbsp; &nbsp;<asp:button id="BtnPrint" CssClass="FormButtonStyle" Height="21px" Width="85px" 
+										Runat="server" BorderStyle="Groove" Text="Print"></asp:button></TD>
 							</TR>
 							<asp:Panel ID="panal1" Runat="server" Visible="false">
         <TR>

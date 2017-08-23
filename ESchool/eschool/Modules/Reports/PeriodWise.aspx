@@ -44,9 +44,9 @@
 										<asp:ListItem Value="VII">VII</asp:ListItem>
 										<asp:ListItem Value="VIII">VIII</asp:ListItem>
 									</asp:dropdownlist>&nbsp;
-								&nbsp;&nbsp;<asp:button id="btnShow" Runat="server" Text="Show" CssClass="FormButtonStyle" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Width="100px" Height=21 Font-Size="X-Small"></asp:button>&nbsp;&nbsp;
-								&nbsp;&nbsp;<asp:button id="btnPrint" Runat="server" Text="Print" CssClass="FormButtonStyle" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Width="85px" Height=21 Font-Size="X-Small"></asp:button>&nbsp;&nbsp;&nbsp;&nbsp;
-								&nbsp;&nbsp;<asp:button id="Btnexcel" Runat="server" Text="Excel" CssClass="FormButtonStyle" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Width="85px" Height=21 Font-Size="X-Small"></asp:button>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								&nbsp;&nbsp;<asp:button id="btnShow" Runat="server" Text="Show" CssClass="FormButtonStyle" BorderColor="Black" Width="100px" Height=21 ></asp:button>&nbsp;&nbsp;
+								&nbsp;&nbsp;<asp:button id="btnPrint" Runat="server" Text="Print" CssClass="FormButtonStyle" BorderColor="Black" Width="85px" Height=21 ></asp:button>&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;<asp:button id="Btnexcel" Runat="server" Text="Excel" CssClass="FormButtonStyle" BorderColor="Black" Width="85px" Height=21 ></asp:button>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 							</tr>
 							<asp:Panel ID=pangrid Runat=server Visible=False>
         <TR>

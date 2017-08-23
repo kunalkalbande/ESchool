@@ -74,8 +74,8 @@
 											<asp:ListItem Value="2019:2020">2019:2020</asp:ListItem>
 											<asp:ListItem Value="2020:2021">2020:2021</asp:ListItem>
 										</asp:dropdownlist>
-										&nbsp;<asp:button id="btnShow" Runat="server" CssClass="FormButtonStyle" BorderColor=black Height=21 BorderStyle=Groove BorderWidth=2 BackColor="#E0E0E0" Width=100 Font-Size="X-Small" Text="Show"></asp:button>&nbsp;
-										<asp:Button ID=btSave Runat=server CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove Height=21 BorderWidth=2 BackColor="#E0E0E0" Width=85 Font-Size="X-Small" OnClick="updateclass" Text=Submit></asp:Button>&nbsp;&nbsp;</td>
+										&nbsp;<asp:button id="btnShow" Runat="server" CssClass="FormButtonStyle" BorderColor=black Height=21 BorderStyle=Groove Width=100  Text="Show"></asp:button>&nbsp;
+										<asp:Button ID=btSave Runat=server CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove Height=21 Width=85  OnClick="updateclass" Text=Submit></asp:Button>&nbsp;&nbsp;</td>
 								</tr>
 								<%
 									if(flage==true)

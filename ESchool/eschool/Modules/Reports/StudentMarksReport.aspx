@@ -122,10 +122,10 @@
 								</tr>
 								<tr>
 									<td align=center colspan=26>
-										<asp:Button ID=btnShow Runat=server Text="Show" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove BorderWidth=2 BackColor="#E0E0E0" Height=21 Width=100 Font-Size="X-Small"></asp:Button>
-										&nbsp;<asp:Button ID="btnSubmit" Runat=server Text="Print" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove BorderWidth=2 BackColor="#E0E0E0" Height=21 Width=85 Font-Size="X-Small"></asp:Button>
+										<asp:Button ID=btnShow Runat=server Text="Show" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove  Height=21 Width=100 ></asp:Button>
+										&nbsp;<asp:Button ID="btnSubmit" Runat=server Text="Print" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove Height=21 Width=85 ></asp:Button>
 										&nbsp;<asp:Button ID="btnEdit" Runat=server Text="Edit" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove BorderWidth=2 BackColor="#E0E0E0" Width=85 Height=21 Font-Size="X-Small" Visible=False></asp:Button>
-										&nbsp;<asp:Button ID="Btnexcel" Runat=server Text="Excel" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove BorderWidth=2 BackColor="#E0E0E0" Width=85 Height=21 Font-Size="X-Small"></asp:Button>
+										&nbsp;<asp:Button ID="Btnexcel" Runat=server Text="Excel" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove  Width=85 Height=21 ></asp:Button>
 									</td>
 								</tr>
 								<%		

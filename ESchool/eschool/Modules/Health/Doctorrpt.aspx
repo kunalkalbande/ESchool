@@ -35,7 +35,7 @@
 										Enabled="False"></asp:textbox>
 									&nbsp;<BUTTON class="FormButtonStyle" id="Search" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 100px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 21px; BACKGROUND-COLOR: #e1e1e1"
 										accessKey="S" type="button" runat="server"><IMG id="txtsearch" style="WIDTH: 16px; HEIGHT: 7px" height="7" src="../../HeaderFooter/images/search.gif"
-											width="16"> <U>S</U>earch</BUTTON> &nbsp;<asp:button id="BtnPrint" Width="85px" CssClass="FormButtonStyle" BackColor="#e1e1e1" Runat="server"
+											width="16"> <U>S</U>earch</BUTTON> &nbsp;<asp:button id="BtnPrint" Width="85px" CssClass="FormButtonStyle" Runat="server"
 										Text="Print" BorderColor="black" Height="21px"></asp:button>&nbsp;<BUTTON id="BtnExcel" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 85px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 21px; BACKGROUND-COLOR: #e1e1e1"
 										accessKey="S" type="button" runat="server">Excel</BUTTON></TD>
 							</TR>

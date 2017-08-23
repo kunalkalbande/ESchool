@@ -44,9 +44,9 @@
 										<asp:ListItem Value="I">I</asp:ListItem>
 										<asp:ListItem Value="J">J</asp:ListItem>
 									</asp:DropDownList>&nbsp;
-									<asp:Button id="Button1" runat="server" Height=21 Width="100px" Text="Search" BorderStyle="Groove" BorderColor="Black" BackColor="#E0E0E0" CssClass="FormButtonStyle" Font-Size="X-Small" BorderWidth="2px"></asp:Button>&nbsp;
-									<asp:Button id="Button2" runat="server" Height=21 Width="85px" Text="Print" BorderStyle="Groove"  BackColor="#E0E0E0" CssClass="FormButtonStyle" BorderColor="Black" Font-Size="X-Small" BorderWidth="2px"></asp:Button>
-									<asp:Button id="Btnexcel" runat="server" Height=21 Width="85px" Text="Excel" BorderStyle="Groove"  BackColor="#E0E0E0" CssClass="FormButtonStyle" BorderColor="Black" Font-Size="X-Small" BorderWidth="2px"></asp:Button></td>
+									<asp:Button id="Button1" runat="server" Height=21 Width="100px" Text="Search" BorderStyle="Groove" BorderColor="Black"  CssClass="FormButtonStyle"  ></asp:Button>&nbsp;
+									<asp:Button id="Button2" runat="server" Height=21 Width="85px" Text="Print" BorderStyle="Groove"   CssClass="FormButtonStyle" BorderColor="Black"  ></asp:Button>
+									<asp:Button id="Btnexcel" runat="server" Height=21 Width="85px" Text="Excel" BorderStyle="Groove"  CssClass="FormButtonStyle" BorderColor="Black"  ></asp:Button></td>
 							</tr>
 							<!--tr height=150>
 					<td align="center"-->

@@ -34,9 +34,9 @@
 												<asp:ListItem Value="Saturday"></asp:ListItem>
 											</asp:dropdownlist>&nbsp;<BUTTON class="FormButtonStyle" id="Search" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 120px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; BACKGROUND-COLOR: #e1e1e1"
 												accessKey="S" type="button" runat="server"><IMG id="txtsearch" height="7" src="../../HeaderFooter/images/search.gif" width="16">
-												<U>S</U>earch</BUTTON>&nbsp;<asp:button id="Button1" BorderColor="Black" BorderStyle="Groove" BackColor="#E0E0E0" runat="server"
-												Width="94px" CssClass="FormButtonStyle" Text="Print" BorderWidth="2px" Font-Size="X-Small"></asp:button>&nbsp;<asp:button id="Btnexcel" BorderColor="Black" BorderStyle="Groove" BackColor="#E0E0E0" runat="server"
-												Width="94px" CssClass="FormButtonStyle" Text="Excel" BorderWidth="2px" Font-Size="X-Small"></asp:button>
+												<U>S</U>earch</BUTTON>&nbsp;<asp:button id="Button1" BorderColor="Black" BorderStyle="Groove"  runat="server"
+												Width="94px" CssClass="FormButtonStyle" Text="Print"></asp:button>&nbsp;<asp:button id="Btnexcel" BorderColor="Black" BorderStyle="Groove"  runat="server"
+												Width="94px" CssClass="FormButtonStyle" Text="Excel" ></asp:button>
 										</td>
 									</tr>
 									<asp:Panel id="pangrid" Runat="server" Visible="False">

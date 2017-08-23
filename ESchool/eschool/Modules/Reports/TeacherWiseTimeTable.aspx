@@ -50,11 +50,11 @@
 												<td colspan="9">Teacher Code&nbsp; &nbsp;<asp:dropdownlist id="DropTCode" CssClass="ComboBox" Runat="server"></asp:dropdownlist>
 													&nbsp;
 													<asp:button id="btnShow" Width="100px" Runat="server" Text="Show" CssClass="FormButtonStyle"
-														Height="21" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Font-Size="X-Small"></asp:button>&nbsp;
+														Height="21" BorderColor="Black" ></asp:button>&nbsp;
 													<asp:button id="btnPrint" Width="85px" Runat="server" Text="Print" Visible="False" CssClass="FormButtonStyle"
-														Height="21" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Font-Size="X-Small"></asp:button>&nbsp; 
+														Height="21" BorderColor="Black" ></asp:button>&nbsp; 
 													&nbsp;<asp:button id="Btnexcel" Width="85px" Runat="server" Text="Excel" CssClass="FormButtonStyle"
-														Height="21" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Font-Size="X-Small"></asp:button></td>
+														Height="21" BorderColor="Black" ></asp:button></td>
 											</tr>
 										</table>
 									</td>

@@ -30,9 +30,9 @@
 										ControlToValidate="txttodt" Runat="server">*</asp:requiredfieldvalidator>&nbsp; 
 									&nbsp;<BUTTON class="FormButtonStyle" id="Search" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 100px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 21px; BACKGROUND-COLOR: #e1e1e1"
 										accessKey="S" type="button" runat="server"><IMG id="txtsearch" height="7" src="../../HeaderFooter/images/search.gif" width="16">
-										<U>S</U>earch</BUTTON>&nbsp; &nbsp;<asp:button id="btnPrint" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" CssClass="FormButtonStyle"
+										<U>S</U>earch</BUTTON>&nbsp; &nbsp;<asp:button id="btnPrint" BorderColor="Black"  CssClass="FormButtonStyle"
 										Width="85px" Runat="server" Font-Size="X-Small" Height="21" Text="Print"></asp:button>&nbsp; 
-									&nbsp;<asp:button id="BtnExcel" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" CssClass="FormButtonStyle"
+									&nbsp;<asp:button id="BtnExcel" BorderColor="Black" CssClass="FormButtonStyle"
 										Width="85px" Runat="server" Font-Size="X-Small" Height="21" Text="Excel"></asp:button></TD>
 							</TR>
 							<asp:panel id="panal1" Runat="server" Visible="False">

@@ -34,11 +34,11 @@
 											<asp:ListItem Value="---Select---">---Select---</asp:ListItem>
 										</asp:dropdownlist>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										<asp:button id="Button1" runat="server" CssClass="formbuttonstyle" Text="Search" BorderColor="Black"
-											BorderWidth="2px" BackColor="#E0E0E0" Width="100px" Height="21" Font-Size="X-Small"></asp:button>&nbsp;
+											 Width="100px" Height="21" Font-Size="X-Small"></asp:button>&nbsp;
 										<asp:button id="btnPrint1" runat="server" CssClass="formbuttonstyle" Text="Print" BorderColor="Black"
-											BorderWidth="2px" BackColor="#E0E0E0" Width="85px" Height="21" Font-Size="X-Small"></asp:button>&nbsp;
+											 Width="85px" Height="21" Font-Size="X-Small"></asp:button>&nbsp;
 										<asp:button id="Btnexcel" runat="server" CssClass="formbuttonstyle" Text="Excel" BorderColor="Black"
-											BorderWidth="2px" BackColor="#E0E0E0" Width="85px" Height="21" Font-Size="X-Small"></asp:button></TD>
+											 Width="85px" Height="21" Font-Size="X-Small"></asp:button></TD>
 								</TR>
 								<asp:Panel ID="panal1" Runat="server" Visible="False">
         <TR>

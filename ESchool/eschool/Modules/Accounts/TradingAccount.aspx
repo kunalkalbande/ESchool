@@ -42,9 +42,9 @@
 							ControlToValidate="txtDateTo">*</asp:requiredfieldvalidator>&nbsp;
 						<asp:textbox id="txtDateTo" CssClass="FontStyle" Width=70 runat="server" BorderStyle="Groove" ></asp:textbox><A onclick="if(self.gfPop)gfPop.fPopCalendar(document.Form1.txtDateTo);return false;"><IMG class="PopcalTrigger" alt="" src="../../HeaderFooter/images/calendar_icon.gif" align="absMiddle"
 								border="0"></A>&nbsp;&nbsp;&nbsp;
-						<asp:button id="btnShow" runat="server" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove  Height=21 Width=100 Font-Size="X-Small"  Text="Show"></asp:button>&nbsp;&nbsp;&nbsp;
-						<asp:button id="BtnPrint" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove  Width=85 Height=21 Font-Size="X-Small"  Text="Print " Runat="server"></asp:button>&nbsp;&nbsp;&nbsp;
-						<asp:button id="btnExcel" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove  Width=85 Height=21 Font-Size="X-Small"  Text="Excel" Runat="server"></asp:button>
+						<asp:button id="btnShow" runat="server" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove  Height=21 Width=100   Text="Show"></asp:button>&nbsp;&nbsp;&nbsp;
+						<asp:button id="BtnPrint" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove  Width=85 Height=21   Text="Print " Runat="server"></asp:button>&nbsp;&nbsp;&nbsp;
+						<asp:button id="btnExcel" CssClass="FormButtonStyle" BorderColor=black BorderStyle=Groove  Width=85 Height=21   Text="Excel" Runat="server"></asp:button>
 					</td>
 				</tr>
 				</table>

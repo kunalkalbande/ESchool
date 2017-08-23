@@ -470,9 +470,9 @@
 							</tr>
 							<tr>
 								<td align="center" colSpan="17"><asp:button id="btnPrint" Runat="server" Height="21" Width="85px" CssClass="formbuttonstyle"
-										Text="Print" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Font-Size="X-Small"></asp:button>&nbsp;&nbsp;&nbsp;
+										Text="Print" BorderColor="Black" Font-Size="X-Small"></asp:button>&nbsp;&nbsp;&nbsp;
 									<asp:button id="btnexcel" Runat="server" Width="85" Height="21" CssClass="formbuttonstyle" Text="Excel"
-										BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Font-Size="X-Small"></asp:button></td>
+										BorderColor="Black" Font-Size="X-Small"></asp:button></td>
 							</tr>
 						</table>
 					</td>

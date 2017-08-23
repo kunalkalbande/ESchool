@@ -59,7 +59,7 @@
 										accessKey="S" type="button" runat="server"><IMG id="txtsearch" style="WIDTH: 14px; HEIGHT: 7px" height="7" src="../../HeaderFooter/images/search.gif"
 											width="16"><U>S</U>earch</BUTTON>&nbsp;<BUTTON class="FormButtonStyle" id="print" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 85px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 21px; BACKGROUND-COLOR: #e1e1e1"
 										accessKey="S" type="button" runat="server">Print</BUTTON> &nbsp;<BUTTON class="FormButtonStyle" id="Exel" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 85px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 21px; BACKGROUND-COLOR: #e1e1e1"
-										accessKey="S" type="button" runat="server">Exel</BUTTON>
+										accessKey="S" type="button" runat="server">Excel</BUTTON>
 								</td>
 							</tr>
 							<%

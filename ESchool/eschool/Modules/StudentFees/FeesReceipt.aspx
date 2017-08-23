@@ -40,7 +40,7 @@
 													width="16"> <U>S</U>earch</BUTTON>&nbsp;<BUTTON class="FormButtonStyle" id="BtnPrint" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 85px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 21px; BACKGROUND-COLOR: #e1e1e1"
 												accessKey="S" type="button" runat="server">Print</BUTTON>
 											<asp:button id="btnExcel" BorderColor="Black" BorderStyle="Outset"  runat="server"
-												Width="85px" Height="21px" CssClass="FormButtonStyle" Font-Size="X-Small" Text="Excel" 
+												Width="85px" Height="21px" CssClass="FormButtonStyle" Text="Excel" 
 												CausesValidation="True"></asp:button><asp:ValidationSummary ID=summry1 Runat=server ShowMessageBox=True ShowSummary=False></asp:ValidationSummary>
 										</td>
 									</tr>

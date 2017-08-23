@@ -36,10 +36,10 @@
 								<TD align="center" colSpan="6"><BUTTON class="FormButtonStyle" id="Search" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 120px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; BACKGROUND-COLOR: #e1e1e1"
 										accessKey="S" type="button" runat="server"><IMG id="txtsearch" height="7" src="../../HeaderFooter/images/search.gif" width="16">
 										<U>S</U>earch</BUTTON>&nbsp;&nbsp;&nbsp;&nbsp;<asp:button id="Button1" BorderColor="Black" BorderStyle="Groove" 
-										runat="server" Width="94px" CssClass="FormButtonStyle" Text="Print" Font-Size="X-Small"></asp:button>
+										runat="server" Width="94px" CssClass="FormButtonStyle" Text="Print" ></asp:button>
 									&nbsp;&nbsp;&nbsp;&nbsp;
 									<asp:button id="Exel" BorderColor="Black" BorderStyle="Groove" 
-										runat="server" Width="94px" CssClass="FormButtonStyle" Text="Exel" Font-Size="X-Small"></asp:button></TD>
+										runat="server" Width="94px" CssClass="FormButtonStyle" Text="Excel" ></asp:button></TD>
 							</tr>
 							<!--<TR>
 								<TD colSpan="5"><asp:datagrid id="grdBank" Width="100%" Runat="server" AutoGenerateColumns="False">

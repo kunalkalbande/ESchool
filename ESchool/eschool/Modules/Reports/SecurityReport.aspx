@@ -39,9 +39,9 @@
 									</asp:dropdownlist>&nbsp;&nbsp; <BUTTON id="Search" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 100px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 21px; BACKGROUND-COLOR: #e1e1e1"
 										accessKey="S" type="button" runat="server" class="FormButtonStyle"><IMG id="txtsearch" height="7" src="../../HeaderFooter/images/search.gif" width="16"><U>S</U>earch</BUTTON>&nbsp;&nbsp;
 									<asp:button id="Button1" BorderColor="Black" BorderStyle="Groove"  runat="server"
-										Width="85px" CssClass="FormButtonStyle" Text="Print" Height="21"  Font-Size="X-Small"></asp:button>&nbsp;&nbsp;
+										Width="85px" CssClass="FormButtonStyle" Text="Print" Height="21"  ></asp:button>&nbsp;&nbsp;
 									<asp:button id="Exel" BorderColor="Black" BorderStyle="Groove"  runat="server"
-										Width="85px" CssClass="FormButtonStyle" Text="Exel" Height="21"  Font-Size="X-Small"></asp:button>
+										Width="85px" CssClass="FormButtonStyle" Text="Exel" Height="21"  ></asp:button>
 								</td>
 							</TR>
 							<asp:Panel ID="pansecu" Runat="server" Visible="false">

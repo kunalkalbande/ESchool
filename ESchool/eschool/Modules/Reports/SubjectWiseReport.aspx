@@ -122,11 +122,11 @@
 								<tr align="center">
 									<td colspan="16">
 										<asp:button id="btnsearch" Runat="server" CssClass="formbuttonstyle" Text="Show" Height="21"
-											BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Width="100px" Font-Size="X-Small"></asp:button>&nbsp;
+											BorderColor="Black"  Width="100px" ></asp:button>&nbsp;
 										<asp:button id="btnprint" CssClass="formbuttonstyle" Runat="server" Text="Print" Width="85px"
-											Height="21" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Font-Size="X-Small"></asp:button>&nbsp;
+											Height="21" BorderColor="Black"  ></asp:button>&nbsp;
 										<asp:button id="Btnexcel" CssClass="formbuttonstyle" Runat="server" Text="Excel" Width="85px"
-											Height="21" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Font-Size="X-Small"></asp:button>
+											Height="21" BorderColor="Black" ></asp:button>
 									</td>
 								</tr>
 								<%

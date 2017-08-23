@@ -123,12 +123,12 @@
 					</TR>
 					<tr>
 						<TD colspan="13" align="center">
-							<asp:button id="btnShow" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Width="100px"
-								Height="21" Runat="server" CssClass="formbuttonstyle" Font-Size="X-Small" Text="Show"></asp:button>&nbsp;&nbsp;
-							<asp:button id="btnPrint" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Width="85px"
-								Height="21" Runat="server" CssClass="formbuttonstyle" Font-Size="X-Small" Text="Print"></asp:button>&nbsp;&nbsp;&nbsp;
-							<asp:button id="Btnexcel" BorderColor="Black" BorderWidth="2px" BackColor="#E0E0E0" Width="85px"
-								Height="21" Runat="server" CssClass="formbuttonstyle" Font-Size="X-Small" Text="Excel"></asp:button>
+							<asp:button id="btnShow" BorderColor="Black" Width="100px"
+								Height="22" Runat="server" CssClass="formbuttonstyle"  Text="Show"></asp:button>&nbsp;&nbsp;
+							<asp:button id="btnPrint" BorderColor="Black"  Width="85px"
+								Height="22" Runat="server" CssClass="formbuttonstyle" Text="Print"></asp:button>&nbsp;&nbsp;&nbsp;
+							<asp:button id="Btnexcel" BorderColor="Black"  Width="85px"
+								Height="22" Runat="server" CssClass="formbuttonstyle" Text="Excel"></asp:button>
 						</TD>
 					</tr>
 					<asp:Panel ID="panglsnce" Runat="server" Visible="False">

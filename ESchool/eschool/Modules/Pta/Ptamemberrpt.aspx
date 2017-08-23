@@ -35,9 +35,9 @@
 										Height="20px" Width="142px" ></asp:textbox>&nbsp; &nbsp; <BUTTON id="Search" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 100px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 21px; BACKGROUND-COLOR: #e1e1e1"
 										accessKey="S" type="button" runat="server"><IMG id="txtsearch" height="7" src="../../HeaderFooter/images/search.gif" width="16"><U>S</U>earch</BUTTON>&nbsp;&nbsp;
 									<asp:button id="BtnPrint" BorderColor="Black"  CssClass="FormButtonStyle"
-										Width="85px" Font-Size="X-Small" Height="21" Text="Excel" Runat="server"></asp:button>&nbsp;&nbsp;
+										Width="85px"  Height="21" Text="Excel" Runat="server"></asp:button>&nbsp;&nbsp;
 									<asp:button id="btnPrintD" BorderColor="Black" CssClass="FormButtonStyle"
-										Width="85px" Font-Size="X-Small" Height="21" Text="Print" Runat="server"></asp:button>&nbsp;&nbsp;</TD>
+										Width="85px"  Height="21" Text="Print" Runat="server"></asp:button>&nbsp;&nbsp;</TD>
 							</TR>
 							<asp:Panel ID="pangrid" Runat="server" Visible="False">
 								<TR>

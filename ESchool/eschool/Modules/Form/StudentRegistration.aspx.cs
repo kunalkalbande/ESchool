@@ -1052,7 +1052,7 @@ namespace eschool.Forms
 						///else
 						obj.Student_Stream=dropStream .SelectedItem.Value.ToString().Trim();
 					
-						obj.Student_AdmissionDate=Convert.ToDateTime(GenUtil.str2MMDDYYYY(DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year));
+						obj.Student_AdmissionDate=Convert.ToDateTime(GenUtil.str2MMDDYYYY(DateTime.Now.Month+"/"+ DateTime.Now.Day + "/"+DateTime.Now.Year));
 						obj.Student_Birthdate=dob;
 						//11.02.09if(DropGender .SelectedIndex==0)
 						//11.02.09	obj.Student_Gender="";
@@ -1165,7 +1165,7 @@ namespace eschool.Forms
 			{
 				rdr = obj.GetRecordSet("select top 1 Entry_Date from AccountsLedgerTable where Ledger_ID='"+LedgerID[k].ToString()+"' and Entry_Date<='"+Invoice_Date+"' order by entry_date desc");
 				if(rdr.Read())
-					str="select * from AccountsLedgerTable where Ledger_ID='"+LedgerID[k].ToString()+"' and Entry_Date>='"+rdr.GetValue(0).ToString()+"' order by entry_date";
+					str="select * from AccountsLedgerTable where Ledger_ID='"+LedgerID[k].ToString()+"' and Entry_Date>='"+ GenUtil.str2MMDDYYYY(rdr.GetValue(0).ToString())+"' order by entry_date";
 				else
 					str="select * from AccountsLedgerTable where Ledger_ID='"+LedgerID[k].ToString()+"' order by entry_date";
 				rdr.Close();

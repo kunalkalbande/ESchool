@@ -465,8 +465,8 @@ namespace eschool.StudentFees
 					obj.BillDate="";
 					obj.BillNo="0";
 					obj.Vehicle="0";
-					obj.Trans_Date=System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(txtdate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
-					bldate=System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(txtdate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
+					obj.Trans_Date=System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(txtdate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
+					bldate=System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(txtdate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
 					if(txtremark.Text=="")
 						obj.Remarks  ="";
 					else
@@ -491,7 +491,7 @@ namespace eschool.StudentFees
 						closing=closing-Convert.ToDouble(obj.Qty);
 					}
 					dtr.Close();
-					str="insert into stock_movement (itemno,tran_no,tran_date,opening,recieved,issued,closing) values('"+itemname+"','"+trano+"','"+bldate+"',"+opening+",0,"+qty+","+closing+")";
+					str="insert into stock_movement (itemno,tran_no,tran_date,opening,recieved,issued,closing) values('"+itemname+"','"+trano+"','"+GenUtil.str2MMDDYYYY(bldate.ToString())+"',"+opening+",0,"+qty+","+closing+")";
 					cmd=new SqlCommand(str,scon);
 					cmd.ExecuteNonQuery();
 					MessageBox.Show("Transaction Successfully Saved");
@@ -725,12 +725,12 @@ namespace eschool.StudentFees
 					obj.Qty ="";
 				else
 					obj.Qty  =txtqty.Text.ToString().Trim ();
-				obj.Trans_Date=System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(txtdate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
-				bldate=System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(txtdate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
+				obj.Trans_Date=System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(txtdate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
+				bldate=System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(txtdate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
 				if(txtdate.Text=="")
 					obj.Issuedate ="";
 				else
-					obj.Issuedate=GenUtil.str2MMDDYYYY(txtdate .Text.ToString().Trim ());
+					obj.Issuedate=GenUtil.str2DDMMYYYY(txtdate .Text.ToString().Trim ());
 				if(txtremark.Text=="")
 					obj.Remarks  ="";
 				else
@@ -757,8 +757,8 @@ namespace eschool.StudentFees
 				}
 				dtr.Close();*/
                 //str="update stock_movement set tran_date='"+bldate+"',Issued="+txtqty.Text.ToString().Trim()+",closing="+closing+" where itemno="+itemname+" and Tran_no = 'I:"+ DropIssueID.SelectedItem.Text .Trim()+"'" ;
-				//str="update stock_movement set tran_date='"+bldate+"',Issued="+txtqty.Text.ToString().Trim()+" where itemno="+itemname+" and Tran_no = 'I:"+ DropIssueID.SelectedItem.Text .Trim()+"'" ;
-				str="update stock_movement set tran_date='"+bldate+"',Issued="+txtqty.Text.ToString().Trim()+" ,itemno="+itemname+" where Tran_no = 'I:"+ DropIssueID.SelectedItem.Text .Trim()+"'" ;
+				//str="update stock_movement set tran_date='"+bldate+"',Issued="+txftqty.Text.ToString().Trim()+" where itemno="+itemname+" and Tran_no = 'I:"+ DropIssueID.SelectedItem.Text .Trim()+"'" ;
+				str="update stock_movement set tran_date='"+ GenUtil.str2MMDDYYYY(bldate.ToString()) +"',Issued="+txtqty.Text.ToString().Trim()+" ,itemno="+itemname+" where Tran_no = 'I:"+ DropIssueID.SelectedItem.Text .Trim()+"'" ;
 				cmd=new SqlCommand(str,scon);
 				cmd.ExecuteNonQuery();
 				StockMasterUpdate(itemname);
@@ -788,7 +788,8 @@ namespace eschool.StudentFees
 			DropEmpID.Items.Add("Select");
 			DropEmpID.SelectedIndex=0;
 			DropItemCategory.Items.Clear();
-			DropItemCategory.SelectedIndex=0;
+            DropItemCategory.Items.Add("Select");
+            DropItemCategory.SelectedIndex=0;
 			DropItemName.Items.Clear();
 			DropItemName.Items.Add("Select");
 			DropItemName.SelectedIndex=0;

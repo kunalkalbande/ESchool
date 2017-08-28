@@ -540,7 +540,7 @@ namespace eschool.Forms.Inventory
 			string narration = txtNarration.Text.Trim();
 			string Vouch_Type = DropVoucherName.SelectedItem.Text;
 			//string date = GenUtil.str2MMDDYYYY(txtDate.Text.ToString());
-			DateTime date = System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(txtDate.Text.ToString())+" "+DateTime.Now.TimeOfDay.ToString());
+			DateTime date = System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(txtDate.Text.ToString())+" "+DateTime.Now.TimeOfDay.ToString());
 			int intID = System.Convert.ToInt32(id.ToString()); 
 			int flag = 0;
 			for(int i=0; i<(dropAccName.Length/2);i++)
@@ -581,7 +581,7 @@ namespace eschool.Forms.Inventory
 					}
  
 						
-					dbobj.Insert_or_Update("Insert into Voucher_Transaction values("+intID+",'"+Vouch_Type.Trim()+"','"+date+"',"+crID.Trim() +","+Amount_cr.Trim() +","+drID.Trim() +","+Amount_Dr.Trim() +",'"+narration+"','"+L_Type+"')",ref c);
+					dbobj.Insert_or_Update("Insert into Voucher_Transaction values("+intID+",'"+Vouch_Type.Trim()+"','"+GenUtil.str2MMDDYYYY(date.ToString())+"',"+crID.Trim() +","+Amount_cr.Trim() +","+drID.Trim() +","+Amount_Dr.Trim() +",'"+narration+"','"+L_Type+"')",ref c);
 					object obj = null;
 					//						dbobj.ExecProc(OprType.Insert,"ProInsertAccountsLedger",ref obj,"@Ledger_ID",drID.Trim(),"@Particulars",Vouch_Type.Trim()+" ("+intID+")","@Debit_Amount",Amount_Dr.Trim(),"@Credit_Amount","0.0","@type","Dr");
 					//						dbobj.ExecProc(OprType.Insert,"ProInsertAccountsLedger",ref obj,"@Ledger_ID",crID.Trim(),"@Particulars",Vouch_Type.Trim()+" ("+intID+")","@Debit_Amount","0.0","@Credit_Amount",Amount_cr.Trim(),"@type","Cr");

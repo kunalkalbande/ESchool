@@ -278,7 +278,7 @@ namespace eschool.Library.FORMS
 					DropBookID.Items.Add(sdred.GetValue(0).ToString());
 				}
 				sdred.Close();
-				sql="select distinct ib.Book_ID,st.bookname,ib.Date_Of_Issue,ib.Return_Date from Issue_Book ib , Stock_table st where ib.book_id=st.book_id and ib.Book_id='"+DropBookID.SelectedItem.Text.ToString()+"'";
+				sql= "select distinct ib.Book_ID,st.bookname,ib.Date_Of_Issue,ib.Return_Date from Issue_Book ib , Stock_table st where ib.book_id=st.book_id and ib.memberID='" + id1[0].ToString().Trim() + "' ";
 				sdred=obj.ReturnBookID(sql);
 				if(sdred.Read())
 				{				

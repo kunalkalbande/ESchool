@@ -589,8 +589,8 @@ namespace eschool.StudentFees
 					obj.BillDate =GenUtil.str2MMDDYYYY (GenUtil.trimDate (TxtBilDate.Text.Trim ())).ToString ();
 					bldate=GenUtil.str2MMDDYYYY (GenUtil.trimDate (TxtBilDate.Text.Trim ())).ToString ();
 				}
-				obj.Trans_Date=System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(TxtBilDate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
-				trandt=System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(TxtBilDate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
+				obj.Trans_Date=System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(TxtBilDate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
+				trandt=System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(TxtBilDate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
 				if(DropVendername.SelectedIndex ==0)
 				{
 					obj.Vendor_Name  ="";
@@ -918,8 +918,8 @@ namespace eschool.StudentFees
 				else
 				{
 					
-					obj.Trans_Date=System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(TxtBilDate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
-					bldate=System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(TxtBilDate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
+					obj.Trans_Date=System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(TxtBilDate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
+					bldate=System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(TxtBilDate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
 				}
     				if(DropVendername.SelectedItem .Text.ToUpper() .Trim ()!="Other")
 					{
@@ -963,7 +963,7 @@ namespace eschool.StudentFees
 				dtr.Close();*/
 				//str="update stock_movement set tran_date='"+bldate+"', Opening="+opening+",recieved="+qty+",closing="+closing+" where itemno="+itemname+" and Tran_no = 'R:"+ DropStockID.SelectedItem.Text .Trim()+"'" ;
 				///01.010.08 str="update stock_movement set tran_date='"+bldate+"', recieved="+qty+" where itemno="+itemname+" and Tran_no = 'R:"+ DropStockID.SelectedItem.Text .Trim()+"'" ;
-				str="update stock_movement set tran_date='"+bldate+"', recieved="+qty+",itemno="+itemname+" where Tran_no = 'R:"+ DropStockID.SelectedItem.Text .Trim()+"'" ;
+				str="update stock_movement set tran_date='"+GenUtil.str2MMDDYYYY(bldate.ToString())+"', recieved="+qty+",itemno="+itemname+" where Tran_no = 'R:"+ DropStockID.SelectedItem.Text .Trim()+"'" ;
 				cmd=new SqlCommand(str,scon);
 				cmd.ExecuteNonQuery();
 				
@@ -1004,19 +1004,19 @@ namespace eschool.StudentFees
 			int i=0;
 			//*************************
 			string[] CheckDate = Invoice_Date.Split(new char[] {' '},Invoice_Date.Length);
-			if(DateTime.Compare(System.Convert.ToDateTime(CheckDate[0].ToString()),System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(TxtBilDate.Text)))>0)
-				Invoice_Date=GenUtil.str2MMDDYYYY(TxtBilDate.Text);
+			if(DateTime.Compare(System.Convert.ToDateTime(CheckDate[0].ToString()),System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(TxtBilDate.Text)))>0)
+				Invoice_Date=GenUtil.str2DDMMYYYY(TxtBilDate.Text);
 			for(int k=0;k<LedgerID.Count;k++)
 			{
-				rdr = obj.GetRecordSet("select top 1 Entry_Date from AccountsLedgerTable where Ledger_ID='"+LedgerID[k].ToString()+"' and Entry_Date<='"+Invoice_Date+"' order by entry_date desc");
+				rdr = obj.GetRecordSet("select top 1 Entry_Date from AccountsLedgerTable where Ledger_ID='"+LedgerID[k].ToString()+"' and Entry_Date<='"+GenUtil.str2MMDDYYYY(Invoice_Date.ToString())+"' order by entry_date desc");
 				if(rdr.Read())
 					str="select * from AccountsLedgerTable where Ledger_ID='"+LedgerID[k].ToString()+"' and Entry_Date>='"+rdr.GetValue(0).ToString()+"' order by entry_date";
 				else
 					str="select * from AccountsLedgerTable where Ledger_ID='"+LedgerID[k].ToString()+"' order by entry_date";
-				rdr.Close();
+			
 				//*************************
 				//string str="select * from AccountsLedgerTable where Ledger_ID='"+LedgerID+"' order by entry_date";
-				rdr=obj.GetRecordSet(str);
+				//rdr=obj.GetRecordSet(str);
 				Bal=0;
 				BalType="";
 				i=0;
@@ -1071,7 +1071,8 @@ namespace eschool.StudentFees
 									BalType="Cr";
 							}
 						}
-						Con.Open();
+                        rdr.Close();
+                        Con.Open();
 						string str11="update AccountsLedgerTable set Balance='"+Bal.ToString()+"',Bal_Type='"+BalType+"' where Ledger_ID='"+rdr["Ledger_ID"].ToString()+"' and Particulars='"+rdr["Particulars"].ToString()+"'";
 						cmd = new SqlCommand("update AccountsLedgerTable set Balance='"+Bal.ToString()+"',Bal_Type='"+BalType+"' where Ledger_ID='"+rdr["Ledger_ID"].ToString()+"' and Particulars='"+rdr["Particulars"].ToString()+"'",Con);
 						cmd.ExecuteNonQuery();

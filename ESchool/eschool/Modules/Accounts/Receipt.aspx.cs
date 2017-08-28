@@ -293,7 +293,7 @@ namespace eschool.Modules.Accounts
 				string[] cust=cust_id.Split(new char[]{':'});
 				string newname=cust[1].ToString().Trim();
 
-				DateTime entry_date=System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(txtDate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
+				DateTime entry_date=System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(txtDate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
 
 				if(btnedit.Visible==true)
 				{
@@ -605,19 +605,19 @@ namespace eschool.Modules.Accounts
 			int i=0;
 			//*************************
 			string[] CheckDate = Invoice_Date.Split(new char[] {' '},Invoice_Date.Length);
-			if(DateTime.Compare(System.Convert.ToDateTime(CheckDate[0].ToString()),System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(txtDate.Text)))>0)
-				Invoice_Date=GenUtil.str2MMDDYYYY(txtDate.Text);
+			if(DateTime.Compare(System.Convert.ToDateTime(CheckDate[0].ToString()),System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(txtDate.Text)))>0)
+				Invoice_Date=GenUtil.str2DDMMYYYY(txtDate.Text);
 			for(int k=0;k<LedgerID.Count;k++)
 			{
-				rdr = obj.GetRecordSet("select top 1 Entry_Date from AccountsLedgerTable where Ledger_ID='"+LedgerID[k].ToString()+"' and Entry_Date<='"+Invoice_Date+"' order by entry_date desc");
+				rdr = obj.GetRecordSet("select top 1 Entry_Date from AccountsLedgerTable where Ledger_ID='"+LedgerID[k].ToString()+"' and Entry_Date<='"+GenUtil.str2MMDDYYYY(Invoice_Date.ToString())+"' order by entry_date desc");
 				if(rdr.Read())
 					str="select * from AccountsLedgerTable where Ledger_ID='"+LedgerID[k].ToString()+"' and Entry_Date>='"+rdr.GetValue(0).ToString()+"' order by entry_date";
 				else
 					str="select * from AccountsLedgerTable where Ledger_ID='"+LedgerID[k].ToString()+"' order by entry_date";
-				rdr.Close();
+				
 				//*************************
 				//string str="select * from AccountsLedgerTable where Ledger_ID='"+LedgerID+"' order by entry_date";
-				rdr=obj.GetRecordSet(str);
+				//rdr=obj.GetRecordSet(str);
 				Bal=0;
 				BalType="";
 				i=0;
@@ -672,7 +672,8 @@ namespace eschool.Modules.Accounts
 									BalType="Cr";
 							}
 						}
-						Con.Open();
+                        rdr.Close();
+                        Con.Open();
 						string str11="update AccountsLedgerTable set Balance='"+Bal.ToString()+"',Bal_Type='"+BalType+"' where Ledger_ID='"+rdr["Ledger_ID"].ToString()+"' and Particulars='"+rdr["Particulars"].ToString()+"'";
 						cmd = new SqlCommand("update AccountsLedgerTable set Balance='"+Bal.ToString()+"',Bal_Type='"+BalType+"' where Ledger_ID='"+rdr["Ledger_ID"].ToString()+"' and Particulars='"+rdr["Particulars"].ToString()+"'",Con);
 						cmd.ExecuteNonQuery();

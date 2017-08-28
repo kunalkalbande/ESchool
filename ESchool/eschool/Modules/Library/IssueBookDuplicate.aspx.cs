@@ -386,7 +386,7 @@ namespace eschool.Library.FORMS
                                     obj.Return_Date = "0";
                                 else
                                     //obj.Return_Date =ToMMddYYYY(txtReturn.Text.Trim()).ToShortDateString();
-                                    obj.Return_Date = GenUtil.str2MMDDYYYY(txtReturn.Text);
+                                    obj.Return_Date = GenUtil.str2MMDDYYYY(Request.Form["txtReturn"]);
 								obj.IssueBookID =i.Trim().ToString();
 								if(rediteaching.Checked==true)
 									obj.MemType=rediteaching.Text;

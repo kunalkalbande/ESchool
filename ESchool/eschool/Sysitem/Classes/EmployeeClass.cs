@@ -1263,8 +1263,8 @@ namespace eschool.Classes
 				SqlCmd=new SqlCommand("ProLeaveUpdate",SqlCon );
 				SqlCmd.CommandType=CommandType.StoredProcedure;
 				SqlCmd.Parameters.Add("@Emp_Name",Emp_Name);
-				SqlCmd.Parameters.Add("@DateFrom",Date_From );
-				SqlCmd.Parameters.Add("@DateTo",Date_To );
+				SqlCmd.Parameters.Add("@DateFrom", System.Convert.ToDateTime(Date_From));
+				SqlCmd.Parameters.Add("@DateTo", System.Convert.ToDateTime(Date_To));
 				SqlCmd.Parameters.Add("@Reason",Reason);
 				SqlCmd.Parameters.Add("@isSanction",isSanction);
 				SqlCmd.ExecuteNonQuery();

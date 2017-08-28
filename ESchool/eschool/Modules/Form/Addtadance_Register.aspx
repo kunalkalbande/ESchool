@@ -108,7 +108,7 @@
 							else if(DropEmp.SelectedIndex!=0)
 							{
 									//string str="Select a.Emp_ID,e.Emp_Name,e.Designation,a.Status from Attandance_Register a,Employee e where Att_date='"+DropEmp.SelectedItem.Text+"' and a.Emp_ID=e.Emp_ID";
-									string str="Select a.staff_id,e.staff_name,e.Staff_type,a.attandance_Status,a.half_day from staff_Attandance a,Staff_information e where Attendance_date='"+DropEmp.SelectedItem.Text+"' and a.staff_ID=e.staff_ID";
+									string str="Select a.staff_id,e.staff_name,e.Staff_type,a.attandance_Status,a.half_day from staff_Attandance a,Staff_information e where Attendance_date='"+GenUtil.str2MMDDYYYY(DropEmp.SelectedItem.Text)+"' and a.staff_ID=e.staff_ID";
 									SqlDtr = obj.GetRecordSet(str);
 									i=0;
 									while(SqlDtr.Read())
@@ -207,144 +207,146 @@
 </HTML>
 
 <script language=C# runat=server >
-		
-				
-		///<Summary>
-		/// this method used to save and Update the attendance of employee.
-		///</Summary>
-		public void attan(Object sender, EventArgs e)
-		{                      
-		            
-		            SqlConnection con1;
-		            con1=new SqlConnection(System.Configuration.ConfigurationSettings.AppSettings["bbnschool"]);
-					con1.Open ();
-				  	string msg="";
-					string strInsert1="";
-			       
-			   //if(panEmp.Visible==false)
-				//	{
-							 int Total_Rows=System.Convert.ToInt32(Request.Params.Get("lblTotal_Row"));
-							 for(int i=0;i<Total_Rows;i++)
-							 {
-								if(Request.Params.Get("Txt_Row"+i)!=null && Request.Params.Get("Txt_Row"+i)!="")
-								{
-									string st=Request.Params.Get("lblEmpID"+i);
-									string dt1=System.DateTime.Now.ToShortDateString();
-									SqlCommand cmdInsert1;
-									try
-									{
-										string strcheck1="select count(*) from Staff_Attandance where Staff_ID='"+st.ToString()+"' and Attendance_Date='"+dt1+"'";
-										//string strcheck1="select count(*) from Staff_Attandance where Staff_ID='"+st.ToString()+"' and Attendance_Date='"+DropEmp.SelectedItem.Text+"'";
-										SqlCommand cmdcheck1=new SqlCommand(strcheck1,con1);
-										SqlDataReader dtr=cmdcheck1.ExecuteReader();
-										int icount=0;
-										while(dtr.Read())
-										{
-											icount=Convert.ToInt32(dtr.GetValue(0));
-										}
-										dtr.Close();
-										if(icount>0)
-										{
-											strInsert1 ="update staff_attandance set Half_Day=@half_day, Attandance_Status=@Attandance_Status where Staff_ID=@Staff_ID and Attendance_Date='"+dt1+"'";
-											msg="Updated";
-										}
-										else
-										{
-											strInsert1 = "Insert Staff_Attandance(Staff_ID,Attandance_Status,Attendance_Date,Half_Day)values (@Staff_ID,@Attandance_Status,@Attendance_Date,@half_day)";
-											msg="Saved";
-										}
-										cmdInsert1=new SqlCommand (strInsert1,con1);
-				                        //if(Dropempid.SelectedIndex==0)
-										//cmdInsert1.Parameters .Add ("@Staff_ID","");
-										//else
-										cmdInsert1.Parameters .Add ("@Staff_ID",Request.Params.Get("lblEmpID"+i));
-										cmdInsert1.Parameters .Add ("@Attendance_Date",dt1.ToString());
-										if(Request.Params.Get("Txt_Row"+i)=="Yes")
-										{
-											cmdInsert1.Parameters .Add ("@Attandance_Status","1");
-											cmdInsert1.Parameters .Add ("@half_day",Convert.ToInt16(3));
-										}
-										else if(Request.Params.Get("Txt_Row"+i) =="HoliDay")
-										{
-											cmdInsert1.Parameters .Add ("@Attandance_Status","1");
-											cmdInsert1.Parameters .Add ("@half_day",Convert.ToInt16(0));
-										}
-										else if(Request.Params.Get("Txt_Row"+i)=="No")
-										{
-											cmdInsert1.Parameters .Add ("@Attandance_Status","0");
-											cmdInsert1.Parameters .Add ("@half_day",Convert.ToInt16(0));
-										}
-										else if(Request.Params.Get("Txt_Row"+i)=="Ist Half")
-										{
-											cmdInsert1.Parameters .Add ("@Attandance_Status","0.5");
-											cmdInsert1.Parameters .Add ("@half_day",Convert.ToInt16(1));
-										}
-										else if(Request.Params.Get("Txt_Row"+i)=="IInd Half")
-										{
-											cmdInsert1.Parameters .Add ("@Attandance_Status","0.5");
-											cmdInsert1.Parameters .Add ("@half_day",Convert.ToInt16(2));      
-										}
-										cmdInsert1.ExecuteNonQuery();
-										//CreateLogFiles.ErrorLog ("Form: Attendance.aspx.cs, Method: btnSave_Click. Attendance for the employee ID: " + Dropempid.SelectedItem.Text.ToString() + " is saved. User: " + pass );
-									}
-									catch(Exception ex)
-							     	{
-								        CreateLogFiles.ErrorLog ("Form: Attendance.aspx.cs, Method: btnSave_Click. Exception: " + ex.Message + " User: " + Session["password"] );
-							        }
-								}
-							}
-							// }
-							panEmp.Visible=false;
-							DropEmp.SelectedIndex=0;
-							MessageBox.Show("Attendance Successfully "+msg);
-							con1.Close (); 
-						}
-		
-		/// <Summary>
-		/// This Method use to view the save Attendance. this method fetch data from Staff_Attendance.
-		/// <Summary>
-		public void View(Object sender, EventArgs e)
-		{
-			try
-			{
-				panEmp.Visible=true;
-				EmployeeClass obj=new EmployeeClass(); 
-				SqlDataReader SqlDtr;
-				string sql;
-				sql="select distinct Attendance_Date from Staff_Attandance";
-				SqlDtr=obj.GetRecordSet(sql);
-				DropEmp.Items.Clear();
-				DropEmp.Items.Add("Select");
-				while(SqlDtr.Read())
-				{
-				   // string b=SqlDtr["Attendance_Date"].ToString();
-				   // b=b.Substring(0,9);
-				   // string[] bb=b.Split(new char[] (""),b.Lenth);
-					DropEmp.Items.Add(GenUtil.trimDate(SqlDtr["Attendance_Date"].ToString()));
-					//DropEmp.Items.Add(b);
-				}
-				SqlDtr.Close();
-			}
-			catch(Exception ex)
-			{
-				CreateLogFiles.ErrorLog("Form:Attendance_Register.aspx.cs,Method:attan(). EXCEPTION: "+ ex.Message+" userid :"+ Session["password"]);
-			}
-		}
-		
-		/// <Summary>
-		/// This method get date as a string and return MMDDYYYY format.
-		/// </Summary>
-		public DateTime ToMMddYYYY(string str)
-		{
-			int dd,mm,yy;
-			string [] strarr = new string[3];			
-			strarr=str.Split(new char[]{'/'},str.Length);
-			dd=Int32.Parse(strarr[0]);
-			mm=Int32.Parse(strarr[1]);
-			yy=Int32.Parse(strarr[2]);
-			DateTime dt=new DateTime(yy,mm,dd);			
-			return(dt);
-		}
+
+
+    ///<Summary>
+    /// this method used to save and Update the attendance of employee.
+    ///</Summary>
+    public void attan(Object sender, EventArgs e)
+    {
+
+        SqlConnection con1;
+        con1=new SqlConnection(System.Configuration.ConfigurationSettings.AppSettings["bbnschool"]);
+        con1.Open ();
+        string msg="";
+        string strInsert1="";
+
+        //if(panEmp.Visible==false)
+        //	{
+        int Total_Rows=System.Convert.ToInt32(Request.Params.Get("lblTotal_Row"));
+        for(int i=0;i<Total_Rows;i++)
+        {
+            if(Request.Params.Get("Txt_Row"+i)!=null && Request.Params.Get("Txt_Row"+i)!="")
+            {
+                string st=Request.Params.Get("lblEmpID"+i);
+                //string dt1=System.DateTime.Now.ToShortDateString();
+                string dt1 = DateTime.Now.ToString("dd'/'MM'/'yyyy");
+                
+                SqlCommand cmdInsert1;
+                try
+                {
+                    string strcheck1="select count(*) from Staff_Attandance where Staff_ID='"+st.ToString()+"' and Attendance_Date='"+GenUtil.str2MMDDYYYY(dt1)+"'";
+                    //string strcheck1="select count(*) from Staff_Attandance where Staff_ID='"+st.ToString()+"' and Attendance_Date='"+DropEmp.SelectedItem.Text+"'";
+                    SqlCommand cmdcheck1=new SqlCommand(strcheck1,con1);
+                    SqlDataReader dtr=cmdcheck1.ExecuteReader();
+                    int icount=0;
+                    while(dtr.Read())
+                    {
+                        icount=Convert.ToInt32(dtr.GetValue(0));
+                    }
+                    dtr.Close();
+                    if(icount>0)
+                    {
+                        strInsert1 ="update staff_attandance set Half_Day=@half_day, Attandance_Status=@Attandance_Status where Staff_ID=@Staff_ID and Attendance_Date='"+dt1+"'";
+                        msg="Updated";
+                    }
+                    else
+                    {
+                        strInsert1 = "Insert Staff_Attandance(Staff_ID,Attandance_Status,Attendance_Date,Half_Day)values (@Staff_ID,@Attandance_Status,@Attendance_Date,@half_day)";
+                        msg="Saved";
+                    }
+                    cmdInsert1=new SqlCommand (strInsert1,con1);
+                    //if(Dropempid.SelectedIndex==0)
+                    //cmdInsert1.Parameters .Add ("@Staff_ID","");
+                    //else
+                    cmdInsert1.Parameters .Add ("@Staff_ID",Request.Params.Get("lblEmpID"+i));
+                    cmdInsert1.Parameters .Add ("@Attendance_Date",GenUtil.str2MMDDYYYY(dt1).ToString());
+                    if(Request.Params.Get("Txt_Row"+i)=="Yes")
+                    {
+                        cmdInsert1.Parameters .Add ("@Attandance_Status","1");
+                        cmdInsert1.Parameters .Add ("@half_day",Convert.ToInt16(3));
+                    }
+                    else if(Request.Params.Get("Txt_Row"+i) =="HoliDay")
+                    {
+                        cmdInsert1.Parameters .Add ("@Attandance_Status","1");
+                        cmdInsert1.Parameters .Add ("@half_day",Convert.ToInt16(0));
+                    }
+                    else if(Request.Params.Get("Txt_Row"+i)=="No")
+                    {
+                        cmdInsert1.Parameters .Add ("@Attandance_Status","0");
+                        cmdInsert1.Parameters .Add ("@half_day",Convert.ToInt16(0));
+                    }
+                    else if(Request.Params.Get("Txt_Row"+i)=="Ist Half")
+                    {
+                        cmdInsert1.Parameters .Add ("@Attandance_Status","0.5");
+                        cmdInsert1.Parameters .Add ("@half_day",Convert.ToInt16(1));
+                    }
+                    else if(Request.Params.Get("Txt_Row"+i)=="IInd Half")
+                    {
+                        cmdInsert1.Parameters .Add ("@Attandance_Status","0.5");
+                        cmdInsert1.Parameters .Add ("@half_day",Convert.ToInt16(2));
+                    }
+                    cmdInsert1.ExecuteNonQuery();
+                    //CreateLogFiles.ErrorLog ("Form: Attendance.aspx.cs, Method: btnSave_Click. Attendance for the employee ID: " + Dropempid.SelectedItem.Text.ToString() + " is saved. User: " + pass );
+                }
+                catch(Exception ex)
+                {
+                    CreateLogFiles.ErrorLog ("Form: Attendance.aspx.cs, Method: btnSave_Click. Exception: " + ex.Message + " User: " + Session["password"] );
+                }
+            }
+        }
+        // }
+        panEmp.Visible=false;
+        DropEmp.SelectedIndex=0;
+        MessageBox.Show("Attendance Successfully "+msg);
+        con1.Close ();
+    }
+
+    /// <Summary>
+    /// This Method use to view the save Attendance. this method fetch data from Staff_Attendance.
+    /// <Summary>
+    public void View(Object sender, EventArgs e)
+    {
+        try
+        {
+            panEmp.Visible=true;
+            EmployeeClass obj=new EmployeeClass();
+            SqlDataReader SqlDtr;
+            string sql;
+            sql="select distinct Attendance_Date from Staff_Attandance";
+            SqlDtr=obj.GetRecordSet(sql);
+            DropEmp.Items.Clear();
+            DropEmp.Items.Add("Select");
+            while(SqlDtr.Read())
+            {
+                // string b=SqlDtr["Attendance_Date"].ToString();
+                // b=b.Substring(0,9);
+                // string[] bb=b.Split(new char[] (""),b.Lenth);
+                DropEmp.Items.Add(GenUtil.trimDate(SqlDtr["Attendance_Date"].ToString()));
+                //DropEmp.Items.Add(b);
+            }
+            SqlDtr.Close();
+        }
+        catch(Exception ex)
+        {
+            CreateLogFiles.ErrorLog("Form:Attendance_Register.aspx.cs,Method:attan(). EXCEPTION: "+ ex.Message+" userid :"+ Session["password"]);
+        }
+    }
+
+    /// <Summary>
+    /// This method get date as a string and return MMDDYYYY format.
+    /// </Summary>
+    public DateTime ToMMddYYYY(string str)
+    {
+        int dd,mm,yy;
+        string [] strarr = new string[3];
+        strarr=str.Split(new char[]{'/'},str.Length);
+        dd=Int32.Parse(strarr[0]);
+        mm=Int32.Parse(strarr[1]);
+        yy=Int32.Parse(strarr[2]);
+        DateTime dt=new DateTime(yy,mm,dd);
+        return(dt);
+    }
 </script>
 <script language =javascript>
 // This Method use to for holiday attendance. if we check holiday checkbox then all dropdown show value acording to holiday status.

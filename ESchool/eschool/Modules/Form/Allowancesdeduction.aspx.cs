@@ -424,7 +424,7 @@ namespace eschool.Form
 							con1=new SqlConnection(System.Configuration.ConfigurationSettings.AppSettings["bbnschool"]);
 							con1.Open ();
 							//15.10.08strInsert1="select count(*) from Allowancesdeduction where Staff_ID="+staff[0].ToString()+" and (fromdt>='"+datefrom+"'and fromdt<='"+datefrom+"' or todt>='"+dateto+"'and todt<='"+dateto+"')";
-							strInsert1="select count(*) from Allowancesdeduction where Staff_ID="+staff[1].ToString()+" and (fromdt>='"+datefrom+"'and fromdt<='"+datefrom+"' or todt>='"+dateto+"'and todt<='"+dateto+"')";
+							strInsert1="select count(*) from Allowancesdeduction where Staff_ID="+staff[1].ToString()+" and (fromdt>='"+GenUtil.str2MMDDYYYY(datefrom)+"'and fromdt<='"+ GenUtil.str2MMDDYYYY(datefrom) + "' or todt>='"+ GenUtil.str2MMDDYYYY(dateto) +"'and todt<='"+ GenUtil.str2MMDDYYYY(dateto) + "')";
 							cmdInsert1=new SqlCommand (strInsert1,con1);
 							sdtr=cmdInsert1.ExecuteReader();
 							if(sdtr.Read())

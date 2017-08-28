@@ -80,7 +80,7 @@
 								<td>
 									<asp:label id="lblDesignation" runat="server">&nbsp;Staff Desig.&nbsp;</asp:label><FONT color="red" size="1">*</FONT>
 								</td>
-								<td><asp:dropdownlist id="DropType" runat="server" AutoPostBack="True" CssClass="ComboBox" Width="100">
+								<td><asp:dropdownlist id="DropType" runat="server" AutoPostBack="True" CssClass="ComboBox" Width="120px">
 										<asp:ListItem Value="---Select---">---Select---</asp:ListItem>
 									</asp:dropdownlist><asp:comparevalidator id="cvStaffType" runat="server" ValueToCompare="---Select---" Operator="NotEqual"
 										ControlToValidate="DropType" ErrorMessage="Please Select The Staff Designation">*</asp:comparevalidator>
@@ -241,8 +241,8 @@
 							</TR>
 							<TR>
 								<TD><asp:label id="lblSub" runat="server">&nbsp;Subject Taken</asp:label></TD>
-								<TD><asp:listbox id="lstSubject" runat="server" Width="150px" Font-Names="Microsoft Sans Serif" SelectionMode="Multiple"
-										Rows="1" Font-Size="8pt" Height="60px"></asp:listbox></TD>
+								<TD><asp:listbox id="lstSubject" runat="server" Width="150px" SelectionMode="Multiple"
+										Rows="1" Height="18px"></asp:listbox></TD>
 								<td>&nbsp;Nature Of Appoint.</td>
 								<td colSpan="3"><asp:dropdownlist CssClass="ComboBox" id="DropNatApp" Width="150px" Runat="server">
 										<asp:ListItem Value="Permanent">Permanent</asp:ListItem>

@@ -444,7 +444,7 @@ namespace eschool.Roles
 				string sLoginName=txtLoginName.Text;
 				if(txtLoginName.Equals ("") || txtFName.Equals ("")||txtLName.Equals ("")|| DropRole.SelectedIndex ==0 )
 				{
-					MessageBox.Show ("- Login Name or \r\n - User Name or \r\n - Role is blank");
+					MessageBox.Show ("- Login Name or \n - User Name or \n - Role is blank");
 					return;
 				}
 				string sName=txtFName.Text.ToString()+" "+txtMName.Text.ToString()+" "+txtLName.Text.ToString();

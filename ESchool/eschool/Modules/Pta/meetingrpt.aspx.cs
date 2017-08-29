@@ -157,8 +157,8 @@ namespace eschool.Pta
 				con1.Open ();
 				strInsert1 ="Select *  From ptameetingagenda where meetingdt >=@meetingdt and meetingdt <=@meetingtodate";
 				cmdInsert1=new SqlCommand (strInsert1,con1);
-				cmdInsert1.Parameters .Add("@meetingdt",ToMMddYYYY(txtdt.Text.Trim().ToString ()).ToShortDateString() ); 
-				cmdInsert1.Parameters .Add("@meetingtodate",ToMMddYYYY(txtToDate.Text.Trim().ToString ()).ToShortDateString() ); 
+				cmdInsert1.Parameters .Add("@meetingdt",GenUtil.str2MMDDYYYY(txtdt.Text)); 
+				cmdInsert1.Parameters .Add("@meetingtodate",GenUtil.str2MMDDYYYY(txtToDate.Text)); 
 				dgrdcomp.DataSource =cmdInsert1.ExecuteReader();
 				dgrdcomp.DataBind ();
 					if(dgrdcomp.Items.Count==0)

@@ -175,7 +175,7 @@ namespace eschool.Modules.Reports
 						{
 							while(dr.Read())
 							{
-								dbobj.ExecProc(OprType.Insert,"sp_stockmovement",ref op,"@id",Int32.Parse(dr["stockid"].ToString()),"@fromdate",getdate(TxtDatefrom.Text,true).Date.ToShortDateString(),"@todate",getdate(TxtDateTo.Text,true).Date.ToShortDateString());
+								dbobj.ExecProc(OprType.Insert,"sp_stockmovement",ref op,"@id",Int32.Parse(dr["stockid"].ToString()),"@fromdate",GenUtil.str2MMDDYYYY(TxtDatefrom.Text),"@todate",GenUtil.str2MMDDYYYY(TxtDateTo.Text));
 							}
 							dr.Close();
 						}

@@ -911,9 +911,10 @@ namespace eschool.StudentFees
 					else
 						OS=CS;
 					CS=OS+double.Parse(rdr1["recieved"].ToString())-double.Parse(rdr1["issued"].ToString());
+                    string TD = rdr1["Tran_date"].ToString();
 					//CS=OS+double.Parse(rdr1["received"].ToString())-(double.Parse(rdr1["issued"].ToString())+double.Parse(rdr1["salesfoc"].ToString()));
 					Con.Open();
-					cmd = new SqlCommand("update Stock_Movement set opening='"+OS.ToString()+"', Closing='"+CS.ToString()+"' where itemno="+itemname1+" and Tran_Date='"+rdr1["Tran_date"].ToString()+"'",Con);
+					cmd = new SqlCommand("update Stock_Movement set opening='"+OS.ToString()+"', Closing='"+CS.ToString()+"' where itemno="+itemname1+" and Tran_Date='"+GenUtil.str2MMDDYYYY(TD.ToString())+"'",Con);
 					cmd.ExecuteNonQuery();
 					cmd.Dispose();
 					Con.Close();

@@ -153,7 +153,7 @@ namespace eschool.localuserReports
 			{
 				if(Dropstype .SelectedIndex ==0)
 				{
-					MessageBox .Show ("pls select the option");
+					MessageBox .Show ("Please select the option");
 				}
 				string str="";
 				//DataSet ds=new DataSet();

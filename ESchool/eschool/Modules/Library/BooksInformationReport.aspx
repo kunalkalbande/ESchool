@@ -24,7 +24,7 @@
 			<table height="290" class="border" width="778" align="center">
 				<tr>
 					<td vAlign="top" align="center"><b>BOOK INFORMATION REPORT</b>
-						<table align="center" width="75%" bordercolorlight="#663300" border="5">
+						<table align="center" width="100%" bordercolorlight="#663300" border="5">
 							<TR height="10">
 								<TD align="center">Search Option&nbsp;<asp:dropdownlist id="Dropsearchopt" runat="server" Width="80" AutoPostBack="True" CssClass="ComboBox">
 										<asp:ListItem Value="---Select---">---Select---</asp:ListItem>
@@ -67,10 +67,10 @@
 														<%=i++%>
 													</ItemTemplate>
 												</asp:TemplateColumn>
-												<asp:BoundColumn DataField="Book_ID" HeaderText="Book ID"></asp:BoundColumn>
-												<asp:BoundColumn DataField="bookname" HeaderText="Book Name"></asp:BoundColumn>
-												<asp:BoundColumn DataField="subname" HeaderText="Subject Name"></asp:BoundColumn>
-												<asp:BoundColumn DataField="aname" HeaderText="Author Name"></asp:BoundColumn>
+												<asp:BoundColumn DataField="Book_ID" HeaderText="Book ID" ItemStyle-Width="41"></asp:BoundColumn>
+												<asp:BoundColumn DataField="bookname" HeaderText="Book Name" ItemStyle-Width="50"></asp:BoundColumn>
+												<asp:BoundColumn DataField="subname" HeaderText="Subject Name" ItemStyle-Width="50"></asp:BoundColumn>
+												<asp:BoundColumn DataField="aname" HeaderText="Author Name" ></asp:BoundColumn>
 												<asp:BoundColumn DataField="pname" HeaderText="Publisher Name"></asp:BoundColumn>
 												<asp:BoundColumn DataField="price" HeaderText="Book Cost"></asp:BoundColumn>
 												<asp:BoundColumn DataField="pdate" HeaderText="Purchase Date" DataFormatString="{0:dd/MM/yyyy}"></asp:BoundColumn>

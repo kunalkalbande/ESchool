@@ -37,7 +37,8 @@
 					<asp:Label id="Labusertype1" runat="server" Font-Bold="True" ForeColor="Maroon"></asp:Label>
 					&nbsp;<asp:Label id="Labelloginby" runat="server" Font-Bold="True" ForeColor="Maroon">Login By :</asp:Label>
 					<asp:Label id="Labelloginby3" runat="server" Font-Bold="True" ForeColor="Maroon"></asp:Label></td>
-				<td align="right" colspan="2" valign="middle"><asp:label id="Label3" runat="server" Font-Bold="True"><A href="/eschool/LoginHome/Menu.aspx"><font color="Maroon">Home</font></A></asp:label></td>
+				<td align="right" colspan="2" valign="middle">
+                <asp:HyperLink ID="HLinkHome" runat="server" NavigateUrl="~/LoginHome/Menu.aspx" ForeColor="Maroon"><STRONG>Home</STRONG></asp:HyperLink></td>
 				<!--td align="right"></td-->
 			</tr>
 		</TABLE>

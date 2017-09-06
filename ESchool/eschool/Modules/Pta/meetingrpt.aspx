@@ -49,7 +49,7 @@
 											<HeaderStyle CssClass="DataGridHeader" BackColor="#663300"></HeaderStyle>
 											<FooterStyle ForeColor="Black" BackColor="#CCCC99"></FooterStyle>
 											<Columns>
-												<asp:BoundColumn DataField="meetingdt" HeaderText="Date" DataFormatString="{0:dd/MM/yyyy}"></asp:BoundColumn>
+												<asp:BoundColumn DataField="meetingdt" HeaderText="Date" DataFormatString="{0:dd/MM/yyyy}" ItemStyle-Width="55"></asp:BoundColumn>
 												<asp:BoundColumn DataField="agenda" HeaderText="Agenda"></asp:BoundColumn>
 												<asp:BoundColumn DataField="min1" HeaderText="Discussion1"></asp:BoundColumn>
 												<asp:BoundColumn DataField="min2" HeaderText="Discussion2"></asp:BoundColumn>

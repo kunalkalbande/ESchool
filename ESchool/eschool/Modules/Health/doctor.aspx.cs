@@ -16,11 +16,10 @@ using System.Web.SessionState;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
-using System.Data .SqlClient;
-using RMG; 
+using System.Data.SqlClient;
+using RMG;
 using eschool.Classes;
-
-
+using System.Text;
 
 namespace eschool.Health
 {
@@ -320,7 +319,52 @@ namespace eschool.Health
 			SqlCommand cmdInsert;
 			try
 			{
-				con=new SqlConnection(System.Configuration.ConfigurationSettings.AppSettings["bbnschool"]);
+                StringBuilder errorMessage = new StringBuilder();
+                if (txtdoctor.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Docter Name");
+                    errorMessage.Append("\n");
+                }
+                if (DropSpecial.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select Specialization");
+                    errorMessage.Append("\n");
+                }               
+                if (DropCity.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select City");
+                    errorMessage.Append("\n");
+                }
+                if (txtmobile.Text != string.Empty)
+                {
+                    if (txtmobile.Text.Length < 10)
+                    {
+                        errorMessage.Append("- Mobile No. Between 10 to 12 Digits");
+                        errorMessage.Append("\n");
+                    }
+                }
+                if (txtphoneoff.Text != string.Empty)
+                {
+                    if (txtphoneoff.Text.Length < 6)
+                    {
+                        errorMessage.Append("- Phone(Off) Must be Between 6-12 Digits");
+                        errorMessage.Append("\n");
+                    }
+                }
+                if (txtphoneres.Text != string.Empty)
+                {
+                    if (txtphoneres.Text.Length < 6)
+                    {
+                        errorMessage.Append("- Phone(res) Must be Between 6-12 Digits");
+                        errorMessage.Append("\n");
+                    }
+                }
+                if (errorMessage.Length > 0)
+                {
+                    MessageBox.Show(errorMessage.ToString());                
+                    return;
+                }
+                con =new SqlConnection(System.Configuration.ConfigurationSettings.AppSettings["bbnschool"]);
 				con.Open ();
 				fillID();
 				strInsert = "Insert doctor(docid,doctor_name,add1,city,state,country,phone1_off,phone1_res,mobile,regno,specialisation)values (@docid,@doctor_name,@add1,@city,@state,@country,@phone1_off,@phone1_res,@mobile,@regno,@special)";

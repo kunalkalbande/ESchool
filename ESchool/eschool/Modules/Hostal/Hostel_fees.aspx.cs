@@ -1,15 +1,15 @@
-		
-   /*
-   Copyright (c) 2005 bbnisys Technologies. All Rights Reserved.
-  
-   No part of this software shall be reproduced, stored in a 
-   retrieval system, or transmitted by any means, electronic 
-   mechanical, photocopying, recording  or otherwise, or for
-   any  purpose  without the express  written  permission of
-   bbnisys Technologies.
+
+/*
+Copyright (c) 2005 bbnisys Technologies. All Rights Reserved.
+
+No part of this software shall be reproduced, stored in a 
+retrieval system, or transmitted by any means, electronic 
+mechanical, photocopying, recording  or otherwise, or for
+any  purpose  without the express  written  permission of
+bbnisys Technologies.
 
 */
-     # region Directives...
+#region Directives...
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -20,10 +20,11 @@ using System.Web.SessionState;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
-using System.Data .SqlClient ;
+using System.Data.SqlClient;
 using eschool.Classes;
 using RMG;
-# endregion
+using System.Text;
+#endregion
 
 namespace eschool.Hostel
 {
@@ -213,7 +214,24 @@ namespace eschool.Hostel
 				SqlCommand cmdInsert;
 				con=new SqlConnection(System.Configuration.ConfigurationSettings.AppSettings["bbnschool"]);
 				con.Open ();
-				fillID();
+                StringBuilder errorMessage = new StringBuilder();
+
+                if (Dropclass.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select Class Name");
+                    errorMessage.Append("\n");
+                }
+                if (txtfees.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Fees");
+                    errorMessage.Append("\n");
+                }
+                if (errorMessage.Length > 0)
+                {
+                    MessageBox.Show(errorMessage.ToString());
+                    return;
+                }
+                fillID();
 				string msg="";
 				if(btnSave.Text.Equals("Update"))
 				{

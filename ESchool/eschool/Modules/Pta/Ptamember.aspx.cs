@@ -433,7 +433,38 @@ namespace eschool.Modules.Pta
 				string strInsert111;
 				con111=new SqlConnection(System.Configuration.ConfigurationSettings.AppSettings["bbnschool"]);
 				con111.Open ();
-				fillID();
+                StringBuilder errorMessage = new StringBuilder();
+                if (txtname1.Text == string.Empty)
+                {
+                    errorMessage.Append("- You Must Enter Member Name");
+                    errorMessage.Append("\n");
+                }
+                if (Dropdesi.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select Designation"); 
+                    errorMessage.Append("\n");
+                }
+                if (Dropstaffid.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Checked by name must be selected");
+                    errorMessage.Append("\n");
+                }
+                if (Droptypemem.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please select the member type"); 
+                    errorMessage.Append("\n");
+                }
+                if (Textadd.Text == string.Empty)
+                {
+                    errorMessage.Append("- You Must Enter Address");
+                    errorMessage.Append("\n");
+                }                
+                if (errorMessage.Length > 0)
+                {
+                    MessageBox.Show(errorMessage.ToString());
+                    return;
+                }
+                fillID();
 				cmdInsert111=new SqlCommand ("select * from ptamembership where teleno='" + Texthone.Text.ToString().Trim () + "'  and address='" + Textadd.Text.ToString ().Trim () + "'" ,con111);
 				sdr=cmdInsert111.ExecuteReader ();
 				if(sdr.HasRows )

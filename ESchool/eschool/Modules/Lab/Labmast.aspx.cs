@@ -204,7 +204,23 @@ namespace eschool.Lab
 		{
 			try
 			{
-				string sLabName=txtlabtype.Text;
+                StringBuilder errorMessage = new StringBuilder();
+                if (txtlabtype.Text == string.Empty)
+                {
+                    errorMessage.Append("- You Must Enter Lab Name");
+                    errorMessage.Append("\n");
+                }
+                if (txtlabhallno.Text == string.Empty)
+                {
+                    errorMessage.Append("- You Must Enter Lab No.");
+                    errorMessage.Append("\n");
+                }
+                if (errorMessage.Length > 0)
+                {
+                    MessageBox.Show(errorMessage.ToString());
+                    return;
+                }
+                string sLabName=txtlabtype.Text;
 				SqlConnection con;
 				string strInsert;
 				SqlCommand cmdInsert;

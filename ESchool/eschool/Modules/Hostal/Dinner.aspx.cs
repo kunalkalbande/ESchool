@@ -218,8 +218,39 @@ namespace eschool.Hostel
 			SqlCommand cmdInsert;
 			string msg="";
 			try
-			{				
-				con=new SqlConnection(System.Configuration.ConfigurationSettings.AppSettings["bbnschool"]);
+			{
+                StringBuilder errorMessage = new StringBuilder();
+                if (Droptime.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select Time");
+                    errorMessage.Append("\n");
+                }
+                if (Dropblday.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select Day");
+                    errorMessage.Append("\n");
+                }                
+                if (txtdes1.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Dishes1 Name");
+                    errorMessage.Append("\n");
+                }
+                if (txtdes2.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Dishes2 Name");
+                    errorMessage.Append("\n");
+                }
+                if (txtdes3.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Dishes3 Name");
+                    errorMessage.Append("\n");
+                }
+                if (errorMessage.Length > 0)
+                {
+                    MessageBox.Show(errorMessage.ToString());
+                    return;
+                }
+                con =new SqlConnection(System.Configuration.ConfigurationSettings.AppSettings["bbnschool"]);
 				con.Open ();
 				fillID();
 				if(btnSave.Text.Equals ("Save"))

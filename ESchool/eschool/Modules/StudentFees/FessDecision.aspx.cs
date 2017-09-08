@@ -421,9 +421,39 @@ namespace eschool.StudentFees
 		/// </summary>
 		private void btnSave_Click(object sender, System.EventArgs e)
 		{
-			try
-			{
-				trans();
+            try
+
+            {
+                StringBuilder errorMessage = new StringBuilder();
+                if (DropClass.SelectedIndex == 0 || DropClass.SelectedIndex == -1)
+                {
+                    errorMessage.Append("- Please Select Class");
+                    errorMessage.Append("\n");
+                }
+                if (Dropfeetype.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select Fees Type");
+                    errorMessage.Append("\n");
+                }
+                if (dropscategory.SelectedIndex == 0 || temprank.Value == "")
+                {
+                    errorMessage.Append("- Please Select SCategory");
+                    errorMessage.Append("\n");
+                }
+                if (Dropfeetype.Text == "Monthly")
+                {
+                    if (txttf.Text == string.Empty)
+                    {
+                        errorMessage.Append("- Please Enter Tution Fees");
+                        errorMessage.Append("\n");
+                    }
+                }
+                if (errorMessage.Length > 0)
+                {
+                    MessageBox.Show(errorMessage.ToString());
+                    return;
+                }
+                trans();
 				int sClass=0;
 				for(int j=0;j<LstClassName.Length;j++)
 				{

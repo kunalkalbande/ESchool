@@ -1754,8 +1754,8 @@ namespace eschool.SchoolClass
 			sqcomm.Parameters.Add("@Student_LCountry",Student_LCountry);
 			sqcomm.Parameters.Add("@Student_PCountry",Student_PCountry);
 			sqcomm.Parameters.Add("@House",House);
-			sqcomm.Parameters.Add("@sCategory",sCategory);
-			sqcomm.Parameters.Add("@Rank",Rank);
+            sqcomm.Parameters.Add("@Rank", Rank);
+            sqcomm.Parameters.Add("@sCategory",sCategory);			
 			sqcomm.Parameters.Add("@BG",BG);
 			sqcomm.Parameters.Add("@RouteName",RouteName);
 			sqcomm.Parameters.Add("@RouteNo",RouteNo);

@@ -346,7 +346,7 @@ namespace eschool.Library.FORMS
 							return;
 						}
 						DateTime dt=System.DateTime.Now;
-						DateTime dIssue=Convert.ToDateTime(ToMMddYYYY(txtIssue.Text));
+						DateTime dIssue=Convert.ToDateTime(Request.Form["txtIssue"]);
 						System.TimeSpan diff=dIssue.Subtract(dt);
 						int iDays=diff.Days;
 						fillID();

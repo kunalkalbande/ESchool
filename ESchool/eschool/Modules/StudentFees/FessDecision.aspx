@@ -96,9 +96,11 @@
 										</asp:dropdownlist><asp:comparevalidator id="Comparevalidator13" runat="server" ErrorMessage="Please select Fee Type" ControlToValidate="Dropfeetype"
 											Operator="NotEqual" ValueToCompare="Select">*</asp:comparevalidator></TD>
 									<td>&nbsp;SCategory&nbsp;<font color="#ff3300" size="1">*</font></td>
-									<td><asp:dropdownlist id="dropscategory" Runat="server" CssClass="ComboBox" onchange="ShowRank(this,document.FessDecision.DropRank)"></asp:dropdownlist><asp:comparevalidator id="Comparevalidator14" runat="server" ErrorMessage="Please select SCategory" ControlToValidate="dropscategory"
-											Operator="NotEqual" ValueToCompare="Select">*</asp:comparevalidator><select class="ComboBox" id="DropRank" onchange="getrank(this)" runat="server"><option value="Select" selected>Select</option>
-										</select><asp:comparevalidator id="Comparevalidator15" runat="server" ErrorMessage="Please Select Rank" ControlToValidate="DropRank"
+									<td><asp:dropdownlist id="dropscategory" Runat="server" CssClass="ComboBox" onchange="ShowRank(this,document.FessDecision.DropRank)"></asp:dropdownlist>
+                                        <asp:comparevalidator id="Comparevalidator14" runat="server" ErrorMessage="Please select SCategory" ControlToValidate="dropscategory"
+											Operator="NotEqual" ValueToCompare="Select">*</asp:comparevalidator>
+                                        <select class="ComboBox" id="DropRank" onchange="getrank(this)" runat="server"><option value="Select">Select</option></select>
+                                        <asp:comparevalidator id="Comparevalidator15" runat="server" ErrorMessage="Please Select Rank" ControlToValidate="DropRank"
 											Operator="NotEqual" ValueToCompare="Select">*</asp:comparevalidator></td>
 								</tr>
 								<asp:panel id="panOneTime" Runat="server">

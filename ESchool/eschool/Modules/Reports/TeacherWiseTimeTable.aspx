@@ -45,7 +45,7 @@
 							<table align="center" borderColorLight="#663300" border="5" width="500">
 								<tr>
 									<td>
-										<table>
+										<table align="center">
 											<tr>
 												<td colspan="9">Teacher Code&nbsp; &nbsp;<asp:dropdownlist id="DropTCode" CssClass="ComboBox" Runat="server"></asp:dropdownlist>
 													&nbsp;

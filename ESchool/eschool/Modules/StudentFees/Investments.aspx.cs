@@ -303,7 +303,8 @@ namespace eschool.StudentFees
 			btnSave .Visible =true;
 			BtnUpdate .Visible =false;
 			DropStockID.Visible=false;
-		}
+            Txtdate.Text = DateTime.Now.Day + "/" + DateTime.Now.Month + "/" + DateTime.Now.Year;
+        }
 	
 		/// <summary>
 		///  this method use to Reset page.
@@ -417,7 +418,7 @@ namespace eschool.StudentFees
 				}
 				sdr1.Close();
 				trandt=GenUtil.str2MMDDYYYY (DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year).ToString ()+" "+DateTime.Now .Hour+":"+DateTime.Now .Minute +":"+DateTime.Now .Second;
-				strInsert = "Insert into StockMaster(Stockid,ItemCategory,ItemName,Quantity,Unit,Rate,Remark,stocklocation,open_bal) values (@Stockid,@ItemCategory,@ItemName,@Quantity,@Unit,@Rate,@Remark,@stocklocation,@open_bal)";
+				strInsert = "Insert into StockMaster(Stockid,ItemCategory,ItemName,Quantity,Unit,Rate,Remark,stocklocation,open_bal,CurrentDate) values (@Stockid,@ItemCategory,@ItemName,@Quantity,@Unit,@Rate,@Remark,@stocklocation,@open_bal,@CurrentDate)";
 				cmdInsert=new SqlCommand (strInsert,con);
 				cmdInsert.Parameters .Add ("@Stockid",lblStockID.Text);
 				if (DropOutSider.SelectedIndex>0 &&  DropOutSider.SelectedItem.Text!="Other")  
@@ -456,12 +457,14 @@ namespace eschool.StudentFees
 					cmdInsert.Parameters.Add("@stocklocation",Droplocation.SelectedItem.Text);
 				else if(Droplocation.SelectedItem.Text=="Other")
 					cmdInsert.Parameters.Add("@stocklocation",Request.Params.Get("TxtLocation"));
-				
-				i=cmdInsert.ExecuteNonQuery();
-				if(i==1)
-				{  
+
+                cmdInsert.Parameters.Add("@CurrentDate",GenUtil.str2MMDDYYYY(Txtdate.Text));
+
+                i =cmdInsert.ExecuteNonQuery();
+				if(i==1)//,CurrentDate=@CurrentDate
+                {  
 					//sdtr="insert into stock_movement(itemno,tran_no,tran_date,opening,recieved,issued,closing) values ("+lblStockID.Text+",'OB','"+trandt+"',"+txtQty.Text.Trim().ToUpper()+",0,0,"+txtQty.Text.Trim().ToUpper()+")";
-					sdtr="insert into stock_movement(itemno,tran_no,tran_date,opening,recieved,issued,closing) values ("+lblStockID.Text+",'OB','"+GenUtil.str2MMDDYYYY(GenUtil.trimDate(acc_date_from))+"',"+txtQty.Text.Trim().ToUpper()+",0,0,"+txtQty.Text.Trim().ToUpper()+")";
+					sdtr= "insert into stock_movement(itemno,tran_no,tran_date,opening,recieved,issued,closing) values (" + lblStockID.Text+",'OB','"+GenUtil.str2MMDDYYYY(GenUtil.trimDate(acc_date_from))+"',"+txtQty.Text.Trim().ToUpper()+",0,0,"+txtQty.Text.Trim().ToUpper()+")";
 					cmdInsert=new SqlCommand(sdtr,con);
 					cmdInsert.ExecuteReader();
 				}
@@ -537,7 +540,7 @@ namespace eschool.StudentFees
 				{
 					EmployeeClass obj=new EmployeeClass();
 					SqlDataReader SqlDtr;
-					string str="Select stockid,itemcategory,itemname,quantity,unit,rate,remark,Stocklocation  From StockMaster where stockid='"+DropStockID.SelectedItem.Text+"'";
+					string str="Select stockid,itemcategory,itemname,quantity,unit,rate,remark,Stocklocation,CurrentDate  From StockMaster where stockid='"+DropStockID.SelectedItem.Text+"'";
 					SqlDtr=obj.GetRecordSet(str);
 					if(SqlDtr.Read())
 					{
@@ -548,7 +551,8 @@ namespace eschool.StudentFees
 						txtQty.Text=SqlDtr["Quantity"].ToString().Trim ();
 						txtRate .Text=SqlDtr["rate"].ToString().Trim ();
 						txtrem.Text  =SqlDtr["remark"].ToString().Trim ();
-					}
+                        Txtdate.Text = GenUtil.str2DDMMYYYY(GenUtil.trimDate(SqlDtr["CurrentDate"].ToString().Trim()));
+                    }
 					else
 					{
 						MessageBox.Show("Data may be not available");
@@ -584,10 +588,10 @@ namespace eschool.StudentFees
 				con=new SqlConnection(System.Configuration.ConfigurationSettings.AppSettings["bbnschool"]);
 				con.Open ();
 				//fillID();
-				strUpdate = "Update StockMaster set ItemCategory=@ItemCategory,ItemName=@ItemName,Quantity=@Quantity,Unit=@Unit,Rate=@Rate,Remark=@Remark,Stocklocation=@stocklocation,open_bal=@open_bal where Stockid=@Stockid";
+				strUpdate = "Update StockMaster set ItemCategory=@ItemCategory,ItemName=@ItemName,Quantity=@Quantity,Unit=@Unit,Rate=@Rate,Remark=@Remark,Stocklocation=@stocklocation,open_bal=@open_bal,CurrentDate=@CurrentDate where Stockid=@Stockid";
 				cmdUpdate=new SqlCommand (strUpdate,con);
 				if (DropStockID .SelectedIndex>0)  
-					cmdUpdate.Parameters.Add ("@Stockid",DropStockID.SelectedItem.Text.Trim ());
+					cmdUpdate.Parameters.Add ("@Stockid",DropStockID.SelectedItem.Text.Trim());
 				else
 				{
 					MessageBox.Show ("Please Select Proper  Stock Id");
@@ -638,8 +642,10 @@ namespace eschool.StudentFees
 					cmdUpdate.Parameters.Add("@stocklocation",Droplocation.SelectedItem.Text.Trim());
 				else if(Droplocation.SelectedItem.Text=="Other")
 					cmdUpdate.Parameters.Add("@stocklocation",Request.Params.Get("TxtLocation"));
-				
-				i=cmdUpdate.ExecuteNonQuery();
+
+                cmdUpdate.Parameters.Add("@CurrentDate", GenUtil.str2MMDDYYYY(Txtdate.Text));
+
+                i =cmdUpdate.ExecuteNonQuery();
 				if(i==1)
 				{
 					//strUpdate="update stock_movement set tran_date='"+trandt+"',opening="+txtQty.Text.Trim().ToUpper()+",closing="+txtQty.Text.Trim().ToUpper()+" where itemno="+DropStockID.SelectedItem.Text.Trim ();

@@ -177,7 +177,33 @@ namespace eschool.Library.FORMS
 		{
 			try
 			{
-				string msg="";
+                StringBuilder errorMessage = new StringBuilder();
+                if (TxtBookName.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Book Name");
+                    errorMessage.Append("\n");
+                }
+                if (TxtAuthorName.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Author Name");
+                    errorMessage.Append("\n");
+                }
+                if (TxtNumberOfBook.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Price Of Book");
+                    errorMessage.Append("\n");
+                }
+                if (txtqty.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Quantity");
+                    errorMessage.Append("\n");
+                }
+                if (errorMessage.Length > 0)
+                {
+                    MessageBox.Show(errorMessage.ToString());
+                    return;
+                }
+                string msg="";
 				LibraryClass .ItemClass obj =new LibraryClass.ItemClass();
 				if(txtsubname .Text  =="")
 					obj.subname ="";

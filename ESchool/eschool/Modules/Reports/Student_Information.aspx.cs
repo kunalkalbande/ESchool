@@ -434,13 +434,13 @@ namespace eschool.Reports
 				}
 				catch(Exception ex)
 				{
-					Response.Write(ex.ToString()); 
+					//Response.Write(ex.ToString()); 
 					CreateLogFiles.ErrorLog(" Form : StudentInformation.aspx,Method  Print_Click,  Exception: "+ex.Message+" , Userid :  "+ pass   );
 				}	
 			}
 			catch(Exception ex)
 			{
-				Response.Write(ex.ToString()); 
+				//Response.Write(ex.ToString()); 
 				CreateLogFiles.ErrorLog(" Form : StudentInformation.aspx,Method  Print_Click,  Exception: "+ex.Message+" , Userid :  "+ pass   );
 			}
 		}
@@ -529,7 +529,7 @@ namespace eschool.Reports
 			}
 			catch(Exception ex)
 			{
-				Response.Write(ex.ToString()); 
+				//Response.Write(ex.ToString()); 
 				CreateLogFiles.ErrorLog(" Form : StudentInformation.aspx,Method  DropStudID_SelectedIndexChanged,  Exception: "+ex.Message+" , Userid :  "+ pass   );
 			}
 
@@ -675,7 +675,7 @@ namespace eschool.Reports
 			}
 			catch(Exception ex)
 			{
-				Response.Write(ex.ToString()); 
+				//Response.Write(ex.ToString()); 
 				CreateLogFiles.ErrorLog(" Form : StudentInformation.aspx,Method  Print_Click,  Exception: "+ex.Message+" , Userid :  "+ pass   );
 			}
 					

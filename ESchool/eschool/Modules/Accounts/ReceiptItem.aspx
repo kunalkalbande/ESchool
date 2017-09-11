@@ -50,12 +50,12 @@
 		// this method use to calculate quty * total amount.
 		function Amount()
 		{
-			var rate= document.Form1.all.TxtRate.value
+			var rate= document.all.TxtRate.value
 			//alert("rate:"+rate)
 			//alert("qty:"+qty)
-			var qty= document.Form1.all.txtQty.value
+			var qty= document.all.txtQty.value
 			if(rate!=null&&qty!=null)
-			document.Form1.all.TxtAmount.value=rate * qty
+			document.all.TxtAmount.value=rate * qty
 		}
   
 		</script>

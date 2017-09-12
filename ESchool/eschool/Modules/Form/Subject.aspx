@@ -1,4 +1,4 @@
-<%@ Page language="c#" Codebehind="Subject.aspx.cs" AutoEventWireup="false" Inherits="eschool.Modules.Form.Subject" %>
+<%@ Page language="c#" Codebehind="Subject.aspx.cs" AutoEventWireup="false" EnableEventValidation="false" Inherits="eschool.Modules.Form.Subject" %>
 <%@ Register TagPrefix="uc1" TagName="header" Src="../../HeaderFooter/usercontrol/header.ascx" %>
 <%@ Register TagPrefix="uc1" TagName="Footer" Src="../../HeaderFooter/usercontrol/Footer.ascx" %>
 <%@ Import namespace="System.Data.SqlClient"%>

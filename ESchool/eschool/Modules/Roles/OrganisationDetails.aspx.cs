@@ -11,8 +11,9 @@ using System.Web.UI.HtmlControls;
 using System.Data.SqlClient;
 using RMG;
 using System.IO;
-using eschool.Classes ; 
+using eschool.Classes;
 using DBOperations;
+using System.Text;
 
 namespace eschool
 {
@@ -306,8 +307,35 @@ namespace eschool
 		{
 			try
 			{
-				
-				if(LblCompanyID.Text=="1002" && LblCompanyID.Visible ==true)
+                StringBuilder errorMessage = new StringBuilder();
+                if (txtOwnerName.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter  Affiliation No.");
+                    errorMessage.Append("\n");
+                }
+                if (TxtOrganisationName.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter School Name");
+                    errorMessage.Append("\n");
+                }
+                if (TxtAddress.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Address");
+                    errorMessage.Append("\n");
+                }
+                if (DropCity.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select City");
+                    errorMessage.Append("\n");
+                }
+                
+                if (errorMessage.Length > 0)
+                {
+                    MessageBox.Show(errorMessage.ToString());
+                    return;
+                }
+
+                if (LblCompanyID.Text=="1002" && LblCompanyID.Visible ==true)
 				{
 					MessageBox.Show("School Information Already Stored ");
 					clear();

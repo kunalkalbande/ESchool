@@ -776,11 +776,13 @@ namespace eschool.Form
 			Textbox2.Text ="";
 			Textbox3.Text ="";
 			Textbox4.Text ="";
-			DropEmpID.SelectedIndex=0;
-			DropNatApp.SelectedIndex=0;
+            if (DropEmpID.SelectedIndex >= 0)
+            {
+                DropEmpID.SelectedIndex = 0;                
+            }
+            DropNatApp.SelectedIndex = 0;            
 			txtage.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
-			txtdojoin.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;
-			
+			txtdojoin.Text=DateTime.Now.Day+"/"+DateTime.Now.Month+"/"+DateTime.Now.Year;			
 		}
 		
 		/// <summary>

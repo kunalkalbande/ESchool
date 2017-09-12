@@ -269,7 +269,7 @@ namespace eschool.Modules.chat_Server
 				cmd=new SqlCommand("Delete from session where session_id='"+teach_id+"'",cn);
 				cmd.ExecuteNonQuery();
 				cmd.Dispose();
-				Response.Redirect("../Form/Menu.aspx",false);
+				Response.Redirect("~/LoginHome/Menu.aspx",false);
 			}
 			catch(Exception ex)
 			{

@@ -562,7 +562,29 @@ namespace eschool.Form
 		/// </summary>
 		private void btnSave_Click(object sender, System.EventArgs e)
 		{
-			SqlConnection conin;
+            StringBuilder errorMessage = new StringBuilder();
+            if (Dropempid.SelectedIndex == 0)
+            {
+                errorMessage.Append("- Please Select Teacher name");
+                errorMessage.Append("\n");
+            }
+            if (Dropdesig.SelectedIndex == 0)
+            {
+                errorMessage.Append("- Please Select Designation");
+                errorMessage.Append("\n");
+            }            
+            if (Dropday.SelectedIndex == 0)
+            {
+                errorMessage.Append("- Please Select Day");
+                errorMessage.Append("\n");
+            }            
+            if (errorMessage.Length > 0)
+            {
+                MessageBox.Show(errorMessage.ToString());
+                return;
+            }
+
+            SqlConnection conin;
 			string strInsertin="",strDelete="";
 			SqlCommand cmdInsertin=null,cmdDelete=null;
 			string p1="";

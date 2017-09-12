@@ -362,7 +362,49 @@ namespace eschool.Health
 		{
 			try
 			{
-				string sSysDate=System.DateTime.Now.Month.ToString()+ "/" + System.DateTime.Now.Day.ToString()+ "/" + System.DateTime.Now.Year.ToString();
+                StringBuilder errorMessage = new StringBuilder();
+                if (Dropclass.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select Class");
+                    errorMessage.Append("\n");
+                }
+                if (Dropstudentid.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select Student ID");
+                    errorMessage.Append("\n");
+                }
+                if (txtstudentname.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Name");
+                    errorMessage.Append("\n");
+                }                
+                if (Dropdocname.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select Duration");
+                    errorMessage.Append("\n");
+                }
+                if (Dropchdoc.SelectedValue == "Select")
+                {
+                    errorMessage.Append("- Please Select Checked By Doctor");
+                    errorMessage.Append("\n");
+                }
+                if (Dropbg.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select Blood Group");
+                    errorMessage.Append("\n");
+                }
+                if (Dropstaff.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select Checked By Staff");
+                    errorMessage.Append("\n");
+                }
+                if (errorMessage.Length > 0)
+                {
+                    MessageBox.Show(errorMessage.ToString());
+                    return;
+                }
+
+                string sSysDate=System.DateTime.Now.Month.ToString()+ "/" + System.DateTime.Now.Day.ToString()+ "/" + System.DateTime.Now.Year.ToString();
 				SqlConnection con111;
 				string strInsert111;
 				SqlCommand  cmdselect111;

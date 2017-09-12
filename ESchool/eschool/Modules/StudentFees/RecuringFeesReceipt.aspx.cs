@@ -1931,12 +1931,16 @@ namespace eschool.StudentFees
 			{
 				Cache["FromMonth"]=dropselect.SelectedItem.Text;
 				Cache["FromYear"]=Dropyearfrom.SelectedItem.Text;
-				if(double.Parse(txtamt.Text)==0)
-				{
-					MNS=1;
-					MessageBox.Show("Please Enter the Paid Amount");
-					return 1;
-				}
+
+                if (txtamt.Text != "")
+                {
+                    if (double.Parse(txtamt.Text) == 0)
+                    {
+                        MNS = 1;
+                        MessageBox.Show("Please Enter the Paid Amount");
+                        return 1;
+                    }
+                }
 			
 				if(!TxtPeriod.Text.Equals(""))
 				{
@@ -2029,31 +2033,41 @@ namespace eschool.StudentFees
 					obj.BankName="";
 					obj.draftno = "";
 				}
-						
-				if(txtamt.Text=="")
-					obj.Fees_Amount="";
-				else
-				{
-					if(TempCaution.Value!="0")
-					{
-						obj.Fees_Amount=txtamt.Text;
-						obj.Securityfee=System.Convert.ToString(double.Parse(TempCaution.Value));
-					}
-					else
-					{
-						obj.Fees_Amount=txtamt.Text;
-						obj.Securityfee=txtcmf.Text;
-					}
-					if(TempYearly.Value!="0")
-					{
-						obj.Fees_Amount=txtamt.Text;
-					}
-					else
-					{
-						obj.Fees_Amount=txtamt.Text;
-						
-					}
-				}
+
+                if (txtamt.Text == "")
+                {
+                    obj.Fees_Amount = "";
+                    obj.Securityfee = "0.0";
+                }
+                else
+                {
+                    if (TempCaution.Value != "0")
+                    {
+                        obj.Fees_Amount = txtamt.Text;
+                        obj.Securityfee = System.Convert.ToString(double.Parse(TempCaution.Value));
+                    }
+                    else
+                    {
+                        obj.Fees_Amount = txtamt.Text;
+                        if (txtcmf.Text == "")
+                        {
+                            obj.Securityfee = "0.0";
+                        }
+                        else
+                        {
+                            obj.Securityfee = txtcmf.Text;
+                        }
+                    }
+                    if (TempYearly.Value != "0")
+                    {
+                        obj.Fees_Amount = txtamt.Text;
+                    }
+                    else
+                    {
+                        obj.Fees_Amount = txtamt.Text;
+
+                    }
+                }
 				if(txtlf.Text=="")
 					obj.Latefee="";
 				else

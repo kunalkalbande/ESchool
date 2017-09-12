@@ -33,14 +33,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=8;i<29;i++)
+					for(var i=8;i<31;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=8;i<29;i++)
+					for(var i=8;i<31;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -50,14 +50,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=29;i<74;i++)
+					for(var i=31;i<76;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=29;i<74;i++)
+					for(var i=31;i<76;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -68,14 +68,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=74;i<95;i++)
+					for(var i=76;i<97;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=74;i<95;i++)
+					for(var i=76;i<97;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -85,14 +85,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=95;i<108;i++)
+					for(var i=97;i<110;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=95;i<108;i++)
+					for(var i=97;i<110;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -102,14 +102,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=108;i<117;i++)
+					for(var i=110;i<119;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=108;i<117;i++)
+					for(var i=110;i<119;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -119,14 +119,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=117;i<126;i++)
+					for(var i=119;i<128;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=117;i<126;i++)
+					for(var i=119;i<128;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -136,14 +136,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=126;i<135;i++)
+					for(var i=128;i<137;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=126;i<135;i++)
+					for(var i=128;i<137;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -153,14 +153,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=135;i<140;i++)
+					for(var i=137;i<142;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=135;i<140;i++)
+					for(var i=137;i<142;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -170,14 +170,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=140;i<145;i++)
+					for(var i=142;i<147;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=140;i<145;i++)
+					for(var i=142;i<147;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -187,14 +187,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=145;i<158;i++)
+					for(var i=147;i<160;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=145;i<158;i++)
+					for(var i=147;i<160;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -204,14 +204,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=158;i<171;i++)
+					for(var i=160;i<173;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=158;i<171;i++)
+					for(var i=160;i<173;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -221,14 +221,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=171;i<196;i++)
+					for(var i=173;i<198;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=171;i<196;i++)
+					for(var i=173;i<198;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -238,14 +238,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=196;i<205;i++)
+					for(var i=198;i<207;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=196;i<205;i++)
+					for(var i=198;i<207;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -255,14 +255,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=205;i<218;i++)
+					for(var i=207;i<220;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=205;i<218;i++)
+				    for (var i = 207; i < 220; i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -272,14 +272,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=218;i<235;i++)
+				    for (var i = 220; i < 237; i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=218;i<235;i++)
+				    for (var i = 220; i < 237; i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -289,14 +289,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=235;i<240;i++)
+				    for (var i = 237; i < 242; i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=235;i<240;i++)
+				    for (var i = 237; i < 242; i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -306,14 +306,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=240;i<293;i++)
+				    for (var i = 242; i < 295; i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=240;i<293;i++)
+					for(var i=242;i<295;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -323,14 +323,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=293;i<302;i++)
+				    for (var i = 295; i < 304; i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=293;i<302;i++)
+				    for (var i = 295; i < 304; i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -340,14 +340,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=302;i<311;i++)
+					for(var i=304;i<313;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=302;i<311;i++)
+					for(var i=304;i<313;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -357,14 +357,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=311;i<320;i++)
+					for(var i=313;i<322;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=311;i<320;i++)
+					for(var i=313;i<322;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -374,14 +374,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=320;i<325;i++)
+					for(var i=322;i<327;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=320;i<325;i++)
+					for(var i=322;i<327;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -391,14 +391,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=325;i<334;i++)
+					for(var i=327;i<336;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=325;i<334;i++)
+					for(var i=327;i<336;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -408,14 +408,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=334;i<355;i++)
+					for(var i=336;i<357;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=334;i<355;i++)
+					for(var i=336;i<357;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -425,14 +425,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=355;i<392;i++)
+					for(var i=357;i<394;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=355;i<392;i++)
+					for(var i=357;i<394;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -442,14 +442,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=392;i<409;i++)
+					for(var i=394;i<411;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=392;i<409;i++)
+					for(var i=394;i<411;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -459,14 +459,14 @@
 			{
 				if(t.checked==true)
 				{
-					for(var i=409;i<419;i++)
+					for(var i=411;i<421;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
 				}
 				else
 				{
-					for(var i=409;i<419;i++)
+				    for (var i = 411; i < 421; i++)
 					{
 						document.Form1.elements[i].checked=false
 					}
@@ -480,7 +480,7 @@
 			var val=document.Form1.btnselctall.value
 				if(val=="Select All")
 				{
-					for(var i=7;i<419;i++)
+					for(var i=8;i<421;i++)
 					{
 						document.Form1.elements[i].checked=true
 					}
@@ -488,7 +488,7 @@
 				}
 				else
 				{
-					for(var i=7;i<419;i++)
+					for(var i=8;i<421;i++)
 					{
 						document.Form1.elements[i].checked=false
 					}

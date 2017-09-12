@@ -287,7 +287,7 @@ namespace eschool.Modules.Form
 					SqlDtr=obj.GetRecordSet(sql1);
 					if(SqlDtr.HasRows)
 					{
-						MessageBox.Show("Ledger Name  "+sname+" Already Exist");
+						MessageBox.Show("Vendor Name  " + sname+" Already Exist");
 						return;
 					}
 					SqlDtr.Close();

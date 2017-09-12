@@ -24,9 +24,9 @@
 		// this method use to take value from dropdown in hidden textbox.	
 		function selectCountry()
 		{
-		 	var index=document.Form1.DropCountry.selectedIndex
-  			var CountryName = document.Form1.DropCountry.options[index].text
-  			document.Form1.DropCountryValue.value= CountryName
+		 	var index=document.all.DropCountry.selectedIndex
+  			var CountryName = document.all.DropCountry.options[index].text
+  			document.all.DropCountryValue.value= CountryName
 		}
 		// this method use to show and hide the textbox.
 		function CheckOther(t)
@@ -38,11 +38,11 @@
 				var name = t.options[index].text
 				if(name=="Other")
 				{
-					document.Form1.txtVName.style.visibility="visible"
+					document.all.txtVName.style.visibility="visible"
 				}
 				else
 				{
-					document.Form1.txtVName.style.visibility="hidden"
+					document.all.txtVName.style.visibility="hidden"
 				}
 			}	
 		}

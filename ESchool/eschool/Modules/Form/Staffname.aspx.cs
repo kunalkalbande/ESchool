@@ -409,7 +409,73 @@ namespace eschool.Form
 		{
 			try
 			{
-				int j=0;
+                StringBuilder errorMessage = new StringBuilder();
+                if (txtstaffname.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Name");
+                    errorMessage.Append("\n");
+                }
+                if (txtFatherName.Text == string.Empty)
+                {
+                    errorMessage.Append("- Please Enter Father Name");
+                    errorMessage.Append("\n");
+                }
+                if (txtstaffeducation.Text == string.Empty)
+                {
+                    errorMessage.Append("- You Must Enter Qualification");
+                    errorMessage.Append("\n");
+                }
+                if (DropType.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select The Staff Designation");
+                    errorMessage.Append("\n");
+                }
+                if (DropEmpID.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select EmployeeID");
+                    errorMessage.Append("\n");
+                }
+                if (Dropstaffexp.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- You Must Select The Experience");
+                    errorMessage.Append("\n");
+                }
+                if (DropCity.SelectedIndex == 0)
+                {
+                    errorMessage.Append("- Please Select City");
+                    errorMessage.Append("\n");
+                }
+                if (txtemail.Text != string.Empty)
+                {
+                    string sPattern = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+                    if (!System.Text.RegularExpressions.Regex.IsMatch(txtemail.Text, sPattern))
+                    {
+                        errorMessage.Append("- Please Fill Valid E-mail");
+                        errorMessage.Append("\n");
+                    }
+                }
+                if (txtsmobile.Text != string.Empty)
+                {
+                    if (txtsmobile.Text.Length < 10)
+                    {
+                        errorMessage.Append("- Mobile No. Between 10 to 12 Digits");
+                        errorMessage.Append("\n");
+                    }
+                }
+                if (txtsphone.Text != string.Empty)
+                {
+                    if (txtsphone.Text.Length < 6)
+                    {
+                        errorMessage.Append("- Phone No. Must be Between 6-12 Digits");
+                        errorMessage.Append("\n");
+                    }
+                }
+                if (errorMessage.Length > 0)
+                {
+                    MessageBox.Show(errorMessage.ToString());
+                    return;
+                }
+                int j=0;
 				int iCount=0;
 				fillID();
 				if(chkTeaching.Checked==true)

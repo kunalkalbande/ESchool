@@ -662,7 +662,7 @@ namespace eschool.StudentFees
 					closing=closing+Convert.ToDouble(obj.Qty);
 				}
 				dtr.Close();
-				str="insert into stock_movement (itemno,tran_no,tran_date,opening,recieved,issued,closing) values('"+itemname+"','"+trano+"','"+trandt+"',"+opening+","+qty+",0,"+closing+")";
+				str="insert into stock_movement (itemno,tran_no,tran_date,opening,recieved,issued,closing) values('"+itemname+"','"+trano+"','"+GenUtil.str2MMDDYYYY(trandt.ToString())+"',"+opening+","+qty+",0,"+closing+")";
 				cmd=new SqlCommand(str,scon);
 				cmd.ExecuteNonQuery();
 				NextStockID();

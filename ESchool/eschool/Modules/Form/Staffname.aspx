@@ -1,6 +1,6 @@
 <%@ Register TagPrefix="uc1" TagName="Footer" Src="../../HeaderFooter/usercontrol/Footer.ascx" %>
 <%@ Register TagPrefix="uc1" TagName="header" Src="../../HeaderFooter/usercontrol/header.ascx" %>
-<%@ Page language="c#" Codebehind="Staffname.aspx.cs" AutoEventWireup="false" Inherits="eschool.Form.teacher" %>
+<%@ Page language="c#" Codebehind="Staffname.aspx.cs" EnableEventValidation="false" AutoEventWireup="false" Inherits="eschool.Form.teacher" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
 <HTML>
 	<HEAD>

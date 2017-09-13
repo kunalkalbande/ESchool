@@ -422,12 +422,13 @@ namespace eschool.Form
 							j++;
 						}
 					}
-				}
-				if(iCount==0)
-				{
-					MessageBox.Show("Please Insert Subject");
-					return;
-				}
+                    if (iCount == 0)
+                    {
+                        MessageBox.Show("Please Insert Subject");
+                        return;
+                    }
+                }
+				
 				SqlCommand scom;
 				SqlDataReader sdtr=null;
 				string str="Select count(*) from Staff_Information where staff_Name='"+txtstaffname.Text.Trim()+"' and father_name='"+txtFatherName.Text.Trim()+"' and age='"+GenUtil.str2MMDDYYYY(txtage.Text.Trim())+"'";

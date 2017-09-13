@@ -58,7 +58,7 @@
 											accessKey="S" type="button" runat="server">&nbsp;<U>P</U>rint</BUTTON>&nbsp;<BUTTON class="FormButtonStyle" id="Btnexcel" style="BORDER-RIGHT: #404040 thin outset; BORDER-TOP: #404040 thin outset; FONT-SIZE: 10pt; BORDER-LEFT: #404040 thin outset; WIDTH: 85px; BORDER-BOTTOM: #404040 thin outset; FONT-FAMILY: MS Sans Serif; HEIGHT: 22px; BACKGROUND-COLOR: #c0c0c0"
 											accessKey="S" type="button" runat="server"><u>E</u>xcel</BUTTON></td>
 								</tr>
-				</TR>
+				
 				<% 
 							try
 								{
@@ -105,7 +105,7 @@
 										else if(Dropstype.SelectedItem.Text=="Select")
 										{
 											MessageBox.Show("Please Select Search Type");
-										    return;
+										    //return;
 										}
 										cmd1=new SqlCommand(sql,scon1);
 										dr1=cmd1.ExecuteReader();
@@ -170,11 +170,11 @@
 								}
 								catch(Exception ex)
 								{
-									MessageBox.Show(ex.Message);
+									//MessageBox.Show(ex.Message);
 								}
 								%>
-			</table>
-			</TD></TR></TBODY></TABLE>
+			</TBODY></table>
+			</TD></TR></TABLE>
 			<uc1:Footer id="footer" runat="server"></uc1:Footer>
 			<iframe id="gToday:contrast:agenda.js" style="Z-INDEX: 101; LEFT: -500px; VISIBILITY: visible; POSITION: absolute; TOP: 0px"
 				name="gToday:contrast:agenda.js" src="../../HeaderFooter/shareables/Style/ipopeng.htm" frameBorder="0"

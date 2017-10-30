@@ -1357,10 +1357,10 @@ namespace eschool.Forms.Inventory
 			}
 			string voucher_type = DropVoucherName.SelectedItem.Text;
 			string voucher_ID = DropDownID.SelectedItem.Text;
-			//string date = txtDate.Text.Trim();
-			//date = GenUtil.str2MMDDYYYY(date); 
-			DateTime date = System.Convert.ToDateTime(GenUtil.str2MMDDYYYY(txtDate.Text)+" "+DateTime.Now.TimeOfDay.ToString());
-			string narration = txtNarration.Text.Trim();  
+            //string date = txtDate.Text.Trim();
+            //date = GenUtil.str2MMDDYYYY(date); 
+            DateTime date = System.Convert.ToDateTime(GenUtil.str2DDMMYYYY(txtDate.Text.ToString()) + " " + DateTime.Now.TimeOfDay.ToString());
+            string narration = txtNarration.Text.Trim();  
 			string crID = "";
 			string drID = "";
 			string Amount_cr = "";
@@ -1389,12 +1389,12 @@ namespace eschool.Forms.Inventory
 			}
 			int c = 0;
 				
-			dbobj.Insert_or_Update("Update voucher_transaction set voucher_date ='"+date+"',Ledg_ID_Cr ="+crID.Trim()+",Amount1="+Amount_cr+",Ledg_ID_Dr="+drID.Trim()+",Amount2="+Amount_Dr+",Narration='"+narration+"',L_Type='"+L_Type+"' where Voucher_ID ="+voucher_ID,ref c);   
+			dbobj.Insert_or_Update("Update voucher_transaction set voucher_date ='"+ GenUtil.str2MMDDYYYY(date.ToString()) + "',Ledg_ID_Cr ="+crID.Trim()+",Amount1="+Amount_cr+",Ledg_ID_Dr="+drID.Trim()+",Amount2="+Amount_Dr+",Narration='"+narration+"',L_Type='"+L_Type+"' where Voucher_ID ="+voucher_ID,ref c);   
 			object obj = null;
 			//dbobj.ExecProc(OprType.Update,"ProUpdateAccountsLedger",ref obj,"@Voucher_ID",voucher_ID,"@Ledger_ID",drID.Trim(),"@Amount",Amount_Dr,"@Type","Dr");
 			//dbobj.ExecProc(OprType.Update,"ProUpdateAccountsLedger",ref obj,"@Voucher_ID",voucher_ID,"@Ledger_ID",crID.Trim(),"@Amount",Amount_cr,"@Type","Cr");
-			dbobj.ExecProc(OprType.Update,"ProUpdateAccountsLedger",ref obj,"@Voucher_ID",voucher_ID,"@Ledger_ID",drID.Trim(),"@Amount",Amount_Dr,"@Type","Dr","@Invoice_Date",date);
-			dbobj.ExecProc(OprType.Update,"ProUpdateAccountsLedger",ref obj,"@Voucher_ID",voucher_ID,"@Ledger_ID",crID.Trim(),"@Amount",Amount_cr,"@Type","Cr","@Invoice_Date",date);
+			dbobj.ExecProc(OprType.Update,"ProUpdateAccountsLedger",ref obj,"@Voucher_ID",voucher_ID,"@Ledger_ID",drID.Trim(),"@Amount",Amount_Dr,"@Type","Dr","@Invoice_Date", GenUtil.str2MMDDYYYY(date.ToString()));
+			dbobj.ExecProc(OprType.Update,"ProUpdateAccountsLedger",ref obj,"@Voucher_ID",voucher_ID,"@Ledger_ID",crID.Trim(),"@Amount",Amount_cr,"@Type","Cr","@Invoice_Date", GenUtil.str2MMDDYYYY(date.ToString()));
 			if(c > 0)
 			{
 				MessageBox.Show("Voucher Updated"); 
